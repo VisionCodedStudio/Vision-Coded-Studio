@@ -36,7 +36,11 @@ header {
 header img.logo {
   display: block;
   margin: 0 auto;
+  max-width: 420px;   /* adjust this number */
+  width: 100%;
+  height: auto;
 }
+
 
 /* Navigation */
 nav {
@@ -93,5 +97,6 @@ footer {
   color: #888888;
   border-top: 1px solid #2a2a2a;
 }
+
 
 
