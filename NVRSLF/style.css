@@ -43,6 +43,23 @@ header h1 {
   text-indent: 0.3em;
 }
 
+header .tagline {
+  margin-top: 12px;
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  color: #bfbfbf;
+  font-style: italic;
+}
+
+header .tagline::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: #2a2a2a;
+  margin: 14px auto 0;
+}
+
 /* Navigation */
 nav {
   padding: 12px;
@@ -95,6 +112,7 @@ footer {
   color: #888888;
   border-top: 1px solid #2a2a2a;
 }
+
 
 
 
