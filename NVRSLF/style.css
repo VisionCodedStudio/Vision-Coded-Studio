@@ -36,7 +36,7 @@ header {
 header img.logo {
   display: block;
   margin: 0 auto;
-  width: 260px;   /* PERFECT header size */
+  width: 300px;   /* 👈 this is the move */
   height: auto;
 }
 
@@ -95,6 +95,7 @@ footer {
   color: #888888;
   border-top: 1px solid #2a2a2a;
 }
+
 
 
 
