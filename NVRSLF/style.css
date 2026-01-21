@@ -34,11 +34,13 @@ header {
 }
 
 header h1 {
-  font-size: 2.6rem;      /* bigger, logo-sized */
-  font-weight: 700;       /* stronger presence */
-  letter-spacing: 0.35em; /* intentional spacing */
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
   text-align: center;
-  text-transform: uppercase;
+
+  /* optical centering fix */
+  text-indent: 0.3em;
 }
 
 /* Navigation */
@@ -62,10 +64,7 @@ main {
   align-items: center;
   justify-content: center;
   padding: 40px 20px;
-
-  transform: translateY(-100px);
 }
-
 
 /* Section */
 section {
@@ -96,6 +95,7 @@ footer {
   color: #888888;
   border-top: 1px solid #2a2a2a;
 }
+
 
 
 
