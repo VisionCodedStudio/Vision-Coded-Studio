@@ -33,11 +33,14 @@ header {
   border-bottom: 1px solid #2a2a2a;
 }
 
-header img.logo {
-  display: block;
-  margin: 0 auto;
-  width: 320px;   /* 👈 this is the move */
-  height: auto;
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-align: center;
+
+  /* optical centering fix */
+  text-indent: 0.3em;
 }
 
 /* Navigation */
@@ -95,6 +98,7 @@ footer {
   color: #888888;
   border-top: 1px solid #2a2a2a;
 }
+
 
 
 
