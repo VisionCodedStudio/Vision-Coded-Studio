@@ -78,9 +78,13 @@ nav a {
 }
 
 /* Main content */
-  main {
+ main {
   flex: 1;
   padding: 40px 20px;
+
+  display: flex;
+  align-items: center;     /* vertical center */
+  justify-content: center; /* horizontal center */
 }
 
 /* Section */
@@ -209,6 +213,7 @@ main a:hover {
     font-size: 0.95rem;
   }
 }
+
 
 
 
