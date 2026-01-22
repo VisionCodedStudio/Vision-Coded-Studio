@@ -151,6 +151,26 @@ main a:hover {
   opacity: 0.8;
 }
 
+/* Hero image section */
+.hero-image {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.hero-image img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Hero text spacing */
+.hero-text {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
 
 
 
