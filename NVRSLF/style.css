@@ -185,32 +185,33 @@ main a:hover {
 /* =========================
    Mobile adjustments
    ========================= */
+/* Hero image responsiveness */
+.hero img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
+}
+
+/* Text section spacing */
+.hero-text {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+/* Mobile adjustments */
 @media (max-width: 768px) {
-
-  .hero {
-    margin: 20px auto;
-  }
-
   .hero img {
-    border-radius: 0;
+    max-height: 45vh;
   }
 
-  .hero-overlay {
-    position: static;        /* removes absolute positioning */
-    max-width: 100%;
-    padding: 20px;
-    text-align: left;
-  }
-
-  .hero-overlay h2 {
+  .hero-text h2 {
     font-size: 1.6rem;
   }
 
-  .hero-overlay p {
+  .hero-text p {
     font-size: 0.95rem;
   }
 }
-
 
 
 
