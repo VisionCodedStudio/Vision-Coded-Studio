@@ -139,6 +139,19 @@ footer {
   text-transform: uppercase;
 }
 
+/* Footer email & contact links */
+footer a,
+main a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover,
+main a:hover {
+  opacity: 0.8;
+}
+
+
 
 
 
