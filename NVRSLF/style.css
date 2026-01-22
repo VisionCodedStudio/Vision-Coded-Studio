@@ -75,11 +75,8 @@ nav a {
 }
 
 /* Main content */
-main {
+ main {
   flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 40px 20px;
 }
 
@@ -181,6 +178,7 @@ main a:hover {
   font-size: 0.95rem;
   color: #cccccc;
 }
+
 
 
 
