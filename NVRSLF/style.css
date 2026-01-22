@@ -128,6 +128,17 @@ footer {
   text-align: center;
 }
 
+.about-subhead {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 
 
 
