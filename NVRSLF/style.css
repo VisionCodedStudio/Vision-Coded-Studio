@@ -87,6 +87,13 @@ section {
   text-align: center;
 }
 
+/* Page-centered content (Contact, About if needed) */
+.page-center {
+  max-width: 800px;
+  margin: 120px auto 0; /* THIS is the magic */
+  text-align: center;
+}
+
 /* Headings */
 h2 {
   font-size: 2.2rem;
@@ -199,6 +206,7 @@ main a:hover {
     font-size: 0.95rem;
   }
 }
+
 
 
 
