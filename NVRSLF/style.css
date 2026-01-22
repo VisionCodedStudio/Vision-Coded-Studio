@@ -63,8 +63,11 @@ header .tagline::after {
 /* Navigation */
 nav {
   padding: 12px;
-  text-align: center;
   background-color: #141414;
+
+  display: flex;
+  justify-content: center;
+  gap: 28px; /* 👈 spacing between links */
 }
 
 nav a {
@@ -206,6 +209,7 @@ main a:hover {
     font-size: 0.95rem;
   }
 }
+
 
 
 
