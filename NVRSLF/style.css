@@ -139,47 +139,7 @@ footer {
   text-transform: uppercase;
 }
 
-/* =========================
-   About Page Spacing Polish
-   ========================= */
 
-main section {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-
-main h2 {
-  margin-bottom: 30px;
-}
-
-main h3 {
-  margin-top: 50px;
-  margin-bottom: 16px;
-  font-size: 1.1rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #e5e5e5;
-}
-
-main p {
-  margin-bottom: 22px;
-  line-height: 1.8;
-}
-
-/* Slight visual separation between sections */
-main h3::before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 1px;
-  background-color: #2a2a2a;
-  margin-bottom: 18px;
-}
-
-main {
-  border: 2px solid red;
-}
 
 
 
