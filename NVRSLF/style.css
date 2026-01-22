@@ -83,6 +83,7 @@ nav a {
 /* Section */
 section {
   max-width: 800px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -198,6 +199,7 @@ main a:hover {
     font-size: 0.95rem;
   }
 }
+
 
 
 
