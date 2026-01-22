@@ -177,6 +177,10 @@ main h3::before {
   margin-bottom: 18px;
 }
 
+main {
+  border: 2px solid red;
+}
+
 
 
 
