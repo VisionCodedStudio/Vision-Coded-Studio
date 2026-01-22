@@ -115,15 +115,19 @@ footer {
 
 .about-list {
   list-style: none;
-  margin-top: 30px;
+  margin: 40px auto 0;
   padding: 0;
+  max-width: 600px;
 }
 
 .about-list li {
-  margin: 10px 0;
-  font-size: 0.95rem;
+  margin: 14px 0;
+  font-size: 1rem;
   color: #cccccc;
+  letter-spacing: 0.05em;
+  text-align: center;
 }
+
 
 
 
