@@ -151,24 +151,37 @@ main a:hover {
   opacity: 0.8;
 }
 
-/* Hero image section */
-.hero-image {
-  display: flex;
-  justify-content: center;
-  margin: 40px 0;
+.hero {
+  position: relative;
+  max-width: 1200px;
+  margin: 40px auto;
 }
 
-.hero-image img {
-  max-width: 90%;
+.hero img {
+  width: 100%;
   height: auto;
+  display: block;
   border-radius: 6px;
 }
 
-/* Hero text spacing */
-.hero-text {
-  text-align: center;
-  margin-top: 40px;
+.hero-overlay {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  max-width: 420px;
+  color: #ffffff;
 }
+
+.hero-overlay h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 0.95rem;
+  color: #cccccc;
+}
+
 
 
 
