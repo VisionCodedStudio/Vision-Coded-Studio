@@ -1,5 +1,5 @@
 /* ===================================================
-   NVRSLF Layout System (Stable Version)
+   NVRSLF Layout System 
    =================================================== */
 
 
@@ -132,27 +132,34 @@ main {
 }
 
 
-/* ───────── HERO (Home only) ───────── */
-
-.hero {
-  max-width: 1200px;
-  margin: 40px auto;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-  max-height: 70vh;
-  object-fit: cover;
-  border-radius: 6px;
-  display: block;
-}
+/* ───────── HERO (Home Page Centered) ───────── */
 
 .hero-text {
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   max-width: 800px;
-  margin: 40px auto 0;
+  margin: 0 auto;
   padding: 0 20px;
   text-align: center;
+}
+
+
+/* ───────── LINKS (Fix Blue Email) ───────── */
+
+main a,
+footer a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+main a:hover,
+footer a:hover {
+  opacity: 0.8;
 }
 
 
@@ -170,10 +177,6 @@ footer {
 /* ───────── RESPONSIVE ───────── */
 
 @media (max-width: 768px) {
-
-  .hero img {
-    max-height: 45vh;
-  }
 
   h2 {
     font-size: 1.6rem;
