@@ -332,9 +332,7 @@ footer {
 }
 
 .product-card p {
-  font-size: 15px;
-  color: #cfcfcf;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .price {
@@ -372,5 +370,6 @@ footer {
 .btn-primary:hover {
   background: #ff6a1a;
 }
+
 
 
