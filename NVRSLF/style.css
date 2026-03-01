@@ -152,10 +152,7 @@ nav a:hover {
 main {
   flex: 1;
   padding: 60px 20px;
-  text-align: center;
 }
-
-
 /* ───────── HERO (HOME) ───────── */
 
 .hero-text {
@@ -341,6 +338,7 @@ footer {
   background-color: #FF5B00;
   color: #0e0e0e;
 }
+
 
 
 
