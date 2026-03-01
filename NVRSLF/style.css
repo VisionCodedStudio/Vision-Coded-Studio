@@ -241,6 +241,24 @@ footer {
   }
 }
 
+/* ───────── PAGE FADE IN ───────── */
+
+body {
+  animation: pageFade 0.8s ease;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 
 
