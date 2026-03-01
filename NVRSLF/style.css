@@ -1,6 +1,7 @@
 /* ===================================================
-   NVRSLF Layout System 
+   NVRSLF Layout System
    =================================================== */
+
 
 /* ───────── RESET ───────── */
 
@@ -13,7 +14,7 @@
 }
 
 
-/* ───────── BASE STRUCTURE ───────── */
+/* ───────── BASE ───────── */
 
 html,
 body {
@@ -73,7 +74,7 @@ header h1 {
   text-indent: 0.3em;
 }
 
-header .tagline {
+.tagline {
   margin-top: 12px;
   font-size: 0.75rem;
   letter-spacing: 0.25em;
@@ -81,7 +82,7 @@ header .tagline {
   font-style: italic;
 }
 
-header .tagline::after {
+.tagline::after {
   content: "";
   display: block;
   width: 40px;
@@ -122,15 +123,8 @@ main {
   text-align: center;
 }
 
-/* ───────── PAGE CENTER (About / Contact) ───────── */
 
-.page-center {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-
-/* ───────── HERO (Home Page Centered) ───────── */
+/* ───────── HERO (HOME) ───────── */
 
 .hero-text {
   min-height: 70vh;
@@ -143,16 +137,17 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
-  text-align: center;
 }
+
 
 /* ───────── CONTACT CENTER ───────── */
 
 .contact-center {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  padding: 0 20px;
 }
 
 .contact-center section {
@@ -160,11 +155,11 @@ main {
 }
 
 
-/* ───────── LINKS (Fix Blue Email) ───────── */
+/* ───────── LINKS ───────── */
 
 main a,
 footer a {
-  color: #ffffff !important;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -188,7 +183,6 @@ footer {
 /* ───────── RESPONSIVE ───────── */
 
 @media (max-width: 768px) {
-
   h2 {
     font-size: 1.6rem;
   }
@@ -197,30 +191,3 @@ footer {
     font-size: 0.95rem;
   }
 }
-
-/* ───────── CONTACT PAGE CENTER (OVERRIDE) ───────── */
-.contact-center {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  /* THIS is what fixes “it didn’t move” */
-  padding: 0 20px;
-
-  text-align: center;
-}
-
-.contact-center section {
-  max-width: 800px;
-}
-
-
-
-
-
-
-
-
-
-
