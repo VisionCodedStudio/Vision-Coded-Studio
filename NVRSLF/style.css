@@ -278,6 +278,87 @@ footer {
 }
 
 
+/* ───────── PRODUCT LINEUP ───────── */
+
+.product-hero {
+  margin-bottom: 60px;
+}
+
+.product-image {
+  margin: 40px 0 80px;
+}
+
+.image-placeholder {
+  height: 320px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #141414;
+  border: 1px solid #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  letter-spacing: 0.1em;
+}
+
+.product-lineup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+  max-width: 1000px;
+  margin: 80px auto 0;
+}
+
+.product-card {
+  background-color: #141414;
+  border: 1px solid #2a2a2a;
+  padding: 40px 30px;
+  border-radius: 6px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  border-color: #FF5B00;
+}
+
+.card-image {
+  height: 180px;
+  background-color: #0e0e0e;
+  border: 1px solid #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  margin-bottom: 30px;
+  letter-spacing: 0.1em;
+}
+
+.price {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #FF5B00;
+  font-size: 1.1rem;
+}
+
+/* ───────── PREORDER BUTTON ───────── */
+
+.preorder-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 24px;
+  border: 1px solid #FF5B00;
+  color: #FF5B00;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+.preorder-btn:hover {
+  background-color: #FF5B00;
+  color: #0e0e0e;
+}
 
 
 
