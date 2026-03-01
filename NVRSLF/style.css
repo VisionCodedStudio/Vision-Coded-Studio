@@ -249,6 +249,41 @@ footer {
   }
 }
 
+/* ───────── PRODUCT PAGE ───────── */
+
+.product-hero {
+  margin-bottom: 60px;
+}
+
+.product-image {
+  margin: 40px 0 80px;
+}
+
+.image-placeholder {
+  height: 300px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #141414;
+  border: 1px solid #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  letter-spacing: 0.1em;
+}
+
+.product-features {
+  display: grid;
+  gap: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.feature h3 {
+  margin-top: 0;
+}
+
+
 
 
 
