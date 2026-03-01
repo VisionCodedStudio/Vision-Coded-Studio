@@ -84,6 +84,11 @@ h3::after {
   margin: 8px auto 0;
 }
 
+/* Remove global h3 underline inside product cards */
+.product-card h3::after {
+  display: none;
+}
+
 p {
   font-size: 1rem;
   color: #cccccc;
@@ -393,5 +398,6 @@ footer {
 .btn-primary:active {
   transform: translateY(0);
 }
+
 
 
