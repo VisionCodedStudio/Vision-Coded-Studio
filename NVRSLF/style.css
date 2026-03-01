@@ -63,14 +63,8 @@ h2::after {
   margin: 14px auto 0;
 
   animation: lineSlide 3s linear infinite;
-
-   h2::after {
-  transition: width 0.3s ease;
 }
 
-h2:hover::after {
-  width: 200px;
-}
 }
 h3 {
   margin-top: 60px;
@@ -282,6 +276,7 @@ footer {
 .feature h3 {
   margin-top: 0;
 }
+
 
 
 
