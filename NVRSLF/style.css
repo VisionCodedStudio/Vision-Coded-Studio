@@ -3,15 +3,24 @@
    Dark Minimal System
    ================================================== */
 
-/* Reset */
+
+/* ==================================================
+   1. RESET
+   ================================================== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Page structure */
-html, body {
+
+/* ==================================================
+   2. BASE STRUCTURE
+   ================================================== */
+
+html,
+body {
   height: 100%;
 }
 
@@ -21,13 +30,34 @@ body {
   color: #ffffff;
   line-height: 1.6;
 
-  /* KEY FIX */
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Added to keep footer at bottom */
+  min-height: 100vh; /* Sticky footer support */
 }
 
-/* Header */
+
+/* ==================================================
+   3. TYPOGRAPHY
+   ================================================== */
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  color: #cccccc;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+
+/* ==================================================
+   4. HEADER
+   ================================================== */
+
 header {
   padding: 30px 20px;
   text-align: center;
@@ -39,9 +69,7 @@ header h1 {
   font-weight: 600;
   letter-spacing: 0.3em;
   text-align: center;
-
-  /* optical centering fix */
-  text-indent: 0.3em;
+  text-indent: 0.3em; /* optical centering */
 }
 
 header .tagline {
@@ -61,7 +89,11 @@ header .tagline::after {
   margin: 14px auto 0;
 }
 
-/* Navigation */
+
+/* ==================================================
+   5. NAVIGATION
+   ================================================== */
+
 nav {
   padding: 12px;
   background-color: #141414;
@@ -78,49 +110,75 @@ nav a {
   letter-spacing: 0.15em;
 }
 
-/* Main content */
+
+/* ==================================================
+   6. MAIN LAYOUT
+   ================================================== */
+
 main {
   flex: 1;
   padding: 40px 20px;
 }
 
-/* Section */
 section {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* Page-centered content */
 .page-center {
   max-width: 800px;
   margin: 120px auto 0;
   text-align: center;
 }
 
-/* Headings */
-h2 {
+
+/* ==================================================
+   7. HERO SECTION
+   ================================================== */
+
+.hero {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+.hero-text {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-text h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
   font-weight: 600;
 }
 
-/* Paragraph */
-p {
+.hero-text p {
   font-size: 1rem;
   color: #cccccc;
-  max-width: 650px;
-  margin: 0 auto;
 }
 
-/* Footer */
-footer {
-  padding: 20px;
-  text-align: center;
-  font-size: 0.85rem;
-  color: #888888;
-  border-top: 1px solid #2a2a2a;
-}
+
+/* ==================================================
+   8. ABOUT PAGE COMPONENTS
+   ================================================== */
 
 .about-list {
   list-style: none;
@@ -144,11 +202,15 @@ footer {
   font-weight: 500;
   letter-spacing: 0.15em;
   color: #ffffff;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 }
 
-/* Footer email & contact links */
+
+/* ==================================================
+   9. LINKS
+   ================================================== */
+
 footer a,
 main a {
   color: #ffffff;
@@ -160,52 +222,26 @@ main a:hover {
   opacity: 0.8;
 }
 
-/* Hero image */
-.hero {
-  max-width: 1200px;
-  margin: 40px auto;
-}
 
-.hero img {
-  width: 100%;
-  height: auto;
-  max-height: 70vh;
-  object-fit: cover;
-  display: block;
-  border-radius: 6px;
-}
+/* ==================================================
+   10. FOOTER
+   ================================================== */
 
-/* =========================
-   UPDATED HERO TEXT CENTERING
-   ========================= */
-
-.hero-text {
-  min-height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+footer {
+  padding: 20px;
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
+  font-size: 0.85rem;
+  color: #888888;
+  border-top: 1px solid #2a2a2a;
 }
 
-.hero-text h2 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
 
-.hero-text p {
-  font-size: 1rem;
-  color: #cccccc;
-}
+/* ==================================================
+   11. RESPONSIVE
+   ================================================== */
 
-/* =========================
-   Mobile adjustments
-   ========================= */
 @media (max-width: 768px) {
+
   .hero img {
     max-height: 45vh;
   }
@@ -217,5 +253,5 @@ main a:hover {
   .hero-text p {
     font-size: 0.95rem;
   }
-}
 
+}
