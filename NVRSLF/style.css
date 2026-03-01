@@ -181,18 +181,18 @@ main {
 
 /* ───────── CONTACT CENTER ───────── */
 
-.contact-center {
+main.contact-center {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 60px 20px;
 }
 
-.contact-center section {
+main.contact-center .page-center {
+  width: 100%;
   max-width: 800px;
 }
-
 
 /* ───────── LINKS ───────── */
 
@@ -355,5 +355,6 @@ footer {
   background-color: #FF5B00;
   color: #0e0e0e;
 }
+
 
 
