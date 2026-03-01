@@ -117,10 +117,10 @@ main {
   flex: 1;
   padding: 40px 20px;
 
-  /* ADDED FOR PROPER CENTERING */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;   /* instead of center */
+  padding-top: 120px;        /* controlled vertical placement */
 }
 
 section {
@@ -258,3 +258,4 @@ footer {
   }
 
 }
+
