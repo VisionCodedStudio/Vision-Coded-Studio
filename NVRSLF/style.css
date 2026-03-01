@@ -261,8 +261,8 @@ footer {
 ================================ */
 
 .products {
-  padding: 140px 8%;
-  background: linear-gradient(to bottom, #0d0d0d, #111);
+  padding: 100px 8% 140px;
+  margin-top: 40px;
 }
 
 .products-container {
@@ -373,3 +373,4 @@ footer {
 .btn-primary:hover {
   background: #ff6a1a;
 }
+
