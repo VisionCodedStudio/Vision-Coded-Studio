@@ -58,6 +58,10 @@ h2::after {
   margin: 10px auto 0;
 }
 
+h3 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
 /* Orange Accent Line Under h3 */
 h3 {
   position: relative;
@@ -221,6 +225,7 @@ footer {
     font-size: 0.95rem;
   }
 }
+
 
 
 
