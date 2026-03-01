@@ -1,7 +1,7 @@
-/* =========================
-   NVRSLF – Semantic Layout
-   Chapter 2 Compliant
-   ========================= */
+/* ==================================================
+   NVRSLF – Core Layout Styles
+   Dark Minimal System
+   ================================================== */
 
 /* Reset */
 * {
@@ -218,3 +218,4 @@ main a:hover {
     font-size: 0.95rem;
   }
 }
+
