@@ -1,3 +1,6 @@
+/* ===============================
+   BASE RESET
+================================= */
 * { 
   margin: 0; 
   padding: 0; 
@@ -19,12 +22,14 @@ body {
   flex: 1;                    
 }
 
-/* Hero */
+/* ===============================
+   HERO SECTION
+================================= */
 header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* ← THIS */
+  justify-content: flex-start;
   align-items: center;
   padding: 40px 20px;
 }
@@ -73,10 +78,13 @@ header h1 {
 header p {
   margin: 10px 0 20px;
   font-size: 1.1rem;
-  color: #444;
+  color: #444;   /* Paragraph default color */
   max-width: 650px;
 }
 
+/* ===============================
+   BUTTONS
+================================= */
 .cta-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -117,7 +125,9 @@ header p {
   color: #FF5B00;
 }
 
-/* Footer */
+/* ===============================
+   FOOTER
+================================= */
 .footer {
   background: #fff;         
   color: #555;
@@ -147,5 +157,15 @@ header p {
 .footer-links a:hover {
   color: #000;
 }
+
+/* =========================================
+   🔥 NVRSLF BLACK TEXT OVERRIDE (ADDED)
+   This forces NVRSLF to be bold and black
+========================================= */
+.brand-name {
+  font-weight: 700;
+  color: #000 !important;
+}
+
 
 
