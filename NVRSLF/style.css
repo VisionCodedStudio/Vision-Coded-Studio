@@ -24,6 +24,7 @@ body {
   /* KEY FIX */
   display: flex;
   flex-direction: column;
+  min-height: 100vh; /* Added to keep footer at bottom */
 }
 
 /* Header */
@@ -179,11 +180,11 @@ main a:hover {
    ========================= */
 
 .hero-text {
-  min-height: 60vh;              /* vertical space */
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;       /* vertical center */
-  align-items: center;           /* horizontal center */
+  justify-content: center;
+  align-items: center;
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
