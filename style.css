@@ -162,10 +162,12 @@ header p {
    🔥 NVRSLF BLACK TEXT OVERRIDE (ADDED)
    This forces NVRSLF to be bold and black
 ========================================= */
+/* NVRSLF Brand Highlight */
 .brand-name {
   font-weight: 700;
-  color: #000000 !important;
+  color: #FF5B00 !important;
 }
+
 
 
 
