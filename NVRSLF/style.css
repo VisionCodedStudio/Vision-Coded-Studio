@@ -371,5 +371,27 @@ footer {
   background: #ff6a1a;
 }
 
+/* Improve button alignment inside cards */
+.product-card a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Smooth button press effect */
+.btn-outline,
+.btn-primary {
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-outline:hover,
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-outline:active,
+.btn-primary:active {
+  transform: translateY(0);
+}
 
 
