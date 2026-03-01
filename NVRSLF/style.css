@@ -67,7 +67,7 @@ nav {
 
   display: flex;
   justify-content: center;
-  gap: 28px; /* 👈 spacing between links */
+  gap: 28px;
 }
 
 nav a {
@@ -90,10 +90,10 @@ section {
   text-align: center;
 }
 
-/* Page-centered content (Contact, About if needed) */
+/* Page-centered content */
 .page-center {
   max-width: 800px;
-  margin: 120px auto 0; /* THIS is the magic */
+  margin: 120px auto 0;
   text-align: center;
 }
 
@@ -174,11 +174,19 @@ main a:hover {
   border-radius: 6px;
 }
 
-/* Hero text UNDER image */
+/* =========================
+   UPDATED HERO TEXT CENTERING
+   ========================= */
+
 .hero-text {
+  min-height: 60vh;              /* vertical space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;       /* vertical center */
+  align-items: center;           /* horizontal center */
   text-align: center;
   max-width: 800px;
-  margin: 40px auto 0;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -209,33 +217,3 @@ main a:hover {
     font-size: 0.95rem;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
