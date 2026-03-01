@@ -399,5 +399,12 @@ footer {
   transform: translateY(0);
 }
 
+.about-signature {
+  margin-top: 80px;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  color: #777;
+  text-align: center;
+}
 
 
