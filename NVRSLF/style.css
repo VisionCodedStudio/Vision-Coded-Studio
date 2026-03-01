@@ -3,7 +3,6 @@
    Dark Minimal System
    ================================================== */
 
-
 /* ==================================================
    1. RESET
    ================================================== */
@@ -69,7 +68,7 @@ header h1 {
   font-weight: 600;
   letter-spacing: 0.3em;
   text-align: center;
-  text-indent: 0.3em; /* optical centering */
+  text-indent: 0.3em;
 }
 
 header .tagline {
@@ -97,7 +96,6 @@ header .tagline::after {
 nav {
   padding: 12px;
   background-color: #141414;
-
   display: flex;
   justify-content: center;
   gap: 28px;
@@ -118,6 +116,11 @@ nav a {
 main {
   flex: 1;
   padding: 40px 20px;
+
+  /* ADDED FOR PROPER CENTERING */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section {
@@ -126,9 +129,9 @@ section {
   text-align: center;
 }
 
+/* REPLACED */
 .page-center {
   max-width: 800px;
-  margin: 120px auto 0;
   text-align: center;
 }
 
