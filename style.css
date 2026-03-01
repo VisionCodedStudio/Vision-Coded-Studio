@@ -1,228 +1,55 @@
-/* ===================================================
-   NVRSLF Layout System
-   =================================================== */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NVRSLF</title>
 
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
 
-/* 1. RESET */
+<body>
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <!-- Header: static content shown on every page -->
+  <header>
+    <h1>NVRSLF</h1>
+    <p class="tagline">Never Self-Limit.</p>
+  </header>
 
+  <!-- Navigation: site links -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/contact.html">Contact</a>
+  </nav>
 
-/* 2. BASE STRUCTURE */
+  <!-- Main content: unique page content -->
+  <main id="main-content">
 
-html,
-body {
-  height: 100%;
-}
+    <!-- Hero section -->
+    <section class="hero-text">
+      <h2>NVRSLF is currently in development.</h2>
+      <p>
+        We’re engineering a performance-driven tech line designed for creators, builders, and disciplined professionals.
+      </p>
+      <p>
+        Precision. Focus. Execution.<br>
+        <strong>Launching soon.</strong>
+      </p>
+    </section>
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #0e0e0e;
-  color: #ffffff;
-  line-height: 1.6;
-}
+  </main>
 
-
-/* 3. TYPOGRAPHY */
-
-h1,
-h2,
-h3 {
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 1rem;
-  color: #cccccc;
-  max-width: 650px;
-  margin: 0 auto;
-}
-
-
-/* 4. HEADER */
-
-header {
-  padding: 30px 20px;
-  text-align: center;
-  border-bottom: 1px solid #2a2a2a;
-}
-
-header h1 {
-  font-size: 1.8rem;
-  letter-spacing: 0.3em;
-  text-indent: 0.3em;
-}
-
-header .tagline {
-  margin-top: 12px;
-  font-size: 0.75rem;
-  letter-spacing: 0.25em;
-  color: #bfbfbf;
-  font-style: italic;
-}
-
-header .tagline::after {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 1px;
-  background-color: #2a2a2a;
-  margin: 14px auto 0;
-}
-
-
-/* 5. NAVIGATION */
-
-nav {
-  background-color: #141414;
-  padding: 12px;
-  display: flex;
-  justify-content: center;
-  gap: 28px;
-}
-
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 0.9rem;
-  letter-spacing: 0.15em;
-}
-
-nav a:hover {
-  opacity: 0.7;
-}
-
-
-/* 6. MAIN */
-
-main {
-  padding: 80px 20px;
-  min-height: calc(100vh - 220px);
-}
-
-
-/* 7. SECTION */
-
-section {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-
-/* 8. CONTACT CENTERING ONLY */
-
-.contact-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: calc(100vh - 220px);
-}
-
-
-/* 9. HERO (HOME) */
-
-.hero {
-  max-width: 1200px;
-  margin: 40px auto;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-  max-height: 70vh;
-  object-fit: cover;
-  border-radius: 6px;
-  display: block;
-}
-
-.hero-text {
-  min-height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
-  text-align: center;
-}
-
-
-/* 10. ABOUT */
-
-.about-subhead {
-  margin: 50px 0 20px;
-  font-size: 1.1rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.about-list {
-  list-style: none;
-  max-width: 600px;
-  margin: 40px auto 0;
-}
-
-.about-list li {
-  margin: 14px 0;
-  font-size: 1rem;
-  color: #cccccc;
-  letter-spacing: 0.05em;
-}
-
-
-/* 11. LINKS */
-
-main a,
-footer a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-main a:hover,
-footer a:hover {
-  opacity: 0.8;
-}
-
-
-/* 12. FOOTER */
-
-footer {
-  padding: 20px;
-  font-size: 0.85rem;
-  color: #888888;
-  border-top: 1px solid #2a2a2a;
-  text-align: center;
-}
-
-
-/* 13. RESPONSIVE */
-
-@media (max-width: 768px) {
-
-  .hero img {
-    max-height: 45vh;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  p {
-    font-size: 0.95rem;
-  }
-
-}
+  <!-- Footer: static content -->
+  <footer>
+    <p>
+      © 2025 NVRSLF. All rights reserved. |
+      <a href="mailto:contact@nvrslf.com">
+        contact@nvrslf.com
+      </a>
+    </p>
+  </footer>
+  
+</body>
+</html>
