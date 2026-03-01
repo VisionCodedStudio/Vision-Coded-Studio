@@ -65,7 +65,6 @@ h2::after {
   animation: lineSlide 3s linear infinite;
 }
 
-}
 h3 {
   margin-top: 60px;
   margin-bottom: 20px;
@@ -342,6 +341,7 @@ footer {
   background-color: #FF5B00;
   color: #0e0e0e;
 }
+
 
 
 
