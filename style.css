@@ -3,7 +3,7 @@
    =================================================== */
 
 
-/* ───────────── 1. RESET ───────────── */
+/* 1. RESET */
 
 *,
 *::before,
@@ -14,7 +14,7 @@
 }
 
 
-/* ───────────── 2. BASE STRUCTURE ───────────── */
+/* 2. BASE STRUCTURE */
 
 html,
 body {
@@ -26,14 +26,10 @@ body {
   background-color: #0e0e0e;
   color: #ffffff;
   line-height: 1.6;
-
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 
-/* ───────────── 3. TYPOGRAPHY ───────────── */
+/* 3. TYPOGRAPHY */
 
 h1,
 h2,
@@ -54,7 +50,7 @@ p {
 }
 
 
-/* ───────────── 4. HEADER ───────────── */
+/* 4. HEADER */
 
 header {
   padding: 30px 20px;
@@ -86,12 +82,11 @@ header .tagline::after {
 }
 
 
-/* ───────────── 5. NAVIGATION ───────────── */
+/* 5. NAVIGATION */
 
 nav {
   background-color: #141414;
   padding: 12px;
-
   display: flex;
   justify-content: center;
   gap: 28px;
@@ -109,23 +104,15 @@ nav a:hover {
 }
 
 
-/* ───────────── 6. MAIN LAYOUT ───────────── */
+/* 6. MAIN */
 
 main {
-  flex: 1;
-  padding: 40px 20px;
-}
-
-/* Contact page only */
-.contact-page {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 80px 20px;
+  min-height: calc(100vh - 220px);
 }
 
 
-/* ───────────── 7. SECTION ───────────── */
+/* 7. SECTION */
 
 section {
   max-width: 800px;
@@ -134,7 +121,17 @@ section {
 }
 
 
-/* ───────────── 8. HERO (Home Only) ───────────── */
+/* 8. CONTACT CENTERING ONLY */
+
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 220px);
+}
+
+
+/* 9. HERO (HOME) */
 
 .hero {
   max-width: 1200px;
@@ -152,12 +149,10 @@ section {
 
 .hero-text {
   min-height: 60vh;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
@@ -165,7 +160,7 @@ section {
 }
 
 
-/* ───────────── 9. ABOUT COMPONENTS ───────────── */
+/* 10. ABOUT */
 
 .about-subhead {
   margin: 50px 0 20px;
@@ -189,7 +184,7 @@ section {
 }
 
 
-/* ───────────── 10. LINKS ───────────── */
+/* 11. LINKS */
 
 main a,
 footer a {
@@ -203,7 +198,7 @@ footer a:hover {
 }
 
 
-/* ───────────── 11. FOOTER ───────────── */
+/* 12. FOOTER */
 
 footer {
   padding: 20px;
@@ -214,7 +209,7 @@ footer {
 }
 
 
-/* ───────────── 12. RESPONSIVE ───────────── */
+/* 13. RESPONSIVE */
 
 @media (max-width: 768px) {
 
