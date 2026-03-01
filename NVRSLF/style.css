@@ -48,14 +48,17 @@ h2 {
   display: inline-block;
 }
 
-/* Orange Accent Line Under Headings */
 h2::after {
   content: "";
   display: block;
-  width: 60px;
+  width: 120px;              /* longer line */
   height: 2px;
   background-color: #FF5B00;
-  margin: 10px auto 0;
+  margin: 14px auto 0;
+
+  transform: scaleX(0);
+  transform-origin: center;
+  animation: lineGrow 1.2s ease forwards;
 }
 
 h3 {
@@ -226,6 +229,11 @@ footer {
   }
 }
 
+@keyframes lineGrow {
+  to {
+    transform: scaleX(1);
+  }
+}
 
 
 
