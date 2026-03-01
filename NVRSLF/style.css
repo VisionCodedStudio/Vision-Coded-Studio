@@ -116,12 +116,11 @@ main {
   padding: 40px 20px;
 }
 
-section {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+.contact-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 /* ───────────── PAGE CENTER (Contact Only) ───────────── */
 
@@ -236,3 +235,4 @@ footer {
   }
 
 }
+
