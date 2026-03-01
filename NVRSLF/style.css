@@ -290,7 +290,6 @@ footer {
 }
 
 .product-card.pro {
-  transform: scale(1.03);
   border-color: rgba(255,69,0,0.3);
   box-shadow: 0 30px 60px rgba(0,0,0,0.8);
 }
@@ -373,4 +372,5 @@ footer {
 .btn-primary:hover {
   background: #ff6a1a;
 }
+
 
