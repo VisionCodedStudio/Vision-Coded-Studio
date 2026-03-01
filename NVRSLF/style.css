@@ -198,4 +198,110 @@ footer {
   }
 }
 
+/* ───────── CONTACT PAGE CENTER (OVERRIDE) ───────── */
+.contact-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* THIS is what fixes “it didn’t move” */
+  padding: 0 20px;
+
+  text-align: center;
+}
+
+.contact-center section {
+  max-width: 800px;
+}
+
+/* ───────── FORCE EMAIL LINKS WHITE ───────── */
+footer a,
+main a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+footer a:hover,
+main a:hover {
+  opacity: 0.8;
+}
+
+/* ───────── CONTACT PAGE CENTER (OVERRIDE) ───────── */
+.contact-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* THIS is what fixes “it didn’t move” */
+  padding: 0 20px;
+
+  text-align: center;
+}
+
+.contact-center section {
+  max-width: 800px;
+}
+
+/* ───────── FORCE EMAIL LINKS WHITE ───────── */
+footer a,
+main a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+footer a:hover,
+main a:hover {
+  opacity: 0.8;
+}
+
+/* ───────── CONTACT PAGE CENTER (OVERRIDE) ───────── */
+.contact-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* THIS is what fixes “it didn’t move” */
+  padding: 0 20px;
+
+  text-align: center;
+}
+
+.contact-center section {
+  max-width: 800px;
+}
+
+/* ───────── FORCE EMAIL LINKS WHITE ───────── */
+footer a,
+main a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+footer a:hover,
+main a:hover {
+  opacity: 0.8;
+}
+
+/* ───────── CONTACT PAGE CENTER (OVERRIDE) ───────── */
+.contact-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* THIS is what fixes “it didn’t move” */
+  padding: 0 20px;
+
+  text-align: center;
+}
+
+.contact-center section {
+  max-width: 800px;
+}
+
+
+
 
