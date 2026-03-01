@@ -274,87 +274,89 @@ footer {
 }
 
 
-/* ───────── PRODUCT LINEUP ───────── */
+/* ===============================
+   NVRSLF Product Section
+================================ */
 
-.product-hero {
-  margin-bottom: 60px;
+.products-section {
+  padding: 120px 8%;
+  background: #0e0e0e;
 }
 
-.product-image {
-  margin: 40px 0 80px;
-}
-
-.image-placeholder {
-  height: 320px;
-  max-width: 1000px;
-  margin: 0 auto;
-  background-color: #141414;
-  border: 1px solid #2a2a2a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666;
-  letter-spacing: 0.1em;
-}
-
-.product-lineup {
+.products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 60px;
-  max-width: 1000px;
-  margin: 80px auto 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .product-card {
-  background-color: #141414;
-  border: 1px solid #2a2a2a;
-  padding: 40px 30px;
-  border-radius: 6px;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 50px 40px 60px;
+  text-align: center;
+  transition: all 0.35s ease;
 }
 
 .product-card:hover {
-  transform: translateY(-6px);
-  border-color: #FF5B00;
+  transform: translateY(-8px);
+  border-color: rgba(255, 69, 0, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
-.card-image {
-  height: 180px;
-  background-color: #0e0e0e;
-  border: 1px solid #2a2a2a;
+.product-image {
+  height: 220px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #666;
-  margin-bottom: 30px;
-  letter-spacing: 0.1em;
+  font-size: 14px;
+  letter-spacing: 2px;
 }
 
-.price {
-  margin-top: 20px;
+.product-card h3 {
+  font-size: 24px;
   font-weight: 600;
-  color: #FF5B00;
-  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
-/* ───────── PREORDER BUTTON ───────── */
+.product-accent {
+  width: 40px;
+  height: 2px;
+  background: #ff4500;
+  margin: 12px auto 30px;
+}
 
-.preorder-btn {
+.product-card p {
+  font-size: 16px;
+  color: #cfcfcf;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.product-price {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ff4500;
+  margin-bottom: 30px;
+}
+
+.product-btn {
   display: inline-block;
-  margin-top: 18px;
-  padding: 10px 24px;
-  border: 1px solid #FF5B00;
-  color: #FF5B00;
+  padding: 14px 36px;
+  border: 1px solid #ff4500;
+  color: #fff;
   text-decoration: none;
-  font-size: 0.85rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 1px;
   transition: all 0.3s ease;
 }
 
-.preorder-btn:hover {
-  background-color: #FF5B00;
-  color: #0e0e0e;
+.product-btn:hover {
+  background: #ff4500;
+  color: #000;
 }
-
-
-
