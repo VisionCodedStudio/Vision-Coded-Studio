@@ -1,9 +1,9 @@
 /* ===================================================
-   NVRSLF Layout System
+   NVRSLF Layout System (Stable Version)
    =================================================== */
 
 
-/* ───────────── RESET ───────────── */
+/* ───────── RESET ───────── */
 
 *,
 *::before,
@@ -14,7 +14,7 @@
 }
 
 
-/* ───────────── BASE STRUCTURE ───────────── */
+/* ───────── BASE STRUCTURE ───────── */
 
 html,
 body {
@@ -33,7 +33,7 @@ body {
 }
 
 
-/* ───────────── TYPOGRAPHY ───────────── */
+/* ───────── TYPOGRAPHY ───────── */
 
 h1,
 h2,
@@ -46,15 +46,21 @@ h2 {
   margin-bottom: 20px;
 }
 
+h3 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
 p {
   font-size: 1rem;
   color: #cccccc;
   max-width: 650px;
-  margin: 0 auto;
+  margin: 0 auto 18px auto;
 }
 
 
-/* ───────────── HEADER ───────────── */
+/* ───────── HEADER ───────── */
 
 header {
   padding: 30px 20px;
@@ -86,7 +92,7 @@ header .tagline::after {
 }
 
 
-/* ───────────── NAVIGATION ───────────── */
+/* ───────── NAVIGATION ───────── */
 
 nav {
   background-color: #141414;
@@ -109,31 +115,24 @@ nav a:hover {
 }
 
 
-/* ───────────── MAIN LAYOUT ───────────── */
+/* ───────── MAIN ───────── */
 
 main {
   flex: 1;
-  padding: 40px 20px;
-}
-
-/* Contact page ONLY */
-.contact-layout {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/* ───────────── PAGE CENTER (Contact Content) ───────────── */
-
-.page-center {
-  max-width: 800px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 
-/* ───────────── HERO SECTION (Home Only) ───────────── */
+/* ───────── PAGE CENTER (About / Contact) ───────── */
+
+.page-center {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+/* ───────── HERO (Home only) ───────── */
 
 .hero {
   max-width: 1200px;
@@ -150,77 +149,14 @@ main {
 }
 
 .hero-text {
-  min-height: 60vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   max-width: 800px;
-  margin: 0 auto;
+  margin: 40px auto 0;
   padding: 0 20px;
   text-align: center;
 }
 
 
-/* ───────────── ABOUT COMPONENTS ───────────── */
-
-.about-subhead {
-  margin: 50px 0 20px;
-  font-size: 1.1rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.about-list {
-  list-style: none;
-  max-width: 600px;
-  margin: 40px auto 0;
-}
-
-.about-list li {
-  margin: 14px 0;
-  font-size: 1rem;
-  color: #cccccc;
-  letter-spacing: 0.05em;
-}
-
-/* ───────────── ABOUT PAGE FIX ───────────── */
-
-.page-center section {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.page-center p {
-  margin-bottom: 18px;  /* spacing between paragraphs */
-}
-
-.page-center h3 {
-  margin-top: 40px;     /* spacing above section titles */
-  margin-bottom: 15px;
-  font-size: 1.2rem;
-}
-
-
-/* ───────────── LINKS ───────────── */
-
-main a,
-footer a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-main a:hover,
-footer a:hover {
-  opacity: 0.8;
-}
-
-
-/* ───────────── FOOTER ───────────── */
+/* ───────── FOOTER ───────── */
 
 footer {
   padding: 20px;
@@ -231,7 +167,7 @@ footer {
 }
 
 
-/* ───────────── RESPONSIVE ───────────── */
+/* ───────── RESPONSIVE ───────── */
 
 @media (max-width: 768px) {
 
@@ -246,6 +182,4 @@ footer {
   p {
     font-size: 0.95rem;
   }
-
 }
-
