@@ -408,7 +408,7 @@ footer {
 }
 
 /* ================================
-   NVRSLF Form Styling
+   NVRSLF Contact Form Styling
 ================================ */
 
 form {
@@ -420,12 +420,14 @@ form input,
 form select,
 form textarea {
   width: 100%;
-  padding: 12px;
+  padding: 12px 14px;
+  margin-top: 8px;
+  margin-bottom: 18px;
   background-color: #0e0e0e;
   border: 1px solid #2a2a2a;
   color: #ffffff;
   border-radius: 4px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 form input:focus,
@@ -437,8 +439,8 @@ form textarea:focus {
 
 form label {
   font-size: 0.85rem;
-  letter-spacing: 0.08em;
   color: #bfbfbf;
+  letter-spacing: 0.05em;
 }
 
 form input[type="radio"],
@@ -449,7 +451,7 @@ form input[type="checkbox"] {
 
 form input[type="submit"] {
   background-color: #FF5B00;
-  color: #000;
+  color: #000000;
   border: none;
   cursor: pointer;
   font-weight: 600;
@@ -460,4 +462,3 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background-color: #ff6a1a;
 }
-
