@@ -1,65 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
+<main class="contact-center">
 
-  <meta name="description" content="Contact NVRSLF for inquiries, collaborations, and brand updates.">
-  <meta name="keywords" content="NVRSLF contact, tech brand inquiries, collaborations, Vision Coded Studio">
-  <meta name="author" content="Vision Coded Studio">
+  <div class="page-center">
+    <h2>Early Access & Product Inquiry</h2>
+    <p>Request early access or ask about upcoming NVRSLF releases.</p>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <form action="#" method="post">
 
-  <title>Contact | NVRSLF</title>
+      <!-- Text -->
+      <input type="text" name="fullname" placeholder="Full Name" required><br><br>
 
-  <link rel="stylesheet" href="../style.css">
-</head>
-<body>
+      <!-- Email -->
+      <input type="email" name="email" placeholder="Email Address" required><br><br>
 
-  <!-- Header -->
-  <header>
-    <h1>NVRSLF</h1>
-    <p class="tagline">Never Self-Limit.</p>
-  </header>
+      <!-- Select (Product Type) -->
+      <label>Select Product:</label><br>
+      <select name="product">
+        <option value="keyboard">Mechanical Keyboard</option>
+        <option value="dock">Charging Dock</option>
+        <option value="deskmat">Performance Desk Mat</option>
+        <option value="custom">Custom Setup</option>
+      </select><br><br>
 
-  <!-- Navigation -->
- <nav>
-  <a href="../index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="products.html">Products</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-  <a href="../sitemap.html">Site Map</a>
-</nav>
-  
-  <!-- Main -->
-  <main class="contact-center">
-    <section class="page-center">
-      <h2>Contact</h2>
+      <!-- Radio (Use Case) -->
+      <label>Primary Use:</label><br>
+      <input type="radio" name="use" value="gaming"> Gaming
+      <input type="radio" name="use" value="work"> Work
+      <input type="radio" name="use" value="content"> Content Creation<br><br>
 
-      <p>
-        For inquiries, collaborations, or general questions, reach out directly.
-        NVRSLF is currently operating online-only while the brand continues to develop its first product releases.
-      </p>
+      <!-- Checkbox -->
+      <input type="checkbox" name="updates">
+      Join early access updates<br><br>
 
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:contact@nvrslf.com">contact@nvrslf.com</a>
-      </p>
+      <!-- Date -->
+      <label>Desired Purchase Timeline:</label><br>
+      <input type="date" name="timeline"><br><br>
 
-      <p>
-        Currently accepting partnerships and collaboration inquiries.
-      </p>
-    </section>
-  </main>
+      <!-- Textarea -->
+      <textarea name="message" rows="4" placeholder="Tell us about your setup goals..."></textarea><br><br>
 
-  <!-- Footer -->
-  <footer>
-    <p>
-      © 2025 NVRSLF. All rights reserved. |
-      <a href="mailto:contact@nvrslf.com">contact@nvrslf.com</a>
-    </p>
-  </footer>
+      <!-- Submit -->
+      <input type="submit" value="Request Access">
 
-</body>
-</html>
+    </form>
+  </div>
 
+</main>
