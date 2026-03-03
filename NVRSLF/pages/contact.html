@@ -1,47 +1,86 @@
-<main class="contact-center">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
-  <div class="page-center">
-    <h2>Early Access & Product Inquiry</h2>
-    <p>Request early access or ask about upcoming NVRSLF releases.</p>
+  <meta name="description" content="Contact NVRSLF — Early access and product inquiries.">
+  <meta name="keywords" content="NVRSLF contact, tech inquiry, early access">
+  <meta name="author" content="Vision Coded Studio">
 
-    <form action="#" method="post">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!-- Text -->
-      <input type="text" name="fullname" placeholder="Full Name" required><br><br>
+  <title>Contact | NVRSLF</title>
 
-      <!-- Email -->
-      <input type="email" name="email" placeholder="Email Address" required><br><br>
+  <!-- IMPORTANT: Correct CSS Path -->
+  <link rel="stylesheet" href="../style.css">
+</head>
 
-      <!-- Select (Product Type) -->
-      <label>Select Product:</label><br>
-      <select name="product">
-        <option value="keyboard">Mechanical Keyboard</option>
-        <option value="dock">Charging Dock</option>
-        <option value="deskmat">Performance Desk Mat</option>
-        <option value="custom">Custom Setup</option>
-      </select><br><br>
+<body>
 
-      <!-- Radio (Use Case) -->
-      <label>Primary Use:</label><br>
-      <input type="radio" name="use" value="gaming"> Gaming
-      <input type="radio" name="use" value="work"> Work
-      <input type="radio" name="use" value="content"> Content Creation<br><br>
+  <!-- Header -->
+  <header>
+    <h1>NVRSLF</h1>
+    <p class="tagline">Never Self-Limit.</p>
+  </header>
 
-      <!-- Checkbox -->
-      <input type="checkbox" name="updates">
-      Join early access updates<br><br>
+  <!-- Navigation -->
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="../sitemap.html">Site Map</a>
+  </nav>
 
-      <!-- Date -->
-      <label>Desired Purchase Timeline:</label><br>
-      <input type="date" name="timeline"><br><br>
+  <!-- Main Content -->
+  <main class="contact-center">
 
-      <!-- Textarea -->
-      <textarea name="message" rows="4" placeholder="Tell us about your setup goals..."></textarea><br><br>
+    <div class="page-center">
+      <h2>Early Access & Product Inquiry</h2>
+      <p>Request early access or ask about upcoming NVRSLF releases.</p>
 
-      <!-- Submit -->
-      <input type="submit" value="Request Access">
+      <form action="#" method="post">
 
-    </form>
-  </div>
+        <input type="text" name="fullname" placeholder="Full Name" required><br><br>
 
-</main>
+        <input type="email" name="email" placeholder="Email Address" required><br><br>
+
+        <label>Select Product:</label><br>
+        <select name="product">
+          <option value="keyboard">Mechanical Keyboard</option>
+          <option value="dock">Charging Dock</option>
+          <option value="deskmat">Performance Desk Mat</option>
+          <option value="custom">Custom Setup</option>
+        </select><br><br>
+
+        <label>Primary Use:</label><br>
+        <input type="radio" name="use" value="gaming"> Gaming
+        <input type="radio" name="use" value="work"> Work
+        <input type="radio" name="use" value="content"> Content Creation<br><br>
+
+        <input type="checkbox" name="updates">
+        Join early access updates<br><br>
+
+        <label>Desired Purchase Timeline:</label><br>
+        <input type="date" name="timeline"><br><br>
+
+        <textarea name="message" rows="4" placeholder="Tell us about your setup goals..."></textarea><br><br>
+
+        <input type="submit" value="Request Access">
+
+      </form>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2025 NVRSLF. All rights reserved. |
+      <a href="mailto:contact@nvrslf.com">contact@nvrslf.com</a>
+    </p>
+  </footer>
+
+</body>
+</html>
