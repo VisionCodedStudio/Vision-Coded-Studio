@@ -407,4 +407,57 @@ footer {
   text-align: center;
 }
 
+/* ================================
+   NVRSLF Form Styling
+================================ */
+
+form {
+  margin-top: 30px;
+  text-align: left;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #0e0e0e;
+  border: 1px solid #2a2a2a;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #FF5B00;
+}
+
+form label {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: #bfbfbf;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+form input[type="submit"] {
+  background-color: #FF5B00;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  transition: 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #ff6a1a;
+}
 
