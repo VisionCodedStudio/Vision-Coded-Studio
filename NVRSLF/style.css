@@ -462,3 +462,26 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background-color: #ff6a1a;
 }
+
+/* ================================
+   Cart Icon (Top Right)
+================================ */
+
+header {
+  position: relative;
+}
+
+.cart-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.cart-icon:hover {
+  color: #FF5B00;
+  transform: scale(1.1);
+}
