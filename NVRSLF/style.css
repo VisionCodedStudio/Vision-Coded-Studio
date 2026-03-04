@@ -463,3 +463,27 @@ form input[type="submit"]:hover {
   background-color: #ff6a1a;
 }
 
+/* ================================
+   NVRSLF Sitemap Styling
+================================ */
+
+.sitemap-list {
+  list-style: none;      /* removes bullets */
+  padding: 0;
+  margin-top: 30px;
+}
+
+.sitemap-list li {
+  margin: 14px 0;
+}
+
+.sitemap-list a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.3s ease;
+  letter-spacing: 0.1em;
+}
+
+.sitemap-list a:hover {
+  color: #FF5B00;
+}
