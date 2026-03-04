@@ -23,19 +23,21 @@ body {
 }
 
 /* ===============================
-   HERO SECTION (TIGHTENED)
+   HERO SECTION (ORIGINAL FULL)
 ================================= */
 header {
-  padding: 100px 20px 80px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  padding: 40px 20px;
 }
 
 /* Animated Logo */
 .logo {
-  width: 220px;
-  max-width: 70%;
+  width: 280px;
+  max-width: 80%;
   margin-bottom: 25px;
   display: block;
   animation: glow 2.5s infinite alternate;
@@ -53,7 +55,7 @@ header {
 }
 
 header h1 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #000;
   margin-bottom: 10px;
@@ -61,7 +63,7 @@ header h1 {
 
 .underline {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   height: 4px;
   background: #FF5B00;
   margin: 10px auto 20px;
@@ -69,13 +71,13 @@ header h1 {
 }
 
 @keyframes pulse {
-  from { opacity: 0.5; width: 250px; }
-  to { opacity: 1; width: 400px; }
+  from { opacity: 0.4; width: 300px; }
+  to { opacity: 1; width: 500px; }
 }
 
 header p {
   margin: 10px 0 20px;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: #444;
   max-width: 650px;
 }
@@ -92,9 +94,9 @@ header p {
 }
 
 .btn {
-  padding: 14px 32px;
+  padding: 15px 35px;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1rem;
   border-radius: 4px;
   cursor: pointer;
   transition: 0.3s;
@@ -128,11 +130,11 @@ header p {
    FOOTER
 ================================= */
 .footer {
-  background: #fff;
+  background: #fff;         
   color: #555;
   text-align: center;
   padding: 25px 15px;
-  margin-top: auto;
+  margin-top: auto;         
 }
 
 .footer p {
