@@ -246,3 +246,12 @@ header strong{
   color:#FF5B00;
 }
 
+/* ===============================
+   CONTENT CONTAINER
+================================= */
+
+.content-box{
+  max-width:700px;
+  margin:40px auto;
+  padding:10px 20px;
+}
