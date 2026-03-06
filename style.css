@@ -219,3 +219,30 @@ header strong{
             drop-shadow(0 0 24px rgba(255,91,0,0.45));
   }
 }
+
+/* ===============================
+   NAVIGATION
+================================= */
+
+.nav{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+  padding:25px 0;
+  font-weight:600;
+}
+
+.nav a{
+  text-decoration:none;
+  color:#111;
+  font-size:1rem;
+  letter-spacing:1px;
+  transition:0.3s;
+}
+
+.nav a:hover{
+  color:#FF5B00;
+}
+
