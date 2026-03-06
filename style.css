@@ -32,6 +32,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   padding: 40px 20px;
+  flex: 1; /* FIX: prevents CTA from being pushed outside the layout */
 }
 
 /* Animated Logo */
@@ -78,7 +79,7 @@ header h1 {
 header p {
   margin: 10px 0 20px;
   font-size: 1.1rem;
-  color: #444;   /* Paragraph default color */
+  color: #444;
   max-width: 650px;
 }
 
@@ -90,6 +91,7 @@ header p {
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 25px;
+  justify-content: center; /* FIX: ensures button stays centered */
 }
 
 .btn {
@@ -101,6 +103,7 @@ header p {
   transition: 0.3s;
   text-transform: uppercase;
   letter-spacing: 1px;
+  display: inline-block; /* FIX: anchor behaves like a real button */
 }
 
 .btn-primary {
@@ -157,6 +160,7 @@ header p {
 .footer-links a:hover {
   color: #000;
 }
+
 /* ===============================
    BRAND ACCENT
 ================================= */
@@ -164,4 +168,3 @@ header p {
   font-weight: 700;
   color: #FF5B00;
 }
-
