@@ -318,6 +318,12 @@ transition:.35s;
 opacity:1;
 }
 
+.featured{
+border:2px solid #FF5B00;
+transform:scale(1.03);
+box-shadow:0 20px 60px rgba(255,91,0,0.18);
+}
+
 /* ICON */
 
 .service-icon{
@@ -511,6 +517,7 @@ color:#000;
 font-weight:700;
 color:#FF5B00;
 }
+
 
 
 
