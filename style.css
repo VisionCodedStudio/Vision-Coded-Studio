@@ -326,6 +326,72 @@ header strong{
   color:#FF5B00;
 }
 
+/* ===============================
+   SERVICES CARDS
+================================= */
+
+.services-container{
+  max-width:900px;
+  margin:60px auto;
+  padding:0 20px;
+}
+
+.service-card{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  background:#ffffff;
+  padding:35px;
+  margin-bottom:25px;
+
+  border-radius:10px;
+  border:1px solid #eee;
+
+  transition:0.25s;
+}
+
+.service-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.06);
+}
+
+.service-content{
+  max-width:500px;
+  text-align:left;
+}
+
+.service-content h3{
+  font-size:1.3rem;
+  margin-bottom:10px;
+}
+
+.service-content p{
+  color:#666;
+  font-size:0.95rem;
+}
+
+.service-meta{
+  text-align:right;
+}
+
+.service-meta span{
+  display:block;
+  font-weight:600;
+  color:#FF5B00;
+  margin-bottom:10px;
+}
+
+.service-btn{
+  text-decoration:none;
+  font-weight:600;
+  font-size:0.9rem;
+  color:#111;
+}
+
+.service-btn:hover{
+  color:#FF5B00;
+}
 
 
 
