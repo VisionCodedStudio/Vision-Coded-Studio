@@ -211,10 +211,11 @@ font-size:18px;
 transition:transform .25s ease;
 }
 
-.btn-primary:hover span{
-transform:translateX(4px);
+.btn-primary:hover{
+background:#e24c00;
+transform:translateY(-3px);
+box-shadow:0 16px 40px rgba(255,91,0,0.45);
 }
-
 
 /* ===============================
    CONTENT CONTAINER
@@ -292,8 +293,8 @@ height:100%;
 }
 
 .service-card:hover{
-transform:translateY(-8px);
-box-shadow:0 30px 70px rgba(0,0,0,0.08);
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 35px 80px rgba(0,0,0,0.12);
 }
 
 /* subtle glow */
@@ -320,8 +321,9 @@ opacity:1;
 
 .featured{
 border:2px solid #FF5B00;
-transform:scale(1.03);
-box-shadow:0 20px 60px rgba(255,91,0,0.18);
+transform:scale(1.05);
+box-shadow:0 30px 80px rgba(255,91,0,0.25);
+z-index:2;
 }
 
 /* ICON */
@@ -543,6 +545,7 @@ color:#000;
 font-weight:700;
 color:#FF5B00;
 }
+
 
 
 
