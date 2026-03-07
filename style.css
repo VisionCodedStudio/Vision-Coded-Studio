@@ -226,13 +226,12 @@ margin-bottom:6px;
 ================================= */
 
 .services-grid{
-max-width:900px;
+max-width:1200px;
 margin:60px auto;
 padding:0 20px;
 
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
+display:grid;
+grid-template-columns:repeat(4,1fr);
 gap:30px;
 }
 
@@ -474,6 +473,7 @@ color:#000;
 font-weight:700;
 color:#FF5B00;
 }
+
 
 
 
