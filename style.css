@@ -229,73 +229,79 @@ header strong{
 
 
 /* ===============================
-   SERVICES GRID
+   SERVICES GRID (OLD STYLE)
 ================================= */
 
 .services-grid{
-  max-width:1000px;
-  margin:50px auto;
+  max-width:900px;
+  margin:40px auto;
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:30px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
   padding:0 20px;
+  justify-items:center;
 }
 
-
-
-/* ===============================
-   SERVICE CARDS
-================================= */
-
 .service-box{
-  background:#ffffff;
-  padding:40px 32px;
-  border-radius:12px;
+  background:#f7f7f7;
+  padding:30px;
+  border-radius:10px;
   text-align:center;
-  transition:all 0.25s ease;
-  box-shadow:0 8px 20px rgba(0,0,0,0.06);
+  transition:0.3s;
+}
+
+.service-box h3{
+  margin-bottom:10px;
+  font-size:1.2rem;
+}
+
+.service-box p{
+  font-size:0.95rem;
+  color:#444;
 }
 
 .service-box:hover{
-  transform:translateY(-6px);
-  box-shadow:0 18px 35px rgba(0,0,0,0.12);
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
 
 
 /* ===============================
-   SERVICE TITLE
+   NEW SERVICES LIST (STUDIO STYLE)
 ================================= */
 
-.service-box h3{
+.services-list{
+  max-width:900px;
+  margin:60px auto;
+  padding:0 20px;
+  text-align:left;
+}
+
+.service-row{
+  padding:30px 0;
+  border-bottom:1px solid #e5e5e5;
+}
+
+.service-row h3{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
   font-size:1.2rem;
   font-weight:600;
   margin-bottom:8px;
 }
 
-
-
-/* ===============================
-   SERVICE PRICE
-================================= */
-
-.service-price{
-  font-size:1.05rem;
+.service-row span{
   color:#FF5B00;
   font-weight:600;
-  margin:8px 0 14px 0;
 }
 
-
-
-/* ===============================
-   SERVICE DESCRIPTION
-================================= */
-
-.service-box p{
-  font-size:0.9rem;
+.service-row p{
   color:#666;
+  font-size:0.95rem;
   line-height:1.6;
+  max-width:650px;
 }
 
 
@@ -305,7 +311,7 @@ header strong{
 ================================= */
 
 .services-cta{
-  margin-top:60px;
+  margin-top:50px;
   text-align:center;
 }
 
