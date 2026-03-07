@@ -255,3 +255,21 @@ header strong{
   margin:40px auto;
   padding:10px 20px;
 }
+
+/* ===============================
+   ABOUT CARD
+================================= */
+
+.about-card{
+max-width:750px;
+margin:50px auto;
+padding:50px;
+background:#ffffff;
+border-radius:10px;
+box-shadow:0 20px 40px rgba(0,0,0,0.08);
+}
+
+.about-card p{
+margin-bottom:25px;
+}
+
