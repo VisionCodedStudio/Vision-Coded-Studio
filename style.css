@@ -1,6 +1,6 @@
-/* ===============================
-   BASE RESET
-================================= */
+/* ==================================================
+BASE RESET
+================================================== */
 
 *{
 margin:0;
@@ -23,10 +23,9 @@ display:flex;
 flex-direction:column;
 }
 
-
-/* ===============================
-   NAVIGATION
-================================= */
+/* ==================================================
+NAVIGATION
+================================================== */
 
 .nav{
 width:100%;
@@ -46,14 +45,11 @@ letter-spacing:1px;
 transition:0.3s;
 }
 
-.nav a:hover{
-color:#FF5B00;
-}
+.nav a:hover
 
-
-/* ===============================
-   PAGE CONTENT
-================================= */
+/* ==================================================
+PAGE CONTENT / HEADER
+================================================== */
 
 header{
 width:100%;
@@ -91,10 +87,9 @@ letter-spacing:1px;
 color:#222;
 }
 
-
-/* ===============================
-   LOGO
-================================= */
+/* ==================================================
+LOGO
+================================================== */
 
 .logo{
 width:280px;
@@ -118,10 +113,9 @@ drop-shadow(0 0 24px rgba(255,91,0,0.45));
 
 }
 
-
-/* ===============================
-   ORANGE DIVIDER
-================================= */
+/* ==================================================
+ORANGE DIVIDER
+================================================== */
 
 .underline{
 width:100%;
@@ -137,10 +131,9 @@ from{opacity:0.4;width:300px;}
 to{opacity:1;width:500px;}
 }
 
-
-/* ===============================
-   BUTTONS
-================================= */
+/* ==================================================
+BUTTONS
+================================================== */
 
 .cta-buttons{
 display:flex;
@@ -167,25 +160,28 @@ text-decoration:none;
 background:#FF5B00;
 color:#fff;
 border:none;
-
 padding:16px 38px;
-
 border-radius:12px;
-
 font-weight:600;
 letter-spacing:1px;
-
 transition:all .25s ease;
-
 box-shadow:0 6px 18px rgba(255,91,0,0.25);
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:8px;
 }
 
 .btn-primary:hover{
 background:#e24c00;
-
 transform:translateY(-2px);
-
 box-shadow:0 12px 30px rgba(255,91,0,0.35);
+}
+
+.btn-primary span{
+font-size:18px;
+transition:transform .25s ease;
 }
 
 .btn-outline{
@@ -194,26 +190,11 @@ border:2px solid #111;
 color:#111;
 }
 
-.btn-outline:hover{
-border-color:#FF5B00;
-color:#FF5B00;
-}
+.btn-outline:hover
 
-.btn-primary{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-gap:8px;
-}
-
-.btn-primary span{
-font-size:18px;
-transition:transform .25s ease;
-}
-
-/* ===============================
-   CONTENT CONTAINER
-================================= */
+/* ==================================================
+CONTENT CONTAINER
+================================================== */
 
 .content-box{
 max-width:700px;
@@ -221,10 +202,9 @@ margin:40px auto;
 padding:10px 20px;
 }
 
-
-/* ===============================
-   ABOUT CARD
-================================= */
+/* ==================================================
+ABOUT CARD
+================================================== */
 
 .about-card{
 max-width:650px;
@@ -246,25 +226,26 @@ margin-top:28px;
 margin-bottom:6px;
 }
 
-/* ===============================
-   SERVICES GRID
-================================= */
+/* ==================================================
+SERVICES GRID
+================================================== */
+
 .services-grid{
 max-width:1400px;
 margin:60px auto;
 padding:0 20px;
 
 display:grid;
-grid-template-columns:repeat(4, 320px);
+grid-template-columns:repeat(4,320px);
 justify-content:center;
 gap:40px;
 
 align-items:stretch;
 }
 
-/* ===============================
-   SERVICES SECTION (HORIZONTAL)
-================================= */
+/* ==================================================
+SERVICE CARD
+================================================== */
 
 .service-card{
 background:#ffffff;
@@ -320,7 +301,9 @@ border:2px solid #FF5B00;
 box-shadow:0 20px 60px rgba(255,91,0,0.18);
 }
 
-/* ICON */
+/* ==================================================
+SERVICE CONTENT
+================================================== */
 
 .service-icon{
 width:50px;
@@ -340,14 +323,10 @@ font-size:22px;
 margin-bottom:18px;
 }
 
-/* TITLE */
-
 .service-card h3{
 font-size:1.25rem;
 margin-bottom:10px;
 }
-
-/* DESCRIPTION */
 
 .service-card p{
 font-size:0.95rem;
@@ -356,8 +335,6 @@ line-height:1.6;
 margin-bottom:16px;
 flex-grow:1;
 }
-
-/* PRICE */
 
 .service-price{
 font-weight:600;
@@ -371,12 +348,11 @@ min-width:200px;
 white-space:nowrap;
 }
 
-/* ===============================
-   POPULAR BADGE
-================================= */
+/* ==================================================
+POPULAR BADGE
+================================================== */
 
 .popular-badge{
-
 position:absolute;
 top:18px;
 right:18px;
@@ -393,11 +369,11 @@ border-radius:30px;
 letter-spacing:0.5px;
 
 box-shadow:0 6px 18px rgba(255,91,0,0.35);
-
 }
-/* ===============================
-   SERVICES CTA
-================================= */
+
+/* ==================================================
+SERVICES CTA
+================================================== */
 
 .services-cta{
 margin-top:60px;
@@ -409,10 +385,9 @@ font-size:1.2rem;
 margin-bottom:15px;
 }
 
-
-/* ===============================
-   CONTACT PAGE
-================================= */
+/* ==================================================
+CONTACT PAGE
+================================================== */
 
 .contact-container{
 max-width:650px;
@@ -477,10 +452,9 @@ padding-right:40px;
 margin-top:15px;
 }
 
-
-/* ===============================
-   CONTACT INTRO
-================================= */
+/* ==================================================
+CONTACT INTRO
+================================================== */
 
 .contact-intro{
 max-width:650px;
@@ -495,10 +469,9 @@ line-height:1.7;
 margin-bottom:12px;
 }
 
-
-/* ===============================
-   FOOTER
-================================= */
+/* ==================================================
+FOOTER
+================================================== */
 
 .footer{
 background:#fff;
@@ -526,22 +499,20 @@ font-weight:600;
 transition:color 0.3s;
 }
 
-.footer-links a:hover{
-color:#000;
-}
+.footer-links a:hover
 
-
-/* ===============================
-   BRAND ACCENT
-================================= */
+/* ==================================================
+BRAND ACCENT
+================================================== */
 
 .brand-name{
 font-weight:700;
 color:#FF5B00;
 }
-/* ===============================
-   PORTFOLIO GRID
-================================= */
+
+/* ==================================================
+PORTFOLIO GRID
+================================================== */
 
 .portfolio-grid{
 max-width:1300px;
@@ -552,8 +523,6 @@ display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:35px;
 }
-
-/* CARD */
 
 .portfolio-card{
 position:relative;
@@ -571,13 +540,9 @@ object-fit:cover;
 transition:transform .5s ease;
 }
 
-/* HOVER EFFECT */
-
 .portfolio-card:hover img{
 transform:scale(1.1);
 }
-
-/* OVERLAY */
 
 .portfolio-overlay{
 position:absolute;
@@ -606,9 +571,9 @@ font-size:0.9rem;
 opacity:0.9;
 }
 
-/* ===============================
-   MOBILE
-================================= */
+/* ==================================================
+RESPONSIVE
+================================================== */
 
 @media (max-width:900px){
 
@@ -625,3 +590,5 @@ grid-template-columns:1fr;
 }
 
 }
+
+
