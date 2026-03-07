@@ -268,6 +268,22 @@ header strong{
 
 
 /* ===============================
+   SERVICES CTA
+================================= */
+
+.services-cta{
+  margin-top:50px;
+  text-align:center;
+}
+
+.services-cta p{
+  font-size:1.2rem;
+  margin-bottom:15px;
+}
+
+
+
+/* ===============================
    FOOTER
 ================================= */
 
@@ -301,8 +317,6 @@ header strong{
   color:#000;
 }
 
-
-
 /* ===============================
    BRAND ACCENT
 ================================= */
@@ -311,6 +325,7 @@ header strong{
   font-weight:700;
   color:#FF5B00;
 }
+
 
 
 
