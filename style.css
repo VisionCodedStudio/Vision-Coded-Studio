@@ -611,6 +611,72 @@ font-size:0.9rem;
 }
 
 }
+/* ===============================
+   PORTFOLIO GRID
+================================= */
+
+.portfolio-grid{
+
+max-width:1200px;
+margin:60px auto;
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+
+padding:0 20px;
+
+}
+
+.portfolio-card{
+
+background:#fff;
+
+border-radius:14px;
+
+overflow:hidden;
+
+box-shadow:0 20px 40px rgba(0,0,0,0.08);
+
+transition:all .35s ease;
+
+}
+
+.portfolio-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 30px 70px rgba(0,0,0,0.12);
+
+}
+
+.portfolio-card img{
+
+width:100%;
+height:220px;
+object-fit:cover;
+
+}
+
+.portfolio-content{
+
+padding:25px;
+
+}
+
+.portfolio-content h3{
+
+font-size:1.2rem;
+margin-bottom:10px;
+
+}
+
+.portfolio-content p{
+
+font-size:0.95rem;
+color:#666;
+
+}
 
 
 
