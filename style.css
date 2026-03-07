@@ -356,42 +356,6 @@ header strong{
   color:#FF5B00;
 }
 
-/* ===============================
-   CONTACT PAGE
-================================= */
-
-.contact-container{
-  max-width:600px;
-  width:100%;
-  margin:50px auto 0;
-  padding:0 20px;
-}
-
-.contact-form{
-  display:flex;
-  flex-direction:column;
-  gap:15px;
-}
-
-.contact-form input,
-.contact-form textarea{
-  padding:14px;
-  font-family:'Poppins',sans-serif;
-  border:1px solid #ddd;
-  border-radius:6px;
-  font-size:0.95rem;
-}
-
-.contact-form textarea{
-  resize:none;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus{
-  outline:none;
-  border-color:#FF5B00;
-}
-
 /* ===== PREMIUM CONTACT FORM ===== */
 
 .contact-container{
@@ -540,3 +504,4 @@ margin-bottom:18px;
 .service-card .btn{
 align-self:flex-start;
 }
+
