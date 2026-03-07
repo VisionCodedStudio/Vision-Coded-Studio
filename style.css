@@ -460,3 +460,18 @@ padding-right:40px;
 .contact-form .btn{
 margin-top:15px;
 }
+
+/* CONTACT INTRO */
+
+.contact-intro{
+max-width:650px;
+margin:30px auto 10px;
+text-align:center;
+color:#555;
+font-size:1rem;
+line-height:1.7;
+}
+
+.contact-intro p{
+margin-bottom:12px;
+}
