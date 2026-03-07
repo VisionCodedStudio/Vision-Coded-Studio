@@ -610,6 +610,20 @@ gap:20px;
 font-size:0.9rem;
 }
 
+@media (max-width:900px){
+
+.portfolio-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (max-width:600px){
+
+.portfolio-grid{
+grid-template-columns:1fr;
+}
+
 }
 /* ===============================
    PORTFOLIO GRID
@@ -677,6 +691,7 @@ font-size:0.95rem;
 color:#666;
 
 }
+
 
 
 
