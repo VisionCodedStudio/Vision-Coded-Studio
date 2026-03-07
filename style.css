@@ -327,8 +327,21 @@ border:2px solid #FF5B00;
 transform:scale(1.05);
 box-shadow:0 30px 80px rgba(255,91,0,0.25);
 z-index:2;
+
+animation:featuredGlow 3s ease-in-out infinite alternate;
 }
 
+@keyframes featuredGlow{
+
+0%{
+box-shadow:0 30px 80px rgba(255,91,0,0.18);
+}
+
+100%{
+box-shadow:0 35px 95px rgba(255,91,0,0.40);
+}
+
+}
 /* ICON */
 
 .service-icon{
@@ -548,6 +561,7 @@ color:#000;
 font-weight:700;
 color:#FF5B00;
 }
+
 
 
 
