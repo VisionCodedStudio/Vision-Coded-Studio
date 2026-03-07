@@ -599,6 +599,18 @@ min-width:0;
 
 }
 
+@media (max-width:600px){
+
+.nav{
+flex-wrap:wrap;
+gap:20px;
+}
+
+.nav a{
+font-size:0.9rem;
+}
+
+}
 
 
 
