@@ -45,7 +45,9 @@ letter-spacing:1px;
 transition:0.3s;
 }
 
-.nav a:hover
+.nav a:hover{
+color:#FF5B00;
+}
 
 /* ==================================================
 PAGE CONTENT / HEADER
@@ -190,7 +192,10 @@ border:2px solid #111;
 color:#111;
 }
 
-.btn-outline:hover
+.btn-outline:hover{
+border-color:#FF5B00;
+color:#FF5B00;
+}
 
 /* ==================================================
 CONTENT CONTAINER
@@ -499,7 +504,9 @@ font-weight:600;
 transition:color 0.3s;
 }
 
-.footer-links a:hover
+.footer-links a:hover{
+color:#000;
+}
 
 /* ==================================================
 BRAND ACCENT
@@ -630,6 +637,7 @@ width:100%;
 }
 
 }
+
 
 
 
