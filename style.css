@@ -228,105 +228,6 @@ header strong{
 
 
 /* ===============================
-   SERVICES LIST
-================================= */
-
-.services-list{
-  width:100%;
-  max-width:750px;
-  margin:50px auto 0;
-  text-align:left;
-}
-
-.service-row{
-  padding:30px 0;
-  border-bottom:1px solid #e5e5e5;
-}
-
-.service-row h3{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  font-size:1.2rem;
-  font-weight:600;
-  margin-bottom:6px;
-}
-
-.service-row span{
-  color:#FF5B00;
-  font-weight:600;
-}
-
-.service-row p{
-  font-size:0.95rem;
-  color:#666;
-  max-width:600px;
-}
-
-
-
-/* ===============================
-   SERVICES CTA
-================================= */
-
-.services-cta{
-  margin-top:60px;
-  text-align:center;
-}
-
-.services-cta p{
-  font-size:1.2rem;
-  margin-bottom:15px;
-}
-
-
-
-/* ===============================
-   FOOTER
-================================= */
-
-.footer{
-  background:#fff;
-  color:#555;
-  text-align:center;
-  padding:25px 15px;
-  margin-top:auto;
-}
-
-.footer p{
-  margin-bottom:10px;
-  font-size:0.95rem;
-}
-
-.footer-links{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-}
-
-.footer-links a{
-  color:#FF5B00;
-  text-decoration:none;
-  font-weight:600;
-  transition:color 0.3s;
-}
-
-.footer-links a:hover{
-  color:#000;
-}
-
-
-
-/* ===============================
-   BRAND ACCENT
-================================= */
-
-.brand-name{
-  font-weight:700;
-  color:#FF5B00;
-}
-
-/* ===============================
    SERVICES CARDS
 ================================= */
 
@@ -394,5 +295,64 @@ header strong{
 }
 
 
+/* ===============================
+   SERVICES CTA
+================================= */
 
+.services-cta{
+  margin-top:60px;
+  text-align:center;
+}
+
+.services-cta p{
+  font-size:1.2rem;
+  margin-bottom:15px;
+}
+
+
+
+/* ===============================
+   FOOTER
+================================= */
+
+.footer{
+  background:#fff;
+  color:#555;
+  text-align:center;
+  padding:25px 15px;
+  margin-top:auto;
+}
+
+.footer p{
+  margin-bottom:10px;
+  font-size:0.95rem;
+}
+
+.footer-links{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.footer-links a{
+  color:#FF5B00;
+  text-decoration:none;
+  font-weight:600;
+  transition:color 0.3s;
+}
+
+.footer-links a:hover{
+  color:#000;
+}
+
+
+
+/* ===============================
+   BRAND ACCENT
+================================= */
+
+.brand-name{
+  font-weight:700;
+  color:#FF5B00;
+}
 
