@@ -225,7 +225,7 @@ margin-bottom:6px;
 ================================= */
 
 .services-grid{
-max-width:1200px;
+max-width:1400px;
 margin:60px auto;
 padding:0 20px;
 
@@ -240,8 +240,8 @@ gap:30px;
 
 .service-card{
 background:#ffffff;
-padding:45px 35px;
-
+padding:50px 45px;
+   
 border-radius:14px;
 border:1px solid #eee;
 
@@ -476,6 +476,7 @@ color:#000;
 font-weight:700;
 color:#FF5B00;
 }
+
 
 
 
