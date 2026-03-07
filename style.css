@@ -166,11 +166,25 @@ display:inline-block;
 background:#FF5B00;
 color:#fff;
 border:none;
+
+padding:16px 38px;
+
+border-radius:12px;
+
+font-weight:600;
+letter-spacing:1px;
+
+transition:all .25s ease;
+
+box-shadow:0 6px 18px rgba(255,91,0,0.25);
 }
 
 .btn-primary:hover{
 background:#e24c00;
-box-shadow:0 0 15px rgba(255,91,0,0.5);
+
+transform:translateY(-2px);
+
+box-shadow:0 12px 30px rgba(255,91,0,0.35);
 }
 
 .btn-outline{
@@ -476,6 +490,7 @@ color:#000;
 font-weight:700;
 color:#FF5B00;
 }
+
 
 
 
