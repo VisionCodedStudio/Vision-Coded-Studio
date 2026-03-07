@@ -14,7 +14,7 @@ html{
 
 body{
   font-family:'Poppins',sans-serif;
-  background:#fff;
+  background:#ffffff;
   color:#111;
   line-height:1.6;
   text-align:center;
@@ -22,8 +22,6 @@ body{
 
   display:flex;
   flex-direction:column;
-
-  background:linear-gradient(180deg,#ffffff 0%,#f6f6f6 100%);
 }
 
 
@@ -327,6 +325,7 @@ header strong{
   font-weight:700;
   color:#FF5B00;
 }
+
 
 
 
