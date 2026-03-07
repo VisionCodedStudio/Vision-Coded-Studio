@@ -231,7 +231,7 @@ margin:70px auto;
 padding:0 20px;
 
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:35px;
 }
 
@@ -473,6 +473,7 @@ color:#000;
 font-weight:700;
 color:#FF5B00;
 }
+
 
 
 
