@@ -230,8 +230,8 @@ margin:60px auto;
 padding:0 20px;
 
 display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:30px;
+grid-template-columns:repeat(4, minmax(300px, 1fr));
+gap:40px;
 }
 
 /* ===============================
@@ -476,6 +476,7 @@ color:#000;
 font-weight:700;
 color:#FF5B00;
 }
+
 
 
 
