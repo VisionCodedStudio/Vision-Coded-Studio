@@ -244,7 +244,7 @@ border:1px solid #eee;
 
 box-shadow:0 15px 40px rgba(0,0,0,0.06);
 
-width:280px;
+width:180px;
 
 display:flex;
 flex-direction:column;
@@ -473,6 +473,7 @@ color:#000;
 font-weight:700;
 color:#FF5B00;
 }
+
 
 
 
