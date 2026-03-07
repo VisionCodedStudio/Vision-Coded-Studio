@@ -236,9 +236,10 @@ header strong{
   max-width:900px;
   margin:40px auto;
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:25px;
   padding:0 20px;
+  justify-items:center;
 }
 
 .service-box{
@@ -310,5 +311,6 @@ header strong{
   font-weight:700;
   color:#FF5B00;
 }
+
 
 
