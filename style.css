@@ -324,11 +324,10 @@ opacity:1;
 
 .featured{
 border:2px solid #FF5B00;
-transform:scale(1.05);
-box-shadow:0 30px 80px rgba(255,91,0,0.25);
-z-index:2;
-
+transform:scale(1.03);
+box-shadow:0 20px 60px rgba(255,91,0,0.18);
 }
+
 /* ICON */
 
 .service-icon{
@@ -548,6 +547,7 @@ color:#000;
 font-weight:700;
 color:#FF5B00;
 }
+
 
 
 
