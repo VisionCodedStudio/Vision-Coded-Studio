@@ -211,12 +211,6 @@ font-size:18px;
 transition:transform .25s ease;
 }
 
-.btn-primary:hover{
-background:#e24c00;
-transform:translateY(-3px);
-box-shadow:0 16px 40px rgba(255,91,0,0.45);
-}
-
 /* ===============================
    CONTENT CONTAINER
 ================================= */
@@ -545,6 +539,7 @@ color:#000;
 font-weight:700;
 color:#FF5B00;
 }
+
 
 
 
