@@ -236,7 +236,7 @@ margin:60px auto;
 padding:0 20px;
 
 display:grid;
-grid-template-columns:repeat(4,320px);
+grid-template-columns:repeat(4,1fr);
 justify-content:center;
 gap:40px;
 
@@ -630,6 +630,7 @@ width:100%;
 }
 
 }
+
 
 
 
