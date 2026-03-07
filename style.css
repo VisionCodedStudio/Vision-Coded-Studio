@@ -335,6 +335,7 @@ font-size:0.95rem;
 color:#666;
 line-height:1.6;
 margin-bottom:16px;
+flex-grow:1;
 }
 
 /* PRICE */
@@ -493,6 +494,7 @@ color:#000;
 font-weight:700;
 color:#FF5B00;
 }
+
 
 
 
