@@ -376,6 +376,30 @@ white-space:nowrap;
 }
 
 /* ===============================
+   POPULAR BADGE
+================================= */
+
+.popular-badge{
+
+position:absolute;
+top:18px;
+right:18px;
+
+background:#FF5B00;
+color:#fff;
+
+font-size:0.7rem;
+font-weight:600;
+
+padding:6px 12px;
+border-radius:30px;
+
+letter-spacing:0.5px;
+
+box-shadow:0 6px 18px rgba(255,91,0,0.35);
+
+}
+/* ===============================
    SERVICES CTA
 ================================= */
 
@@ -519,6 +543,7 @@ color:#000;
 font-weight:700;
 color:#FF5B00;
 }
+
 
 
 
