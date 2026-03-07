@@ -8,10 +8,8 @@
   box-sizing:border-box;
 }
 
-html,body{
+html{
   height:100%;
-  display:flex;
-  flex-direction:column;
 }
 
 body{
@@ -20,10 +18,13 @@ body{
   color:#111;
   line-height:1.6;
   text-align:center;
-  flex:1;
+  min-height:100vh;
+
+  display:flex;
+  flex-direction:column;
+
   background:linear-gradient(180deg,#ffffff 0%,#f6f6f6 100%);
 }
-
 
 
 /* ===============================
@@ -330,4 +331,5 @@ header strong{
   font-weight:700;
   color:#FF5B00;
 }
+
 
