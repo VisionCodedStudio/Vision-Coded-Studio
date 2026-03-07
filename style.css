@@ -225,16 +225,6 @@ margin-bottom:6px;
    SERVICES SECTION (HORIZONTAL)
 ================================= */
 
-.services-grid{
-max-width:1200px;
-margin:60px auto;
-padding:0 20px;
-
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:30px;
-}
-
 .service-card{
 background:#ffffff;
 padding:35px;
@@ -244,7 +234,8 @@ border:1px solid #eee;
 
 box-shadow:0 15px 40px rgba(0,0,0,0.06);
 
-width:180px;
+width:100%;
+height:100%;
 
 display:flex;
 flex-direction:column;
@@ -256,7 +247,6 @@ transition:all .35s ease;
 position:relative;
 overflow:hidden;
 }
-
 .service-card:hover{
 transform:translateY(-8px);
 box-shadow:0 30px 70px rgba(0,0,0,0.08);
@@ -473,6 +463,7 @@ color:#000;
 font-weight:700;
 color:#FF5B00;
 }
+
 
 
 
