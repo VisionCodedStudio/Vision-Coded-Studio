@@ -27,6 +27,8 @@
 <a href="contact.html">Contact</a>
 
 </nav>
+
+
 <header>
 
 <h1>Start Your Project</h1>
@@ -38,6 +40,10 @@ Tell us about your business and the website you want to build.
 This helps Vision Coded Studio understand your project before we begin.
 </p>
 
+<p style="font-size:0.9rem; color:#777;">
+Fields marked with <strong>*</strong> are required.
+</p>
+
 </header>
 
 
@@ -47,14 +53,16 @@ This helps Vision Coded Studio understand your project before we begin.
 
 <form class="contact-form">
 
-<input type="text" placeholder="Your Name" required>
+<input type="text" name="name" placeholder="Your Name *" required>
 
-<input type="email" placeholder="Email Address" required>
+<input type="email" name="email" placeholder="Email Address *" required>
 
-<input type="text" placeholder="Business Name">
+<input type="tel" name="phone" placeholder="Phone Number *" required>
 
-<select>
-<option value="">What type of website do you need?</option>
+<input type="text" name="business" placeholder="Business Name">
+
+<select name="website-type" required>
+<option value="">What type of website do you need? *</option>
 <option>Business Website</option>
 <option>Landing Page</option>
 <option>E-commerce Store</option>
@@ -62,31 +70,31 @@ This helps Vision Coded Studio understand your project before we begin.
 <option>Not sure yet</option>
 </select>
 
-<select>
-<option value="">How many pages do you need?</option>
+<select name="pages" required>
+<option value="">How many pages do you need? *</option>
 <option>1 Page</option>
-<option>3-5 Pages</option>
-<option>5-8 Pages</option>
+<option>3–5 Pages</option>
+<option>5–8 Pages</option>
 <option>Not sure yet</option>
 </select>
 
-<select>
+<select name="branding">
 <option value="">Do you already have branding?</option>
 <option>Yes (logo + colors)</option>
 <option>Logo only</option>
 <option>No branding yet</option>
 </select>
 
-<input type="text" placeholder="Do you already own a domain name?">
+<input type="text" name="domain" placeholder="Do you already own a domain name?">
 
-<select>
+<select name="hosting">
 <option value="">Do you have hosting?</option>
 <option>Yes</option>
 <option>No</option>
 <option>Not sure</option>
 </select>
 
-<textarea placeholder="Tell us more about your project"></textarea>
+<textarea name="project-details" placeholder="Tell us more about your project *" required></textarea>
 
 <button class="btn btn-primary">
 Start My Project
