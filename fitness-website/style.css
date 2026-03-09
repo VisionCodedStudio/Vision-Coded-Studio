@@ -1,9 +1,18 @@
+/* ===============================
+   GLOBAL STYLES
+   =============================== */
+
 body{
 margin:0;
 font-family:Arial, sans-serif;
 background:#111;
 color:white;
 }
+
+
+/* ===============================
+   HEADER
+   =============================== */
 
 header{
 display:flex;
@@ -13,11 +22,27 @@ padding:20px 40px;
 background:black;
 }
 
+
+/* ===============================
+   NAVIGATION
+   =============================== */
+
 nav a{
 color:white;
 margin-left:20px;
 text-decoration:none;
+font-weight:500;
+transition:0.3s;
 }
+
+nav a:hover{
+color:#1e90ff;
+}
+
+
+/* ===============================
+   HERO SECTION
+   =============================== */
 
 .hero{
 height:80vh;
@@ -37,12 +62,25 @@ margin-bottom:20px;
 .hero p{
 max-width:500px;
 margin-bottom:30px;
+color:#ccc;
 }
+
+
+/* ===============================
+   CALL TO ACTION BUTTON
+   Nipsey Blue Theme
+   =============================== */
 
 .cta{
 padding:14px 28px;
-background:#ff4500;
+background:#1e90ff;
 color:white;
 text-decoration:none;
 border-radius:6px;
+font-weight:600;
+transition:0.3s;
+}
+
+.cta:hover{
+background:#187bcd;
 }
