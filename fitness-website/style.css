@@ -131,3 +131,35 @@ color:#1e90ff;
 color:#777;
 font-size:14px;
 }
+
+/* ===============================
+ABOUT SECTION
+================================ */
+
+.about-section{
+padding:80px 120px;
+background:#111;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about-text h3{
+font-size:32px;
+margin-bottom:20px;
+}
+
+.about-text p{
+color:#aaa;
+margin-bottom:15px;
+line-height:1.6;
+}
+
+.about-image img{
+width:100%;
+border-radius:8px;
+}
