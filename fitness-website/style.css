@@ -43,11 +43,17 @@ color:#1e90ff;
    HERO SECTION
    =============================== */
 
+/* ===============================
+   HERO SECTION
+   =============================== */
+
 .hero{
 height:90vh;
+
 background:
 linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-url("images/gym-hero.jpg");
+url("images/hero.jpg");
+
 background-size:cover;
 background-position:center;
 
