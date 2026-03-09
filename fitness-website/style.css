@@ -1,1 +1,48 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#111;
+color:white;
+}
 
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:black;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+}
+
+.hero{
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h2{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:500px;
+margin-bottom:30px;
+}
+
+.cta{
+padding:14px 28px;
+background:#ff4500;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
