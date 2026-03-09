@@ -89,3 +89,45 @@ transition:0.3s;
 .cta:hover{
 background:#187bcd;
 }
+
+/* ===============================
+FOOTER
+================================ */
+
+footer{
+background:#0a0a0a;
+padding:40px 120px;
+margin-top:80px;
+}
+
+.footer-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.footer-brand h3{
+margin:0;
+}
+
+.footer-brand p{
+color:#aaa;
+margin-top:5px;
+}
+
+.footer-links a{
+color:white;
+margin-right:20px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.footer-links a:hover{
+color:#1e90ff;
+}
+
+.footer-copy{
+color:#777;
+font-size:14px;
+}
