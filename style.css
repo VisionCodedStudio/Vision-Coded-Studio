@@ -663,8 +663,9 @@ font-size:0.9rem;
 @media (max-width:600px){
 
 header h1{
-font-size:2.2rem;
-line-height:1.3;
+font-size:1.9rem;
+line-height:1.35;
+padding:0 12px;
 }
 
 header p{
@@ -673,7 +674,14 @@ padding:0 10px;
 }
 
 .logo{
-width:200px;
+width:180px;
+height:auto;
+margin-bottom:20px;
+}
+
+.underline{
+max-width:220px;
+height:3px;
 }
 
 }
