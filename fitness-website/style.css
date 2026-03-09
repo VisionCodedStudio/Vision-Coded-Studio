@@ -44,21 +44,21 @@ color:#1e90ff;
    =============================== */
 
 .hero{
-height:90vh;
+  height:90vh;
 
-background:
-linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-url("images/hero.jpg");
+  background:
+  linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)),
+  url("images/hero.jpg");
 
-background-size:cover;
-background-position:center;
+  background-size:cover;
+  background-position:center;
 
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:flex-start;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
 
-padding:0 80px;
+  padding:0 80px;
 }
 
 .hero h2{
