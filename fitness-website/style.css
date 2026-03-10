@@ -39,26 +39,27 @@ nav a:hover{
 color:#1e90ff;
 }
 
+
 /* ===============================
    HERO SECTION
    =============================== */
 
 .hero {
-  height: 90vh;
+height: 90vh;
 
-  background:
-  linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
-  url("images/hero.jpg");
+background:
+linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
+url("images/hero.jpg");
 
-  background-size: cover;
-  background-position: center;
+background-size: cover;
+background-position: center;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
 
-  padding: 0 120px;
+padding: 0 120px;
 }
 
 .hero h2{
@@ -71,6 +72,7 @@ max-width:520px;
 margin-bottom:30px;
 color:#ccc;
 }
+
 
 /* ===============================
    CTA BUTTON
@@ -90,9 +92,10 @@ transition:0.3s;
 background:#187bcd;
 }
 
+
 /* ===============================
-FOOTER
-================================ */
+   FOOTER
+   =============================== */
 
 footer{
 background:#0a0a0a;
@@ -132,20 +135,24 @@ color:#777;
 font-size:14px;
 }
 
-/* ===============================
-ABOUT SECTION
-================================ */
 
-.about-section{
+/* ===============================
+   ABOUT SECTION
+   =============================== */
+
+.about{
 padding:80px 120px;
 background:#111;
 }
 
-.about-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
+.about-container{
+display:flex;
 gap:60px;
 align-items:center;
+}
+
+.about-text{
+flex:1;
 }
 
 .about-text h3{
@@ -159,12 +166,19 @@ margin-bottom:15px;
 line-height:1.6;
 }
 
+.about-image{
+flex:1;
+}
+
 .about-image img{
 width:100%;
 border-radius:8px;
 }
 
-/* CONTACT PAGE */
+
+/* ===============================
+   CONTACT PAGE
+   =============================== */
 
 .contact-section{
 padding:80px 120px;
@@ -214,4 +228,20 @@ border:none;
 padding:12px;
 border-radius:5px;
 cursor:pointer;
+}
+
+
+/* ===============================
+   PAGE TITLE (About / Programs / Contact)
+   =============================== */
+
+.page-title{
+padding:70px 120px;
+background:#0a0a0a;
+text-align:center;
+}
+
+.page-title h2{
+font-size:42px;
+margin:0;
 }
