@@ -757,6 +757,31 @@ color:#777;
 font-size:14px;
 }
 
+.footer-links-grid{
+display:flex;
+gap:60px;
+margin-top:10px;
+}
+
+.footer-links-left,
+.footer-links-right{
+display:flex;
+flex-direction:column;
+}
+
+.footer-links-left a,
+.footer-links-right a{
+color:#aaa;
+text-decoration:none;
+margin-bottom:8px;
+transition:0.25s;
+}
+
+.footer-links-left a:hover,
+.footer-links-right a:hover{
+color:#1e90ff;
+}
+
 /* ===============================
    CONTACT CENTERED
    =============================== */
