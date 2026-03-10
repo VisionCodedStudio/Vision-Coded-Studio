@@ -781,6 +781,19 @@ text-decoration:none;
 color:#FF5B00;
 }
 
+/* horizontal footer links */
+
+.footer-links-horizontal{
+display:flex;
+flex-wrap:wrap;
+gap:18px;
+justify-content:flex-start;
+}
+
+.footer-links-horizontal li{
+margin:0;
+list-style:none;
+}
 
 /* =================
  FOOTER RESPONSIVE
@@ -819,6 +832,7 @@ max-width:220px;
 }
 
 }
+
 
 
 
