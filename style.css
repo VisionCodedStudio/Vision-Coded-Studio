@@ -480,30 +480,34 @@ VISION CODED STUDIO FOOTER
 
 .vcs-footer{
 background:#ffffff;
-padding:45px 8%;
+padding:22px 8%;
 border-top:1px solid #eee;
 }
 
 .footer-container{
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:40px;
+gap:22px;
+max-width:1050px;
+margin:auto;
+align-items:start;
 }
 
 .footer-col h3{
-font-size:22px;
-margin-bottom:15px;
+font-size:18px;
+margin-bottom:8px;
 }
 
 .footer-col h4{
-font-size:18px;
-margin-bottom:15px;
+font-size:16px;
+margin-bottom:8px;
 }
 
 .footer-col p{
 color:#666;
-line-height:1.6;
-margin-bottom:10px;
+line-height:1.4;
+margin-bottom:4px;
+font-size:14px;
 }
 
 .footer-location{
@@ -591,14 +595,7 @@ margin-top:30px;
 padding-top:15px;
 }
 
-.footer-col h3::after{
-content:"";
-display:block;
-width:40px;
-height:3px;
-background:#FF4500;
-margin-top:10px;
-}
+
 
 /* ==================================================
 BRAND ACCENT
@@ -777,6 +774,7 @@ height:3px;
 }
 
 }
+
 
 
 
