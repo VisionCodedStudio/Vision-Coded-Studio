@@ -703,8 +703,13 @@ line-height:1.6;
 }
 
 .footer-links{
-display:flex;
-flex-direction:column;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:6px 20px;
+}
+
+.footer-links h4{
+grid-column:span 2;
 }
 
 .footer-links a{
