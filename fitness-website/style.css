@@ -27,19 +27,24 @@ box-sizing:border-box;
 header{
 display:flex;
 align-items:center;
-justify-content:space-between;
+justify-content:center;
 padding:20px 80px;
 background:black;
 border-bottom:1px solid #1c1c1c;
+position:relative;
 }
 
 header h1{
+position:absolute;
+left:80px;
 font-size:22px;
 letter-spacing:1px;
-white-space:nowrap;
 }
 
-
+nav{
+display:flex;
+gap:30px;
+}
 /* ===============================
    NAVIGATION
    =============================== */
@@ -122,6 +127,7 @@ background:#187bcd;
 .page-title{
 padding:90px 120px 60px;
 background:#0b0b0b;
+text-align:center;
 }
 
 .page-title h2{
@@ -132,6 +138,7 @@ margin-bottom:10px;
 .page-title p{
 color:#aaa;
 max-width:600px;
+margin:auto;
 }
 
 
