@@ -604,15 +604,11 @@ font-size:14px;
 line-height:1.6;
 }
 
-/* Useful Links Layout */
+/* Useful Links */
 
 .footer-links{
 display:flex;
 flex-direction:column;
-}
-
-.footer-links h4{
-margin-bottom:15px;
 }
 
 .footer-links-columns{
