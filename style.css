@@ -752,6 +752,46 @@ height:3px;
 
 }
 
+/* ===============================
+TABLET
+=============================== */
+
+@media (max-width: 1024px){
+
+.footer-container{
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+
+}
+
+
+/* ===============================
+MOBILE
+=============================== */
+
+@media (max-width: 640px){
+
+.vcs-footer{
+padding:25px 6%;
+}
+
+.footer-container{
+grid-template-columns:1fr;
+gap:22px;
+text-align:left;
+}
+
+.footer-col h3,
+.footer-col h4{
+margin-bottom:8px;
+}
+
+.newsletter-box{
+max-width:280px;
+}
+
+}
 
 
 
