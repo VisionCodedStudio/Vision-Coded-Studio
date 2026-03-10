@@ -48,6 +48,8 @@ nav{
 position:absolute;
 left:50%;
 transform:translateX(-50%);
+display:flex;
+align-items:center;
 }
 
 nav a{
@@ -56,6 +58,7 @@ margin:0 20px;
 text-decoration:none;
 font-weight:500;
 transition:0.25s;
+white-space:nowrap;
 }
 
 nav a:hover{
