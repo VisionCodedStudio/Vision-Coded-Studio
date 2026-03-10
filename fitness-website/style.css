@@ -604,30 +604,45 @@ font-size:14px;
 line-height:1.6;
 }
 
+/* Useful Links Layout */
+
 .footer-links{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:6px 20px;
+display:flex;
+flex-direction:column;
 }
 
 .footer-links h4{
-grid-column:span 2;
+margin-bottom:15px;
 }
 
-.footer-links a{
+.footer-links-columns{
+display:flex;
+gap:40px;
+}
+
+.footer-links-column{
+display:flex;
+flex-direction:column;
+}
+
+.footer-links-column a{
 color:#aaa;
 text-decoration:none;
 margin-bottom:8px;
 transition:0.25s;
 }
 
-.footer-links a:hover{
+.footer-links-column a:hover{
 color:#1e90ff;
 }
+
+/* Contact */
 
 .footer-contact p{
 margin-bottom:8px;
 }
+
+/* Newsletter */
 
 .newsletter-box{
 display:flex;
@@ -649,6 +664,8 @@ color:white;
 padding:10px 16px;
 cursor:pointer;
 }
+
+/* Footer Bottom */
 
 .footer-bottom{
 margin-top:60px;
