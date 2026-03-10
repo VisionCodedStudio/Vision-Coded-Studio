@@ -45,12 +45,12 @@ letter-spacing:1px;
 
 nav{
 display:flex;
-gap:25px;
-margin:0 auto;
+align-items:center;
 }
 
 nav a{
 color:white;
+margin-left:25px;
 text-decoration:none;
 font-weight:500;
 transition:0.25s;
