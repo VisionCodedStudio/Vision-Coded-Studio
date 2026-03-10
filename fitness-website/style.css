@@ -640,7 +640,7 @@ border-top:1px solid #1c1c1c;
 
 .footer-grid{
 display:grid;
-grid-template-columns:repeat(4,1fr);
+grid-template-columns:2fr 1fr 1fr 1fr;
 gap:60px;
 }
 
