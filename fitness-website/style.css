@@ -427,3 +427,29 @@ text-align:center;
 color:#777;
 font-size:14px;
 }
+
+/* ===============================
+ABOUT
+=============================== */
+
+.about-section{
+max-width:1000px;
+margin:auto;
+padding:100px 120px;
+}
+
+.about-section h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.about-section h3{
+margin-top:40px;
+margin-bottom:10px;
+font-size:24px;
+}
+
+.about-section p{
+color:#ccc;
+margin-bottom:20px;
+}
