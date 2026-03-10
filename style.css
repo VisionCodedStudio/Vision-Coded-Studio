@@ -591,6 +591,15 @@ margin-top:30px;
 padding-top:15px;
 }
 
+.footer-col h3::after{
+content:"";
+display:block;
+width:40px;
+height:3px;
+background:#FF4500;
+margin-top:10px;
+}
+
 /* ==================================================
 BRAND ACCENT
 ================================================== */
@@ -768,6 +777,7 @@ height:3px;
 }
 
 }
+
 
 
 
