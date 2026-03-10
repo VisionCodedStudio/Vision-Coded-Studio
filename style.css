@@ -723,18 +723,10 @@ transform:translateX(3px);
 .footer-contact li{
 display:flex;
 align-items:center;
-justify-content:center;
-gap:10px;
-font-size:13px;
+gap:8px;
+font-size:14px;
 color:#555;
-margin-bottom:10px;
-text-align:center;
-}
-
-.footer-contact{
-padding:0;
-margin:0 auto;
-list-style:none;
+margin-bottom:8px;
 }
 
 .footer-contact i{
@@ -840,6 +832,7 @@ max-width:220px;
 }
 
 }
+
 
 
 
