@@ -836,3 +836,25 @@ max-width:220px;
 
 }
 
+/* =================================
+FOUNDER SIGNATURE
+================================= */
+
+.founder-signature{
+margin-top:35px;
+text-align:center;
+}
+
+.signature-line{
+font-family:'Great Vibes', cursive;
+font-size:40px;
+color:#FF5B00;
+margin-bottom:5px;
+}
+
+.signature-title{
+font-size:13px;
+color:#666;
+letter-spacing:1px;
+}
+
