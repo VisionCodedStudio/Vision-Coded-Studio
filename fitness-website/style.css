@@ -141,6 +141,11 @@ margin:auto;
    PROGRAMS
    =============================== */
 
+.hero{
+max-width:1200px;
+margin:auto;
+}
+
 .programs{
 padding:80px 120px;
 max-width:1200px;
@@ -181,6 +186,11 @@ text-align:center;
 padding:80px 20px 40px;
 max-width:900px;
 margin:auto;
+}
+
+.programs-hero h2{
+font-size:52px;
+margin-bottom:10px;
 }
 
 .programs-hero p{
