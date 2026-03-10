@@ -811,8 +811,12 @@ margin:auto;
 }
 
 .footer-contact li{
+display:flex;
+align-items:center;
 justify-content:center;
-text-align:center;
+gap:10px;
+text-align:left;
+margin-bottom:10px;
 }
 
 .newsletter-box{
@@ -824,4 +828,5 @@ max-width:220px;
 }
 
 }
+
 
