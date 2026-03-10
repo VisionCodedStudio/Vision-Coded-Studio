@@ -353,3 +353,39 @@ background-position:center;
 padding:80px 120px 40px;
 border-top:1px solid #1c1c1c;
 }
+
+/* ===============================
+   ABOUT HERO
+   =============================== */
+
+.about-hero{
+
+height:50vh;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+
+padding:0 120px;
+
+background:
+linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+url("./images/about-hero.jpg");
+
+background-size:cover;
+background-position:right center;
+}
+
+.about-hero h2{
+font-size:64px;
+margin-bottom:10px;
+}
+
+.about-hero h2 span{
+color:#f1c40f;
+}
+
+.about-hero p{
+max-width:500px;
+color:#ccc;
+}
