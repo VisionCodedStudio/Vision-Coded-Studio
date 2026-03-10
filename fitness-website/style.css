@@ -26,8 +26,8 @@ box-sizing:border-box;
 
 header{
 display:flex;
-align-items:center;
 justify-content:space-between;
+align-items:center;
 padding:20px 80px;
 background:black;
 border-bottom:1px solid #1c1c1c;
@@ -45,13 +45,12 @@ letter-spacing:1px;
 
 nav{
 display:flex;
-gap:30px;
-margin-left:auto;
-margin-right:auto;
+align-items:center;
 }
 
 nav a{
 color:white;
+margin-left:25px;
 text-decoration:none;
 font-weight:500;
 transition:0.25s;
@@ -60,7 +59,6 @@ transition:0.25s;
 nav a:hover{
 color:#1e90ff;
 }
-
 
 /* ===============================
    HOME HERO ONLY
