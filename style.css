@@ -683,20 +683,19 @@ max-width:1200px;
 margin:auto;
 }
 
-.footer-col h3{
-font-size:18px;
-margin-bottom:10px;
-}
-
+.footer-col h3,
 .footer-col h4{
-font-size:16px;
+font-size:15px;
+font-weight:600;
 margin-bottom:10px;
+letter-spacing:.5px;
 }
 
 .footer-col p{
-font-size:14px;
+font-size:13px;
 color:#666;
 margin-bottom:8px;
+line-height:1.5;
 }
 
 .footer-col ul{
@@ -712,6 +711,7 @@ margin-bottom:6px;
 .footer-col ul li a{
 text-decoration:none;
 color:#333;
+font-size:13px;
 transition:all 0.25s ease;
 }
 
@@ -724,7 +724,7 @@ transform:translateX(3px);
 display:flex;
 align-items:center;
 gap:8px;
-font-size:14px;
+font-size:13px;
 color:#555;
 margin-bottom:8px;
 }
@@ -770,6 +770,17 @@ font-size:13px;
 color:#777;
 }
 
+.footer-col ul li a:hover
+
+.footer-contact a{
+color:#333;
+text-decoration:none;
+}
+
+.footer-contact a:hover{
+color:#FF5B00;
+}
+
 
 /* =================
  FOOTER RESPONSIVE
@@ -808,5 +819,6 @@ max-width:220px;
 }
 
 }
+
 
 
