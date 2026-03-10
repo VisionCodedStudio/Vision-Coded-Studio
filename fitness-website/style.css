@@ -257,60 +257,95 @@ color:#ddd;
    =============================== */
 
 .contact-section{
-padding:100px 120px;
+padding:120px 20px;
+max-width:1200px;
+margin:auto;
 }
 
 .contact-container{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:80px;
+align-items:start;
 }
 
-.contact-info h3{
-font-size:30px;
+.contact-info h2{
+font-size:42px;
 margin-bottom:20px;
 }
 
-.contact-info p{
+.contact-intro{
 color:#aaa;
-margin-bottom:10px;
+margin-bottom:40px;
+max-width:420px;
+}
+
+.contact-details{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.contact-item{
+background:#181818;
+padding:20px 24px;
+border-radius:8px;
+border:1px solid #222;
+}
+
+.contact-item h4{
+margin-bottom:6px;
+font-size:16px;
+color:#1e90ff;
+}
+
+.contact-item p{
+color:#ccc;
+font-size:15px;
+}
+
+.contact-form{
+background:#181818;
+padding:40px;
+border-radius:10px;
+border:1px solid #222;
 }
 
 .contact-form form{
 display:flex;
 flex-direction:column;
-gap:16px;
+gap:18px;
 }
 
 .contact-form input,
 .contact-form textarea{
-padding:14px;
-border:none;
+padding:16px;
+background:#111;
+border:1px solid #222;
 border-radius:6px;
-background:#1a1a1a;
 color:white;
+font-size:14px;
 }
 
 .contact-form textarea{
-min-height:120px;
+min-height:140px;
 resize:vertical;
 }
 
 .contact-form button{
 background:#1e90ff;
-color:white;
 border:none;
-padding:14px;
+padding:16px;
 border-radius:6px;
+color:white;
+font-weight:600;
 cursor:pointer;
 transition:0.25s;
-font-weight:600;
 }
 
 .contact-form button:hover{
 background:#187bcd;
 }
-
 
 /* ===============================
    TRAINERS
