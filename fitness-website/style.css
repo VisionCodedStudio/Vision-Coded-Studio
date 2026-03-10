@@ -367,10 +367,10 @@ padding:0 120px;
 
 background:
 linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-url("images/hero.jpg");
+url("images/about-hero.jpg");
 
 background-size:cover;
-background-position:center 70%;
+background-position:center;
 background-repeat:no-repeat;
 }
 
