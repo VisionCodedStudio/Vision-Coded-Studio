@@ -44,22 +44,22 @@ color:#1e90ff;
    HERO SECTION
    =============================== */
 
-.hero {
-height: 90vh;
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:flex-start;
+padding:0 120px;
+}
 
+.hero-home{
 background:
 linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
 url("images/hero.jpg");
 
-background-size: cover;
-background-position: center;
-
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-
-padding: 0 120px;
+background-size:cover;
+background-position:center;
 }
 
 .hero h2{
