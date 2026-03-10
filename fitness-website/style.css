@@ -177,10 +177,8 @@ padding:100px 120px;
 }
 
 .about-container{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:80px;
-align-items:center;
+max-width:900px;
+margin:auto;
 }
 
 .about-text h3{
