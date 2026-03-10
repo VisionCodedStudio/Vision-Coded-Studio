@@ -798,15 +798,6 @@ list-style:none;
 /* =================
  FOOTER RESPONSIVE
 ==================== */
-
-@media (max-width:1024px){
-
-.footer-container{
-grid-template-columns:repeat(2,1fr);
-}
-
-}
-
 @media (max-width:640px){
 
 .footer-container{
@@ -821,6 +812,7 @@ margin:auto;
 
 .footer-contact li{
 justify-content:center;
+text-align:center;
 }
 
 .newsletter-box{
@@ -832,9 +824,4 @@ max-width:220px;
 }
 
 }
-
-
-
-
-
 
