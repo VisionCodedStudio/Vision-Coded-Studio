@@ -1,6 +1,6 @@
 /* ===============================
-   GLOBAL STYLES
-   =============================== */
+GLOBAL STYLES
+=============================== */
 
 body{
 margin:0;
@@ -19,10 +19,9 @@ width:100%;
 box-sizing:border-box;
 }
 
-
 /* ===============================
-   HEADER
-   =============================== */
+HEADER
+=============================== */
 
 header{
 display:flex;
@@ -46,21 +45,6 @@ display:flex;
 gap:30px;
 }
 
-.cart-icon{
-position:absolute;
-right:80px;
-font-size:22px;
-cursor:pointer;
-transition:0.25s;
-}
-
-.cart-icon:hover{
-transform:scale(1.15);
-}
-/* ===============================
-   NAVIGATION
-   =============================== */
-
 nav a{
 color:white;
 text-decoration:none;
@@ -73,10 +57,21 @@ nav a:hover{
 color:#1e90ff;
 }
 
+.cart-icon{
+position:absolute;
+right:80px;
+font-size:22px;
+cursor:pointer;
+transition:0.25s;
+}
+
+.cart-icon:hover{
+transform:scale(1.15);
+}
 
 /* ===============================
-   HOME HERO
-   =============================== */
+HOME HERO
+=============================== */
 
 .home-hero{
 height:90vh;
@@ -105,10 +100,9 @@ margin-bottom:30px;
 color:#ccc;
 }
 
-
 /* ===============================
-   CTA BUTTON
-   =============================== */
+CTA BUTTON
+=============================== */
 
 .cta{
 padding:16px 34px;
@@ -125,10 +119,9 @@ display:inline-block;
 background:#187bcd;
 }
 
-
 /* ===============================
-   PAGE TITLE
-   =============================== */
+PAGE TITLE
+=============================== */
 
 .page-title{
 padding:90px 20px 60px;
@@ -150,13 +143,8 @@ margin:auto;
 }
 
 /* ===============================
-   PROGRAMS
-   =============================== */
-
-.hero{
-max-width:1200px;
-margin:auto;
-}
+PROGRAMS
+=============================== */
 
 .programs{
 padding:80px 120px;
@@ -193,167 +181,9 @@ font-size:22px;
 color:#aaa;
 }
 
-.programs-hero{
-text-align:center;
-padding:80px 20px 40px;
-max-width:900px;
-margin:auto;
-}
-
-.programs-hero h2{
-font-size:52px;
-margin-bottom:10px;
-}
-
-.programs-hero p{
-max-width:600px;
-margin:20px auto 0;
-color:#aaa;
-}
-
-
 /* ===============================
-   ABOUT HERO
-   =============================== */
-
-.about-hero{
-height:70vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-padding:0 120px;
-
-background:
-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-url("images/about-hero.jpg");
-
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-}
-
-.about-hero h2{
-font-size:64px;
-margin-bottom:10px;
-}
-
-.about-hero span{
-color:#1e90ff;
-}
-
-.about-hero p{
-max-width:500px;
-color:#ccc;
-}
-
-.about-hero .about-text{
-max-width:700px;
-margin-top:30px;
-color:#ddd;
-}
-
-
-/* ===============================
-   CONTACT
-   =============================== */
-
-.contact-section{
-padding:120px 20px;
-text-align:center;
-max-width:900px;
-margin:auto;
-}
-
-.contact-section h2{
-font-size:48px;
-margin-bottom:10px;
-}
-
-.contact-intro{
-color:#aaa;
-font-size:16px;
-max-width:600px;
-margin:15px auto 50px auto;
-line-height:1.6;
-}
-
-/* form container */
-
-.contact-form{
-background:linear-gradient(145deg,#161616,#0f0f0f);
-padding:55px;
-border-radius:14px;
-border:1px solid #222;
-max-width:650px;
-width:100%;
-margin:auto;
-box-shadow:0 30px 80px rgba(0,0,0,0.8);
-}
-
-/* form layout */
-
-.contact-form form{
-display:flex;
-flex-direction:column;
-gap:20px;
-}
-
-/* inputs */
-
-.contact-form input,
-.contact-form textarea{
-padding:18px;
-background:#0e0e0e;
-border:1px solid #262626;
-border-radius:8px;
-color:white;
-font-size:15px;
-transition:all .25s ease;
-outline:none;
-width:100%;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder{
-color:#777;
-}
-
-/* focus effect */
-
-.contact-form input:focus,
-.contact-form textarea:focus{
-border-color:#1e90ff;
-box-shadow:0 0 0 1px #1e90ff;
-background:#111;
-}
-
-.contact-form textarea{
-min-height:170px;
-resize:vertical;
-}
-
-/* button */
-
-.contact-form button{
-margin-top:10px;
-background:linear-gradient(90deg,#1e90ff,#3aa0ff);
-border:none;
-padding:17px;
-border-radius:8px;
-color:white;
-font-weight:600;
-font-size:15px;
-cursor:pointer;
-transition:all .25s ease;
-}
-
-.contact-form button:hover{
-transform:translateY(-2px);
-box-shadow:0 8px 25px rgba(30,144,255,0.4);
-}
-/* ===============================
-   TRAINERS
-   =============================== */
+TRAINERS
+=============================== */
 
 .trainers{
 padding:80px 120px;
@@ -396,10 +226,9 @@ color:#aaa;
 padding-bottom:20px;
 }
 
-
 /* ===============================
-   SHOP
-   =============================== */
+SHOP
+=============================== */
 
 .shop{
 padding:80px 120px;
@@ -432,51 +261,9 @@ border-radius:6px;
 margin-bottom:15px;
 }
 
-.product-card h3{
-margin-bottom:8px;
-font-size:20px;
-}
-
-.product-card p{
-color:#aaa;
-margin-bottom:15px;
-}
-
-.program-card img{
-width:100%;
-height:260px;
-object-fit:cover;
-border-radius:8px;
-margin-bottom:15px;
-}
-
-.program-card{
-background:#181818;
-padding:20px;
-border-radius:10px;
-border:1px solid #222;
-text-align:center;
-transition:0.25s;
-}
-
-.program-card:hover{
-transform:translateY(-8px);
-background:#1e1e1e;
-}
-
-.program-card h3{
-font-size:20px;
-margin-bottom:8px;
-}
-
-.program-duration{
-color:#aaa;
-font-size:14px;
-}
-
 /* ===============================
-   BLOG
-   =============================== */
+BLOG
+=============================== */
 
 .blog{
 padding:80px 120px;
@@ -512,20 +299,97 @@ color:#aaa;
 margin-bottom:15px;
 }
 
-.blog-card a{
-color:#1e90ff;
-text-decoration:none;
-font-weight:500;
+/* ===============================
+CONTACT
+=============================== */
+
+.contact-section{
+padding:120px 20px;
+text-align:center;
+max-width:900px;
+margin:auto;
 }
 
-.blog-card a:hover{
-text-decoration:underline;
+.contact-section h2{
+font-size:48px;
+margin-bottom:10px;
 }
 
+.contact-intro{
+color:#aaa;
+font-size:16px;
+max-width:600px;
+margin:15px auto 50px auto;
+line-height:1.6;
+}
+
+.contact-form{
+background:linear-gradient(145deg,#161616,#0f0f0f);
+padding:55px;
+border-radius:14px;
+border:1px solid #222;
+max-width:650px;
+width:100%;
+margin:auto;
+box-shadow:0 30px 80px rgba(0,0,0,0.8);
+}
+
+.contact-form form{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:18px;
+background:#0e0e0e;
+border:1px solid #262626;
+border-radius:8px;
+color:white;
+font-size:15px;
+outline:none;
+width:100%;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+color:#777;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+border-color:#1e90ff;
+box-shadow:0 0 0 1px #1e90ff;
+background:#111;
+}
+
+.contact-form textarea{
+min-height:170px;
+resize:vertical;
+}
+
+.contact-form button{
+margin-top:10px;
+background:linear-gradient(90deg,#1e90ff,#3aa0ff);
+border:none;
+padding:17px;
+border-radius:8px;
+color:white;
+font-weight:600;
+font-size:15px;
+cursor:pointer;
+transition:all .25s ease;
+}
+
+.contact-form button:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 25px rgba(30,144,255,0.4);
+}
 
 /* ===============================
-   FOOTER
-   =============================== */
+FOOTER
+=============================== */
 
 .main-footer{
 background:
@@ -572,10 +436,6 @@ transition:0.25s;
 color:#1e90ff;
 }
 
-.footer-contact p{
-margin-bottom:8px;
-}
-
 .newsletter-box{
 display:flex;
 margin-top:10px;
@@ -604,114 +464,4 @@ border-top:1px solid #1c1c1c;
 text-align:center;
 color:#777;
 font-size:14px;
-}
-
-/* ===============================
-   CONTACT CENTERED
-   =============================== */
-
-.contact-center{
-max-width:700px;
-margin:auto;
-text-align:center;
-padding:120px 20px;
-}
-
-.contact-center h2{
-font-size:48px;
-margin-bottom:10px;
-}
-
-.contact-sub{
-color:#aaa;
-margin-bottom:40px;
-}
-
-.contact-form-box{
-background:#181818;
-border:1px solid #222;
-border-radius:10px;
-padding:40px;
-}
-
-.contact-form-box form{
-display:flex;
-flex-direction:column;
-gap:20px;
-}
-
-.contact-form-box input,
-.contact-form-box textarea{
-width:100%;
-padding:16px;
-background:#111;
-border:1px solid #222;
-border-radius:6px;
-color:white;
-font-size:14px;
-}
-
-.contact-form-box textarea{
-min-height:150px;
-}
-
-.contact-form-box button{
-background:#1e90ff;
-border:none;
-padding:16px;
-border-radius:6px;
-color:white;
-font-weight:600;
-cursor:pointer;
-transition:0.25s;
-}
-
-.contact-form-box button:hover{
-background:#187bcd;
-}
-
-/* CONTACT FORM FIX */
-
-.contact-section{
-padding:120px 20px;
-text-align:center;
-}
-
-.contact-section form{
-max-width:600px;
-margin:40px auto;
-display:flex;
-flex-direction:column;
-gap:18px;
-}
-
-.contact-section input,
-.contact-section textarea{
-width:100%;
-padding:16px;
-background:#111;
-border:1px solid #222;
-border-radius:6px;
-color:white;
-font-size:14px;
-}
-
-.contact-section textarea{
-min-height:150px;
-resize:vertical;
-}
-
-.contact-section button{
-background:#1e90ff;
-border:none;
-padding:16px;
-border-radius:6px;
-color:white;
-font-weight:600;
-cursor:pointer;
-transition:0.25s;
-}
-
-.contact-section button:hover{
-background:#187bcd;
 }
