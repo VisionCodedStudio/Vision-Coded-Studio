@@ -207,6 +207,15 @@ margin:40px auto;
 padding:10px 20px;
 }
 
+/* GLOBAL CONTAINER */
+
+.container{
+max-width:1200px;
+margin:0 auto;
+padding:0 20px;
+width:100%;
+}
+
 /* ==================================================
 ABOUT CARD
 ================================================== */
@@ -799,4 +808,5 @@ max-width:220px;
 }
 
 }
+
 
