@@ -1,4 +1,4 @@
-/* ===============================
+ /* ===============================
    GLOBAL STYLES
    =============================== */
 
@@ -27,6 +27,7 @@ box-sizing:border-box;
 header{
 position:relative;
 display:flex;
+justify-content:space-between;
 align-items:center;
 padding:20px 80px;
 background:black;
@@ -47,8 +48,6 @@ nav{
 position:absolute;
 left:50%;
 transform:translateX(-50%);
-display:flex;
-align-items:center;
 }
 
 nav a{
@@ -62,6 +61,7 @@ transition:0.25s;
 nav a:hover{
 color:#1e90ff;
 }
+
 
 /* ===============================
    HOME HERO ONLY
@@ -396,7 +396,6 @@ color:#1e90ff;
 max-width:500px;
 color:#ccc;
 }
-
 
 /* ===============================
    TRAINERS
