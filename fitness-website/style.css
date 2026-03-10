@@ -252,67 +252,87 @@ margin-top:30px;
 color:#ddd;
 }
 
+
 /* ===============================
    CONTACT
    =============================== */
 
 /* ===============================
-   CONTACT
-   =============================== */
+CONTACT
+=============================== */
 
 .contact-section{
 padding:120px 20px;
-max-width:1200px;
+max-width:1100px;
 margin:auto;
+text-align:center;
 }
 
 .contact-container{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:80px;
-align-items:start;
+display:flex;
+flex-direction:column;
+align-items:center;
 }
 
 .contact-info h2{
-font-size:42px;
+font-size:46px;
 margin-bottom:20px;
 }
 
 .contact-intro{
 color:#aaa;
-margin-bottom:40px;
-max-width:420px;
-}
-
-.contact-details{
-display:flex;
-flex-direction:column;
-gap:20px;
-}
-
-.contact-item{
-background:#181818;
-padding:20px 24px;
-border-radius:8px;
-border:1px solid #222;
-}
-
-.contact-item h4{
-margin-bottom:6px;
-font-size:16px;
-color:#1e90ff;
-}
-
-.contact-item p{
-color:#ccc;
-font-size:15px;
+margin-bottom:50px;
+max-width:600px;
+margin-left:auto;
+margin-right:auto;
 }
 
 .contact-form{
 background:#181818;
-padding:40px;
-border-radius:10px;
+padding:50px;
+border-radius:12px;
 border:1px solid #222;
+max-width:600px;
+width:100%;
+box-shadow:0 10px 40px rgba(0,0,0,0.6);
+}
+
+.contact-form form{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:16px;
+background:#111;
+border:1px solid #222;
+border-radius:6px;
+color:white;
+font-size:14px;
+width:100%;
+}
+
+.contact-form textarea{
+min-height:160px;
+resize:vertical;
+}
+
+.contact-form button{
+background:#1e90ff;
+border:none;
+padding:16px;
+border-radius:6px;
+color:white;
+font-weight:600;
+cursor:pointer;
+transition:0.25s;
+font-size:15px;
+}
+
+.contact-form button:hover{
+background:#187bcd;
 }
 
 .contact-form form{
