@@ -573,13 +573,8 @@ font-size:13px;
 color:#777;
 }
 
-@media (max-width:640px){
-
-.footer-container{
-grid-template-columns:1fr;
 }
 
-}
 /* ==================================================
 BRAND ACCENT
 ================================================== */
@@ -798,6 +793,7 @@ max-width:280px;
 }
 
 }
+
 
 
 
