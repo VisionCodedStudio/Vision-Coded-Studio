@@ -604,3 +604,23 @@ text-align:center;
 color:#777;
 font-size:14px;
 }
+
+/* ===============================
+   CONTACT PAGE NEW STYLE
+   =============================== */
+
+.contact-wrapper{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.contact-wrapper h2{
+font-size:46px;
+margin-bottom:10px;
+}
+
+.contact-subtext{
+color:#aaa;
+margin-bottom:50px;
+}
