@@ -46,17 +46,17 @@ color:#1e90ff;
 
 .hero{
 height:90vh;
+
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:flex-start;
-padding:0 120px;
-}
 
-.hero-home{
+padding:0 120px;
+
 background:
-linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)),
-url("images/hero.jpg");
+linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+url("./images/hero.jpg");
 
 background-size:cover;
 background-position:center;
