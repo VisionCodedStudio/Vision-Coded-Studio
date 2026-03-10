@@ -480,16 +480,14 @@ VISION CODED STUDIO FOOTER
 
 .vcs-footer{
 background:#ffffff;
-padding:80px 8%;
+padding:45px 8%;
 border-top:1px solid #eee;
 }
 
 .footer-container{
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:60px;
-max-width:1200px;
-margin:auto;
+gap:40px;
 }
 
 .footer-col h3{
@@ -589,12 +587,8 @@ background:#d63b00;
 /* Bottom Bar */
 
 .footer-bottom{
-text-align:center;
-margin-top:60px;
-padding-top:20px;
-border-top:1px solid #eee;
-color:#777;
-font-size:14px;
+margin-top:30px;
+padding-top:15px;
 }
 
 /* ==================================================
@@ -774,6 +768,7 @@ height:3px;
 }
 
 }
+
 
 
 
