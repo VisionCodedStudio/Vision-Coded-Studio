@@ -1,4 +1,4 @@
- /* ===============================
+/* ===============================
    GLOBAL STYLES
    =============================== */
 
@@ -26,8 +26,8 @@ box-sizing:border-box;
 
 header{
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
 padding:20px 80px;
 background:black;
 border-bottom:1px solid #1c1c1c;
@@ -36,6 +36,7 @@ border-bottom:1px solid #1c1c1c;
 header h1{
 font-size:22px;
 letter-spacing:1px;
+white-space:nowrap;
 }
 
 
@@ -46,32 +47,32 @@ letter-spacing:1px;
 nav{
 display:flex;
 align-items:center;
+gap:25px;
 }
 
 nav a{
 color:white;
-margin-left:25px;
 text-decoration:none;
 font-weight:500;
 transition:0.25s;
+white-space:nowrap;
 }
 
 nav a:hover{
 color:#1e90ff;
 }
 
+
 /* ===============================
-   HOME HERO ONLY
+   HOME HERO
    =============================== */
 
 .home-hero{
 height:90vh;
-
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:flex-start;
-
 padding:0 120px;
 
 background:
@@ -115,7 +116,7 @@ background:#187bcd;
 
 
 /* ===============================
-   PAGE HEADER (Programs / About / Contact)
+   PAGE TITLE
    =============================== */
 
 .page-title{
@@ -135,7 +136,7 @@ max-width:600px;
 
 
 /* ===============================
-   PROGRAMS SECTION
+   PROGRAMS
    =============================== */
 
 .programs{
@@ -173,37 +174,42 @@ color:#aaa;
 
 
 /* ===============================
-   ABOUT SECTION
+   ABOUT HERO
    =============================== */
 
-.about{
-padding:100px 120px;
+.about-hero{
+height:70vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:0 120px;
+
+background:
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url("images/about-hero.jpg");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
 }
 
-.about-container{
-max-width:900px;
-margin:auto;
+.about-hero h2{
+font-size:64px;
+margin-bottom:10px;
 }
 
-.about-text h3{
-font-size:36px;
-margin-bottom:20px;
+.about-hero span{
+color:#1e90ff;
 }
 
-.about-text p{
-color:#aaa;
-margin-bottom:18px;
-line-height:1.7;
-}
-
-.about-image img{
-width:100%;
-border-radius:10px;
+.about-hero p{
+max-width:500px;
+color:#ccc;
 }
 
 
 /* ===============================
-   CONTACT PAGE
+   CONTACT
    =============================== */
 
 .contact-section{
@@ -261,138 +267,6 @@ font-weight:600;
 background:#187bcd;
 }
 
-
-/* ===============================
-   FOOTER
-   =============================== */
-
-.main-footer{
-background:#0b0b0b;
-padding:80px 120px 40px;
-border-top:1px solid #1c1c1c;
-}
-
-.footer-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:60px;
-}
-
-.footer-grid h3,
-.footer-grid h4{
-margin-bottom:15px;
-}
-
-.footer-grid p{
-color:#aaa;
-font-size:14px;
-line-height:1.6;
-}
-
-.footer-links{
-display:flex;
-flex-direction:column;
-}
-
-.footer-links a{
-color:#aaa;
-text-decoration:none;
-margin-bottom:8px;
-transition:0.25s;
-}
-
-.footer-links a:hover{
-color:#1e90ff;
-}
-
-.footer-contact p{
-margin-bottom:8px;
-}
-
-.newsletter-box{
-display:flex;
-margin-top:10px;
-}
-
-.newsletter-box input{
-flex:1;
-padding:10px;
-border:none;
-background:#1a1a1a;
-color:white;
-}
-
-.newsletter-box button{
-background:#1e90ff;
-border:none;
-color:white;
-padding:10px 16px;
-cursor:pointer;
-}
-
-.footer-bottom{
-margin-top:60px;
-padding-top:20px;
-border-top:1px solid #1c1c1c;
-text-align:center;
-color:#777;
-font-size:14px;
-}
-
-
-/* ===============================
-   FOOTER WITH OVERLAY
-   =============================== */
-
-.main-footer{
-
-background:
-linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
-url("./images/footer-bg.jpg");
-
-background-size:cover;
-background-position:center;
-
-padding:80px 120px 40px;
-border-top:1px solid #1c1c1c;
-}
-
-
-/* ===============================
-   ABOUT HERO
-   =============================== */
-
-.about-hero{
-height:70vh;
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-
-padding:0 120px;
-
-background:
-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-url("images/about-hero.jpg");
-
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-}
-
-.about-hero h2{
-font-size:64px;
-margin-bottom:10px;
-}
-
-.about-hero span{
-color:#1e90ff;
-}
-
-.about-hero p{
-max-width:500px;
-color:#ccc;
-}
 
 /* ===============================
    TRAINERS
@@ -532,4 +406,88 @@ font-weight:500;
 
 .blog-card a:hover{
 text-decoration:underline;
+}
+
+
+/* ===============================
+   FOOTER
+   =============================== */
+
+.main-footer{
+background:
+linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+url("./images/footer-bg.jpg");
+
+background-size:cover;
+background-position:center;
+
+padding:80px 120px 40px;
+border-top:1px solid #1c1c1c;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:60px;
+}
+
+.footer-grid h3,
+.footer-grid h4{
+margin-bottom:15px;
+}
+
+.footer-grid p{
+color:#aaa;
+font-size:14px;
+line-height:1.6;
+}
+
+.footer-links{
+display:flex;
+flex-direction:column;
+}
+
+.footer-links a{
+color:#aaa;
+text-decoration:none;
+margin-bottom:8px;
+transition:0.25s;
+}
+
+.footer-links a:hover{
+color:#1e90ff;
+}
+
+.footer-contact p{
+margin-bottom:8px;
+}
+
+.newsletter-box{
+display:flex;
+margin-top:10px;
+}
+
+.newsletter-box input{
+flex:1;
+padding:10px;
+border:none;
+background:#1a1a1a;
+color:white;
+}
+
+.newsletter-box button{
+background:#1e90ff;
+border:none;
+color:white;
+padding:10px 16px;
+cursor:pointer;
+}
+
+.footer-bottom{
+margin-top:60px;
+padding-top:20px;
+border-top:1px solid #1c1c1c;
+text-align:center;
+color:#777;
+font-size:14px;
 }
