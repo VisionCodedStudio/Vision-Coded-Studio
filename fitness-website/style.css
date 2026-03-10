@@ -49,12 +49,6 @@ gap:30px;
    NAVIGATION
    =============================== */
 
-nav{
-display:flex;
-align-items:center;
-gap:25px;
-}
-
 nav a{
 color:white;
 text-decoration:none;
