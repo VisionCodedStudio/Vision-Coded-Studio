@@ -264,33 +264,38 @@ background:#187bcd;
    FOOTER
    =============================== */
 
-footer{
-background:#0a0a0a;
-padding:50px 120px;
-margin-top:auto;
+.main-footer{
+background:#0b0b0b;
+padding:80px 120px 40px;
 border-top:1px solid #1c1c1c;
 }
 
-.footer-container{
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:60px;
 }
 
-.footer-brand h3{
-margin:0;
+.footer-grid h3,
+.footer-grid h4{
+margin-bottom:15px;
 }
 
-.footer-brand p{
+.footer-grid p{
 color:#aaa;
-margin-top:5px;
+font-size:14px;
+line-height:1.6;
+}
+
+.footer-links{
+display:flex;
+flex-direction:column;
 }
 
 .footer-links a{
-color:white;
-margin-right:20px;
+color:#aaa;
 text-decoration:none;
+margin-bottom:8px;
 transition:0.25s;
 }
 
@@ -298,7 +303,36 @@ transition:0.25s;
 color:#1e90ff;
 }
 
-.footer-copy{
+.footer-contact p{
+margin-bottom:8px;
+}
+
+.newsletter-box{
+display:flex;
+margin-top:10px;
+}
+
+.newsletter-box input{
+flex:1;
+padding:10px;
+border:none;
+background:#1a1a1a;
+color:white;
+}
+
+.newsletter-box button{
+background:#1e90ff;
+border:none;
+color:white;
+padding:10px 16px;
+cursor:pointer;
+}
+
+.footer-bottom{
+margin-top:60px;
+padding-top:20px;
+border-top:1px solid #1c1c1c;
+text-align:center;
 color:#777;
 font-size:14px;
 }
