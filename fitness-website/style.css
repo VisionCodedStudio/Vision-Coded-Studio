@@ -256,6 +256,10 @@ color:#ddd;
    CONTACT
    =============================== */
 
+/* ===============================
+   CONTACT
+   =============================== */
+
 .contact-section{
 padding:120px 20px;
 max-width:1200px;
@@ -346,7 +350,6 @@ transition:0.25s;
 .contact-form button:hover{
 background:#187bcd;
 }
-
 /* ===============================
    TRAINERS
    =============================== */
