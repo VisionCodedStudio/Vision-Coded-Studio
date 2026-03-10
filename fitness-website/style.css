@@ -57,10 +57,10 @@ color:#1e90ff;
 
 
 /* ===============================
-   HERO SECTION (HOME ONLY)
+   HOME HERO ONLY
    =============================== */
 
-.hero{
+.home-hero{
 height:90vh;
 
 display:flex;
@@ -78,13 +78,12 @@ background-size:cover;
 background-position:center;
 }
 
-.hero h2{
+.home-hero h2{
 font-size:64px;
 margin-bottom:20px;
-max-width:700px;
 }
 
-.hero p{
+.home-hero p{
 max-width:520px;
 margin-bottom:30px;
 color:#ccc;
