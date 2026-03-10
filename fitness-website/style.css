@@ -45,6 +45,18 @@ nav{
 display:flex;
 gap:30px;
 }
+
+.cart-icon{
+position:absolute;
+right:80px;
+font-size:22px;
+cursor:pointer;
+transition:0.25s;
+}
+
+.cart-icon:hover{
+transform:scale(1.15);
+}
 /* ===============================
    NAVIGATION
    =============================== */
