@@ -810,13 +810,20 @@ max-width:400px;
 margin:auto;
 }
 
+.footer-contact{
+padding:0;
+}
+
 .footer-contact li{
 display:flex;
 align-items:center;
 justify-content:center;
 gap:10px;
-text-align:left;
 margin-bottom:10px;
+}
+
+.footer-contact i{
+width:auto;
 }
 
 .newsletter-box{
@@ -828,5 +835,4 @@ max-width:220px;
 }
 
 }
-
 
