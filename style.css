@@ -730,7 +730,7 @@ max-width:220px;
 .vcs-footer{
 background:#ffffff;
 padding:70px 8%;
-border-top:2px solid #FF4500;
+border-top:2px solid #FF5B00;
 box-shadow:0 -4px 25px rgba(255,69,0,0.08);
 margin-top:80px;
 }
@@ -776,7 +776,7 @@ transition:all 0.25s ease;
 }
 
 .footer-col ul li a:hover{
-color:#FF4500;
+color:#FF5B00;
 transform:translateX(3px);
 }
 
@@ -790,7 +790,7 @@ margin-bottom:8px;
 }
 
 .footer-contact i{
-color:#FF4500;
+color:#FF5B00;
 width:16px;
 }
 
@@ -807,7 +807,7 @@ font-size:13px;
 }
 
 .newsletter-box button{
-background:#FF4500;
+background:#FF5B00;
 color:#fff;
 border:none;
 padding:10px 16px;
@@ -831,11 +831,19 @@ color:#777;
 }
 
 
-/* ================================
-FOOTER MOBILE
-================================ */
+/* =================
+ FOOTER RESPONSIVE
+==================== */
 
-@media (max-width:768px){
+@media (max-width:1024px){
+
+.footer-container{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (max-width:640px){
 
 .footer-container{
 grid-template-columns:1fr;
@@ -860,16 +868,3 @@ max-width:220px;
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
