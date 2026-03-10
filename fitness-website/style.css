@@ -438,6 +438,37 @@ color:#aaa;
 margin-bottom:15px;
 }
 
+.program-card img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:8px;
+margin-bottom:15px;
+}
+
+.program-card{
+background:#181818;
+padding:20px;
+border-radius:10px;
+border:1px solid #222;
+text-align:center;
+transition:0.25s;
+}
+
+.program-card:hover{
+transform:translateY(-8px);
+background:#1e1e1e;
+}
+
+.program-card h3{
+font-size:20px;
+margin-bottom:8px;
+}
+
+.program-duration{
+color:#aaa;
+font-size:14px;
+}
 
 /* ===============================
    BLOG
