@@ -25,10 +25,9 @@ box-sizing:border-box;
    =============================== */
 
 header{
-position:relative;
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
 padding:20px 80px;
 background:black;
 border-bottom:1px solid #1c1c1c;
@@ -45,20 +44,17 @@ letter-spacing:1px;
    =============================== */
 
 nav{
-position:absolute;
-left:50%;
-transform:translateX(-50%);
 display:flex;
-align-items:center;
+gap:30px;
+margin-left:auto;
+margin-right:auto;
 }
 
 nav a{
 color:white;
-margin:0 20px;
 text-decoration:none;
 font-weight:500;
 transition:0.25s;
-white-space:nowrap;
 }
 
 nav a:hover{
