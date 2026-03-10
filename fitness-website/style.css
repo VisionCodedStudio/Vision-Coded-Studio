@@ -25,6 +25,7 @@ box-sizing:border-box;
    =============================== */
 
 header{
+position:relative;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -43,9 +44,15 @@ letter-spacing:1px;
    NAVIGATION
    =============================== */
 
+nav{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+}
+
 nav a{
 color:white;
-margin-left:25px;
+margin:0 20px;
 text-decoration:none;
 font-weight:500;
 transition:0.25s;
@@ -335,6 +342,7 @@ color:#777;
 font-size:14px;
 }
 
+
 /* ===============================
    FOOTER WITH OVERLAY
    =============================== */
@@ -351,6 +359,7 @@ background-position:center;
 padding:80px 120px 40px;
 border-top:1px solid #1c1c1c;
 }
+
 
 /* ===============================
    ABOUT HERO
