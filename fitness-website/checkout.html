@@ -241,18 +241,6 @@ Secure Checkout • SSL Encrypted
 
 </footer>
 
-
-
-<script src="cart.js"></script>
-<script>
-renderCheckout();
-</script>
-
-</body>
-</html>
-
-
-
 <script src="cart.js"></script>
 
 <script>
@@ -267,7 +255,6 @@ let subtotal = 0;
 let shipping = 0;
 let tax = 0;
 let discount = 0;
-
 
 
 /* RENDER CHECKOUT */
@@ -367,7 +354,7 @@ document.getElementById("checkout-total").innerText =
 
 
 
-/* PROMO CODES */
+/* PROMO */
 
 function applyPromo(){
 
@@ -392,7 +379,7 @@ calculateTotals();
 
 
 
-/* STATE CHANGE */
+/* STATE CHANGE LISTENER */
 
 document.getElementById("state-select")
 .addEventListener("change", calculateTotals);
@@ -407,7 +394,6 @@ delivery.setDate(delivery.getDate() + 5);
 
 document.getElementById("delivery-date").innerText =
 delivery.toLocaleDateString("en-US",{month:"short",day:"numeric"});
-
 
 
 /* INIT */
