@@ -1472,3 +1472,19 @@ color:white;
 box-shadow:-10px 0 30px rgba(0,0,0,0.7);
 
 }
+
+/* ===============================
+CHECKOUT SUMMARY ROWS
+=============================== */
+
+.summary-row{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-top:12px;
+font-size:16px;
+}
+
+.summary-row span:last-child{
+font-weight:600;
+}
