@@ -8,6 +8,8 @@
 <title>Checkout | Iron Pulse Fitness</title>
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -31,7 +33,6 @@
 <span id="cart-count">0</span>
 </div>
 
-  
 </header>
 
 
@@ -48,15 +49,10 @@
 <form action="payment.html">
 
 <input type="text" placeholder="Full Name" required>
-
 <input type="email" placeholder="Email Address" required>
-
 <input type="text" placeholder="Address" required>
-
 <input type="text" placeholder="City" required>
-
 <input type="text" placeholder="State" required>
-
 <input type="text" placeholder="ZIP Code" required>
 
 <button type="submit" class="checkout-btn">
@@ -76,9 +72,12 @@ Continue to Payment
 
 <div id="checkout-items"></div>
 
-<p class="checkout-total">
-Total: <span id="checkout-total">$0</span>
-</p>
+<hr>
+
+<div class="summary-row">
+<span>Subtotal</span>
+<span id="checkout-total">$0</span>
+</div>
 
 </div>
 
@@ -87,9 +86,6 @@ Total: <span id="checkout-total">$0</span>
 </section>
 
 
-<!-- ===============================
-FOOTER
-================================ -->
 
 <footer class="main-footer">
 
