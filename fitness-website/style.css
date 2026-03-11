@@ -782,11 +782,10 @@ transform:translateY(-6px);
 
 .program-item img{
 width:100%;
-height:220px;
+height:360px;
 object-fit:cover;
 border-radius:4px;
 }
-
 .program-item h3{
 margin-top:12px;
 font-size:18px;
