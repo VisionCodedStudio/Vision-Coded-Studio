@@ -36,12 +36,14 @@
 </header>
 
 
+
 <section class="checkout-container">
 
 <h2>Checkout</h2>
 
 <div class="checkout-grid">
 
+<!-- SHIPPING FORM -->
 
 <div class="checkout-form">
 
@@ -67,6 +69,9 @@ Continue to Payment
 </div>
 
 
+
+<!-- ORDER SUMMARY -->
+
 <div class="order-summary">
 
 <h3>Order Summary</h3>
@@ -74,6 +79,9 @@ Continue to Payment
 <div id="checkout-items"></div>
 
 <hr>
+
+
+<!-- PROMO CODE -->
 
 <div class="promo-section">
 
@@ -88,6 +96,9 @@ Apply
 <p id="promo-message"></p>
 
 <hr>
+
+
+<!-- TOTALS -->
 
 <div class="summary-row">
 <span>Subtotal</span>
@@ -124,6 +135,8 @@ Apply
 
 
 
+<!-- FOOTER -->
+
 <footer class="main-footer">
 
 <div class="footer-grid">
@@ -134,8 +147,7 @@ Apply
 
 <p>
 Elite strength training programs built to develop
-discipline, power, and confidence. Train harder,
-build strength, and unlock your true potential.
+discipline, power, and confidence.
 </p>
 
 <p class="hours">
@@ -156,10 +168,8 @@ Sat - Sun: 5am – 8pm
 <div class="footer-links-column">
 <a href="#">About us</a>
 <a href="#">Membership</a>
-<a href="#">Our Classes</a>
-<a href="#">Instructors</a>
-<a href="#">Shop</a>
-<a href="#">Blog post</a>
+<a href="#">Classes</a>
+<a href="#">Trainers</a>
 </div>
 
 <div class="footer-links-column">
@@ -176,11 +186,11 @@ Sat - Sun: 5am – 8pm
 
 <div class="footer-contact">
 
-<h4>Contact Info</h4>
+<h4>Contact</h4>
 
 <p>
 📍 742 S Hill Street<br>
-Los Angeles, CA 90014
+Los Angeles, CA
 </p>
 
 <p>📞 (213) 555-7711</p>
@@ -194,11 +204,6 @@ Los Angeles, CA 90014
 
 <h4>Newsletter</h4>
 
-<p>
-Subscribe to receive workout tips, gym updates,
-and exclusive training content from Iron Pulse.
-</p>
-
 <div class="newsletter-box">
 <input type="email" placeholder="Email address">
 <button>Join</button>
@@ -208,11 +213,17 @@ and exclusive training content from Iron Pulse.
 
 <h4>We Accept</h4>
 
-<div class="payment-banner">
-<img src="images/payment-methods.png" alt="Payment methods">
+<div class="payment-icons">
+<i class="fa-brands fa-cc-visa"></i>
+<i class="fa-brands fa-cc-mastercard"></i>
+<i class="fa-brands fa-cc-amex"></i>
+<i class="fa-brands fa-cc-paypal"></i>
+<i class="fa-brands fa-cc-apple-pay"></i>
 </div>
 
-<p class="secure-text">Secure Checkout • SSL Encrypted</p>
+<p class="secure-text">
+Secure Checkout • SSL Encrypted
+</p>
 
 </div>
 
@@ -221,7 +232,7 @@ and exclusive training content from Iron Pulse.
 </div>
 
 <div class="footer-bottom">
-<p>© 2026 Iron Pulse Fitness. All rights reserved.</p>
+<p>© 2026 Iron Pulse Fitness</p>
 </div>
 
 </footer>
@@ -229,7 +240,10 @@ and exclusive training content from Iron Pulse.
 
 
 <script src="cart.js"></script>
+
 <script>
+
+/* LOAD CART */
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -240,6 +254,8 @@ let shipping = 0;
 let tax = 0;
 let discount = 0;
 
+
+
 function renderCheckout(){
 
 container.innerHTML = "";
@@ -248,6 +264,7 @@ subtotal = 0;
 cart.forEach((item,index)=>{
 
 const row = document.createElement("div");
+
 row.classList.add("checkout-item");
 
 row.innerHTML = `
@@ -283,6 +300,10 @@ localStorage.setItem("cart",JSON.stringify(cart));
 
 }
 
+
+
+/* CHANGE QUANTITY */
+
 function changeQty(index,amount){
 
 cart[index].quantity += amount;
@@ -295,6 +316,10 @@ renderCheckout();
 
 }
 
+
+
+/* REMOVE ITEM */
+
 function removeItem(index){
 
 cart.splice(index,1);
@@ -303,9 +328,14 @@ renderCheckout();
 
 }
 
+
+
+/* TOTAL CALCULATIONS */
+
 function calculateTotals(){
 
 shipping = subtotal > 300 ? 0 : 12;
+
 tax = subtotal * 0.08;
 
 const total = subtotal + shipping + tax - discount;
@@ -327,146 +357,9 @@ document.getElementById("checkout-total").innerText =
 
 }
 
-function applyPromo(){
-
-const code = document.getElementById("promo-code").value;
-const message = document.getElementById("promo-message");
-
-if(code === "IRON10"){
-
-discount = subtotal * 0.10;
-message.innerText = "10% discount applied";
-
-}
-
-else if(code === "FREESHIP"){
-
-shipping = 0;
-message.innerText = "Free shipping applied";
-
-}
-
-else{
-
-message.innerText = "Invalid promo code";
-
-}
-
-calculateTotals();
-
-}
-
-renderCheckout();
-
-</script>
-
-<script>
-
-/* =========================
-LOAD CART
-========================= */
-
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-const container = document.getElementById("checkout-items");
-
-let subtotal = 0;
-let shipping = 0;
-let tax = 0;
-let discount = 0;
 
 
-
-function renderCheckout(){
-
-container.innerHTML = "";
-subtotal = 0;
-
-cart.forEach((item,index)=>{
-
-const itemDiv = document.createElement("div");
-
-itemDiv.classList.add("checkout-item");
-
-itemDiv.innerHTML = `
-
-<div class="checkout-product">
-
-<img src="${item.image}">
-
-<span class="checkout-name">${item.name}</span>
-
-</div>
-
-<div class="cart-controls">
-
-<button class="qty-btn" onclick="changeQty(${index},-1)">-</button>
-
-<span>${item.quantity}</span>
-
-<button class="qty-btn" onclick="changeQty(${index},1)">+</button>
-
-</div>
-
-<span class="checkout-price">
-$${(item.price * item.quantity).toFixed(2)}
-</span>
-
-<button class="remove-btn" onclick="removeItem(${index})">
-Remove
-</button>
-
-`;
-
-container.appendChild(itemDiv);
-
-subtotal += item.price * item.quantity;
-
-});
-
-calculateTotals();
-
-localStorage.setItem("cart",JSON.stringify(cart));
-
-}
-
-
-
-/* =========================
-QUANTITY
-========================= */
-
-function changeQty(index,amount){
-
-cart[index].quantity += amount;
-
-if(cart[index].quantity <= 0){
-cart.splice(index,1);
-}
-
-renderCheckout();
-
-}
-
-
-
-/* =========================
-REMOVE
-========================= */
-
-function removeItem(index){
-
-cart.splice(index,1);
-
-renderCheckout();
-
-}
-
-
-
-/* =========================
-PROMO CODES
-========================= */
+/* PROMO CODE */
 
 function applyPromo(){
 
@@ -499,40 +392,7 @@ calculateTotals();
 
 
 
-/* =========================
-TOTAL CALCULATIONS
-========================= */
-
-function calculateTotals(){
-
-shipping = subtotal > 300 ? 0 : 12;
-
-tax = subtotal * 0.08;
-
-const total = subtotal + shipping + tax - discount;
-
-document.getElementById("subtotal").innerText =
-"$" + subtotal.toFixed(2);
-
-document.getElementById("shipping").innerText =
-"$" + shipping.toFixed(2);
-
-document.getElementById("tax").innerText =
-"$" + tax.toFixed(2);
-
-document.getElementById("discount").innerText =
-"-$" + discount.toFixed(2);
-
-document.getElementById("checkout-total").innerText =
-"$" + total.toFixed(2);
-
-}
-
-
-
-/* =========================
-INIT
-========================= */
+/* INIT */
 
 renderCheckout();
 
