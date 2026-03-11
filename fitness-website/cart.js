@@ -70,7 +70,15 @@ localStorage.setItem("cart",JSON.stringify(cart));
 
 updateCartCount();
 
-alert(name + " added to cart");
+loadCart();
+
+/* OPEN CART AUTOMATICALLY */
+
+const cartSidebar = document.getElementById("cart-sidebar");
+
+if(cartSidebar){
+cartSidebar.classList.add("open");
+}
 
 });
 
@@ -94,18 +102,21 @@ let total = 0;
 
 cart.forEach((item,index)=>{
 
-let row = document.createElement("tr");
+let itemDiv = document.createElement("div");
 
-row.innerHTML = `
+itemDiv.classList.add("cart-item");
 
-<td class="cart-product">
+itemDiv.innerHTML = `
+
+<div class="cart-product">
+
 <img src="${item.image}" width="60">
+
 <span>${item.name}</span>
-</td>
 
-<td>$${item.price}</td>
+</div>
 
-<td class="cart-qty">
+<div class="cart-controls">
 
 <button class="qty-btn" onclick="decreaseQty(${index})">-</button>
 
@@ -113,17 +124,25 @@ row.innerHTML = `
 
 <button class="qty-btn" onclick="increaseQty(${index})">+</button>
 
-</td>
+</div>
 
-<td>$${(item.price * item.quantity).toFixed(2)}</td>
+<div class="cart-price">
 
-<td>
-<button onclick="removeItem(${index})">Remove</button>
-</td>
+$${(item.price * item.quantity).toFixed(2)}
+
+</div>
+
+<div>
+
+<button class="remove-btn" onclick="removeItem(${index})">
+Remove
+</button>
+
+</div>
 
 `;
 
-cartItems.appendChild(row);
+cartItems.appendChild(itemDiv);
 
 total += item.price * item.quantity;
 
@@ -219,6 +238,52 @@ closeCart.addEventListener("click", ()=>{
 cartSidebar.classList.remove("open");
 
 });
+
+}
+
+
+/* ===============================
+   LOAD CHECKOUT SUMMARY
+================================ */
+
+function loadCheckout(){
+
+const checkoutItems = document.getElementById("checkout-items");
+const checkoutTotal = document.getElementById("checkout-total");
+
+if(!checkoutItems) return;
+
+checkoutItems.innerHTML = "";
+
+let total = 0;
+
+cart.forEach(item=>{
+
+let row = document.createElement("p");
+
+row.innerText =
+item.name + " x" + item.quantity + " - $" + (item.price * item.quantity);
+
+checkoutItems.appendChild(row);
+
+total += item.price * item.quantity;
+
+});
+
+checkoutTotal.innerText = "$" + total.toFixed(2);
+
+}
+
+loadCheckout();
+
+
+/* ===============================
+   CLEAR CART AFTER ORDER
+================================ */
+
+if(window.location.pathname.includes("order-success")){
+
+localStorage.removeItem("cart");
 
 }
 
