@@ -35,6 +35,25 @@
 </header>
 
 
+<!-- CART SIDEBAR (THIS FIXES YOUR ISSUE) -->
+
+<div id="cart-sidebar" class="cart-sidebar">
+
+<div class="cart-header">
+<h3>Your Cart</h3>
+<button id="close-cart">×</button>
+</div>
+
+<div id="cart-items"></div>
+
+<div class="cart-footer">
+<p>Subtotal: <span id="cart-subtotal">$0</span></p>
+<a href="checkout.html" class="checkout-btn">Checkout</a>
+</div>
+
+</div>
+
+
 
 <section class="checkout-container">
 
@@ -133,13 +152,8 @@ Continue to Payment
 <hr>
 
 <div class="promo-section">
-
 <input id="promo-code" type="text" placeholder="Promo code">
-
-<button class="promo-btn" onclick="applyPromo()">
-Apply
-</button>
-
+<button class="promo-btn" onclick="applyPromo()">Apply</button>
 </div>
 
 <p id="promo-message"></p>
@@ -226,6 +240,16 @@ Secure Checkout • SSL Encrypted
 </div>
 
 </footer>
+
+
+
+<script src="cart.js"></script>
+<script>
+renderCheckout();
+</script>
+
+</body>
+</html>
 
 
 
