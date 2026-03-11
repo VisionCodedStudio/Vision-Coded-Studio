@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Your Cart | Iron Pulse Fitness</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Iron Pulse Fitness</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="programs.html">Programs</a>
+<a href="trainers.html">Trainers</a>
+<a href="shop.html">Shop</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="cart-icon">
+<i class="fa-solid fa-bag-shopping"></i>
+<span id="cart-count">0</span>
+</div>
+
+</header>
+
+
+<section class="page-title">
+
+<h2>Your Cart</h2>
+<p>Review your items before checkout.</p>
+
+</section>
+
+
+<section class="cart-page">
+
+<div class="cart-items-container">
+
+<table class="cart-table">
+
+<thead>
+<tr>
+<th>Product</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Total</th>
+<th>Remove</th>
+</tr>
+</thead>
+
+<tbody id="cart-items">
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<div class="cart-summary">
+
+<h3>Order Summary</h3>
+
+<p>Subtotal: <span id="cart-subtotal">$0</span></p>
+
+<a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+
+</div>
+
+</section>
+
+
+<footer class="main-footer">
+<p style="text-align:center;padding:20px;">© 2026 Iron Pulse Fitness</p>
+</footer>
+
+<script src="cart.js"></script>
+
+</body>
+</html>
