@@ -15,9 +15,7 @@
 <body>
 
 <header>
-
 <h1>Iron Pulse Fitness</h1>
-
 </header>
 
 <section class="payment-container">
@@ -26,13 +24,17 @@
 
 <form action="order-success.html">
 
-<input type="text" placeholder="Cardholder Name" required>
+<input id="card-name" type="text" placeholder="Cardholder Name" required>
 
-<input type="text" placeholder="Card Number" required>
+<input id="card-number" type="text" placeholder="Card Number" maxlength="19" required>
 
-<input type="text" placeholder="MM / YY" required>
+<div class="card-row">
 
-<input type="text" placeholder="CVC" required>
+<input id="card-exp" type="text" placeholder="MM/YY" maxlength="5" required>
+
+<input id="card-cvv" type="text" placeholder="CVC" maxlength="4" required>
+
+</div>
 
 <button type="submit" class="checkout-btn">
 Complete Order
@@ -40,7 +42,105 @@ Complete Order
 
 </form>
 
+<a href="checkout.html" class="back-btn">← Back to Checkout</a>
+
 </section>
+
+
+<script>
+
+const cardNumber = document.getElementById("card-number");
+const expInput = document.getElementById("card-exp");
+const cvvInput = document.getElementById("card-cvv");
+
+
+/* CARD NUMBER AUTO FORMAT */
+
+cardNumber.addEventListener("input", function(e){
+
+let value = e.target.value.replace(/\D/g,"");
+value = value.substring(0,16);
+
+let formatted = value.match(/.{1,4}/g);
+
+e.target.value = formatted ? formatted.join(" ") : "";
+
+});
+
+
+/* EXP DATE FORMAT */
+
+expInput.addEventListener("input", function(e){
+
+let value = e.target.value.replace(/\D/g,"").substring(0,4);
+
+if(value.length >= 3){
+
+value = value.substring(0,2) + "/" + value.substring(2);
+
+}
+
+e.target.value = value;
+
+});
+
+
+/* CVV NUMBERS ONLY */
+
+cvvInput.addEventListener("input", function(e){
+
+e.target.value = e.target.value.replace(/\D/g,"");
+
+});
+
+
+/* LUHN CARD VALIDATION */
+
+function validCard(number){
+
+number = number.replace(/\s/g,"");
+
+let sum = 0;
+let shouldDouble = false;
+
+for(let i = number.length - 1; i >= 0; i--){
+
+let digit = parseInt(number.charAt(i));
+
+if(shouldDouble){
+
+digit *= 2;
+
+if(digit > 9) digit -= 9;
+
+}
+
+sum += digit;
+
+shouldDouble = !shouldDouble;
+
+}
+
+return sum % 10 === 0;
+
+}
+
+
+document.querySelector("form").addEventListener("submit", function(e){
+
+const cardVal = cardNumber.value;
+
+if(!validCard(cardVal)){
+
+alert("Invalid credit card number");
+
+e.preventDefault();
+
+}
+
+});
+
+</script>
 
 </body>
 </html>
