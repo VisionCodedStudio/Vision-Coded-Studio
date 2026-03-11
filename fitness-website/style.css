@@ -656,14 +656,10 @@ align-items:center;
 }
 
 .payment-logos img{
-
-height:28px;
+height:30px;
 width:auto;
-
+filter: invert(1);
 opacity:0.9;
-
-transition:0.2s;
-
 }
 
 .payment-logos img:hover{
