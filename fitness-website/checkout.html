@@ -248,6 +248,8 @@ let discount = 0;
 
 
 
+/* RENDER CHECKOUT */
+
 function renderCheckout(){
 
 container.innerHTML = "";
@@ -308,7 +310,7 @@ renderCheckout();
 
 
 
-/* REMOVE */
+/* REMOVE ITEM */
 
 function removeItem(index){
 
@@ -377,21 +379,6 @@ WY:0.04
 
 };
 
-/* REMOVE ITEM */
-function removeItem(index){
-cart.splice(index,1);
-renderCheckout();
-}
-
-
-/* STATE TAX TABLE */
-const stateTaxRates = {
-...ALL STATES HERE...
-};
-
-
-/* TOTAL CALCULATIONS */
-function calculateTotals(){
 
 
 /* TOTAL CALCULATIONS */
@@ -427,7 +414,7 @@ document.getElementById("checkout-total").innerText =
 
 
 
-/* PROMO */
+/* PROMO CODES */
 
 function applyPromo(){
 
@@ -489,6 +476,3 @@ day:"numeric"
 renderCheckout();
 
 </script>
-
-</body>
-</html>
