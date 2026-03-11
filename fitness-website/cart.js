@@ -246,10 +246,6 @@ cartSidebar.classList.remove("open");
 }
 
 
-/* ===============================
-   LOAD CHECKOUT SUMMARY
-================================ */
-
 function loadCheckout(){
 
 const checkoutItems = document.getElementById("checkout-items");
@@ -263,10 +259,27 @@ let total = 0;
 
 cart.forEach(item=>{
 
-let row = document.createElement("p");
+let row = document.createElement("div");
 
-row.innerText =
-item.name + " x" + item.quantity + " - $" + (item.price * item.quantity);
+row.classList.add("checkout-item");
+
+row.innerHTML = `
+
+<div class="checkout-product">
+
+<img src="${item.image}">
+
+<div class="checkout-name">
+${item.name} x${item.quantity}
+</div>
+
+</div>
+
+<div class="checkout-price">
+$${(item.price * item.quantity).toFixed(2)}
+</div>
+
+`;
 
 checkoutItems.appendChild(row);
 
@@ -277,10 +290,6 @@ total += item.price * item.quantity;
 checkoutTotal.innerText = "$" + total.toFixed(2);
 
 }
-
-loadCheckout();
-
-
 /* ===============================
    CLEAR CART AFTER ORDER
 ================================ */
