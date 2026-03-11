@@ -598,6 +598,19 @@ color:#777;
 font-size:14px;
 }
 
+/* PAYMENT METHODS BANNER */
+
+.payment-banner{
+margin-top:12px;
+}
+
+.payment-banner img{
+max-width:260px;
+width:100%;
+height:auto;
+display:block;
+opacity:0.95;
+}
 /* ===============================
 PAYMENT ICONS
 =============================== */
