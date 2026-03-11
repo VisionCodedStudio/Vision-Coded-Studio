@@ -621,6 +621,29 @@ color:white;
 }
 
 /* ===============================
+PAYMENT BRAND COLORS
+=============================== */
+
+.fa-cc-visa{
+color:#1a1f71;
+}
+
+.fa-cc-mastercard{
+color:#eb001b;
+}
+
+.fa-cc-amex{
+color:#2e77bb;
+}
+
+.fa-cc-paypal{
+color:#003087;
+}
+
+.fa-cc-apple-pay{
+color:white;
+}
+/* ===============================
    CONTACT CENTERED
    =============================== */
 
