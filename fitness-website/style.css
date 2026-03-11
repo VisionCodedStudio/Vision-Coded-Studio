@@ -1031,29 +1031,25 @@ pointer-events:auto;
 =============================== */
 
 #cart-sidebar{
-
 position:fixed;
 top:0;
 right:-420px;
 
 width:380px;
-height:100vh;
+height:100%;
 
 background:#111;
-
 border-left:1px solid #222;
 
-padding:25px;
+padding:20px;
 
 z-index:999;
-
 transition:0.35s ease;
 
 display:flex;
 flex-direction:column;
 
 box-shadow:-10px 0 30px rgba(0,0,0,0.7);
-
 }
 
 
@@ -1106,24 +1102,22 @@ cursor:pointer;
 =============================== */
 
 #cart-items{
-flex:1 1 auto;
+flex-grow:1;
 overflow-y:auto;
-padding-right:6px;
 margin-bottom:10px;
 }
-
 
 /* ===============================
    CART FOOTER
 =============================== */
 
 .cart-footer{
+margin-top:auto;
 border-top:1px solid #222;
 padding-top:15px;
-margin-top:auto;
-flex-shrink:0;
 background:#111;
 }
+
 /* ===============================
    CART SIDEBAR LAYOUT FIX
 ================================ */
