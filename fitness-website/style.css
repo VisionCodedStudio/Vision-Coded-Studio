@@ -1064,3 +1064,171 @@ padding-top:20px;
 margin-top:20px;
 
 }
+
+/* ===============================
+   CART ITEM ROW
+================================ */
+
+.cart-item{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+gap:10px;
+
+padding:12px 0;
+
+border-bottom:1px solid #222;
+
+}
+
+
+/* ===============================
+   CART PRODUCT
+================================ */
+
+.cart-product{
+
+display:flex;
+align-items:center;
+
+gap:10px;
+
+}
+
+.cart-product img{
+
+width:55px;
+height:55px;
+
+object-fit:contain;
+
+background:#1a1a1a;
+
+padding:6px;
+
+border-radius:6px;
+
+}
+
+.cart-product span{
+font-size:14px;
+}
+
+
+/* ===============================
+   CART CONTROLS
+================================ */
+
+.cart-controls{
+
+display:flex;
+align-items:center;
+
+gap:6px;
+
+}
+
+.qty-btn{
+
+width:24px;
+height:24px;
+
+border:none;
+
+background:#1e90ff;
+
+color:white;
+
+border-radius:4px;
+
+cursor:pointer;
+
+font-weight:600;
+
+}
+
+.qty-btn:hover{
+background:#187bcd;
+}
+
+
+/* ===============================
+   REMOVE BUTTON
+================================ */
+
+.remove-btn{
+
+background:none;
+
+border:none;
+
+color:#aaa;
+
+font-size:12px;
+
+cursor:pointer;
+
+}
+
+.remove-btn:hover{
+color:white;
+}
+
+
+/* ===============================
+   CART SUBTOTAL
+================================ */
+
+.cart-footer p{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-bottom:10px;
+
+}
+
+
+/* ===============================
+   CART CHECKOUT BUTTON
+================================ */
+
+.cart-footer button{
+
+width:100%;
+
+padding:14px;
+
+background:#1e90ff;
+
+border:none;
+
+color:white;
+
+border-radius:6px;
+
+font-weight:600;
+
+cursor:pointer;
+
+margin-top:10px;
+
+}
+
+.cart-footer button:hover{
+background:#187bcd;
+}
+
+
+/* ===============================
+   CART SHADOW
+================================ */
+
+#cart-sidebar{
+
+box-shadow:-10px 0 30px rgba(0,0,0,0.7);
+
+}
