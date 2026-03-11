@@ -1426,6 +1426,43 @@ margin-bottom:15px;
 .card-row input{
 flex:1;
 }
+
+/* ===============================
+CHECKOUT PRODUCT ROW
+=============================== */
+
+.checkout-item{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:12px 0;
+border-bottom:1px solid #222;
+}
+
+.checkout-product{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.checkout-product img{
+width:55px;
+height:55px;
+object-fit:contain;
+background:#1a1a1a;
+padding:6px;
+border-radius:6px;
+}
+
+.checkout-name{
+font-size:14px;
+color:#ddd;
+}
+
+.checkout-price{
+font-weight:600;
+color:white;
+}
 /* ===============================
    CART SHADOW
 ================================ */
