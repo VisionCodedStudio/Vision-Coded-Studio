@@ -962,6 +962,27 @@ font-weight:600;
 }
 
 /* ===============================
+   BACK BUTTON
+=============================== */
+
+.back-btn{
+
+display:inline-block;
+
+margin-top:20px;
+
+color:#aaa;
+
+text-decoration:none;
+
+font-size:14px;
+
+}
+
+.back-btn:hover{
+color:white;
+}
+/* ===============================
 PAYMENT PAGE
 =============================== */
 
