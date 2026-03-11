@@ -9,12 +9,15 @@
 <title>Blog | Iron Pulse Fitness</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
+
+<!-- ===============================
+HEADER
+================================ -->
 
 <header>
 
@@ -32,42 +35,22 @@
 
 <div class="cart-icon">
 <i class="fa-solid fa-bag-shopping"></i>
-<span id="cart-count">0</span>
 </div>
 
 </header>
- 
+
+
 <!-- ===============================
-CART SIDEBAR
+BLOG HERO
 ================================ -->
 
-<div id="cart-sidebar">
+<section class="blog-hero">
 
-<div class="cart-header">
-<h3>Your Cart</h3>
-<button id="close-cart">×</button>
-</div>
-
-<div id="cart-items"></div>
-
-<div class="cart-footer">
-<p>Subtotal: <span id="cart-subtotal">$0</span></p>
-<a href="checkout.html" class="checkout-btn">Checkout</a>
-</div>
-
-</div>
- 
-<!-- ===============================
-BLOG HEADER
-================================ -->
-
-<section class="page-title">
-
-<h2>Blog</h2>
+<h1>Fitness Blog</h1>
 
 <p>
-Training knowledge, discipline, and mindset
-for building real strength.
+Training knowledge, nutrition strategies, and fitness insights to help you
+build strength, discipline, and confidence.
 </p>
 
 </section>
@@ -77,42 +60,131 @@ for building real strength.
 BLOG POSTS
 ================================ -->
 
-<section class="blog">
-
-<div class="blog-grid">
+<section class="blog-container">
 
 <div class="blog-card">
-<h3>5 Strength Training Principles Every Athlete Should Know</h3>
+
+<img src="images/blog1.jpg" alt="Strength Training">
+
+<h3>5 Strength Training Mistakes Beginners Make</h3>
+
 <p>
-Learn the fundamentals behind building real strength
-and long-term performance.
+Avoid the most common mistakes that slow down muscle growth and
+hold back your strength progress.
 </p>
+
 <a href="#">Read More</a>
+
 </div>
 
-<div class="blog-card">
-<h3>Why Discipline Beats Motivation</h3>
-<p>
-Motivation fades. Discipline builds consistency,
-and consistency builds champions.
-</p>
-<a href="#">Read More</a>
-</div>
 
 <div class="blog-card">
-<h3>Building a Powerful Training Routine</h3>
+
+<img src="images/blog2.jpg" alt="Workout Routine">
+
+<h3>The Perfect Weekly Workout Split</h3>
+
 <p>
-A structured training plan is the key to real progress
-in the gym.
+Discover the most effective workout structure to build muscle
+and increase strength faster.
 </p>
+
 <a href="#">Read More</a>
+
 </div>
+
+
+<div class="blog-card">
+
+<img src="images/blog3.jpg" alt="Nutrition">
+
+<h3>Nutrition Tips for Building Lean Muscle</h3>
+
+<p>
+Fuel your body the right way with nutrition strategies used by
+top athletes and trainers.
+</p>
+
+<a href="#">Read More</a>
+
+</div>
+
+
+<div class="blog-card">
+
+<img src="images/blog4.jpg" alt="Fat Loss">
+
+<h3>How to Burn Fat Without Losing Muscle</h3>
+
+<p>
+Learn how to lose body fat while maintaining lean muscle
+and strength performance.
+</p>
+
+<a href="#">Read More</a>
+
+</div>
+
+
+<div class="blog-card">
+
+<img src="images/blog5.jpg" alt="Recovery">
+
+<h3>The Importance of Rest and Recovery</h3>
+
+<p>
+Recovery plays a huge role in muscle growth and performance.
+Learn how to optimize it.
+</p>
+
+<a href="#">Read More</a>
+
+</div>
+
+
+<div class="blog-card">
+
+<img src="images/blog6.jpg" alt="Gym Motivation">
+
+<h3>Staying Motivated When Training Gets Hard</h3>
+
+<p>
+Discipline beats motivation. Learn how to stay consistent
+when workouts feel tough.
+</p>
+
+<a href="#">Read More</a>
 
 </div>
 
 </section>
 
- <!-- ===============================
+
+<!-- ===============================
+NEWSLETTER
+================================ -->
+
+<section class="blog-subscribe">
+
+<h2>Get Weekly Fitness Tips</h2>
+
+<p>
+Join our newsletter for training strategies, workouts,
+and nutrition advice.
+</p>
+
+<div class="subscribe-form">
+
+<input type="email" placeholder="Enter your email">
+
+<button>Subscribe</button>
+
+</div>
+
+</section>
+
+
+<!-- ===============================
 FOOTER
 ================================ -->
 
@@ -125,15 +197,15 @@ FOOTER
 <h3>Iron Pulse Fitness</h3>
 
 <p>
-Elite strength training programs built to develop
-discipline, power, and confidence. Train harder,
-build strength, and unlock your true potential.
+Elite strength training programs built to develop discipline,
+power, and confidence. Train harder, build strength,
+and unlock your true potential.
 </p>
 
 <p class="hours">
 <strong>Opening Hours</strong><br>
-Mon - Fri: 5am – 10pm<br>
-Sat - Sun: 5am – 8pm
+Mon - Fri: 7am – 10pm<br>
+Sat - Sun: 9am – 8pm
 </p>
 
 </div>
@@ -143,9 +215,9 @@ Sat - Sun: 5am – 8pm
 
 <h4>Useful Link</h4>
 
-<div class="footer-links-columns">
+<div class="footer-links-grid">
 
-<div class="footer-links-column">
+<div class="footer-links-left">
 <a href="#">About us</a>
 <a href="#">Membership</a>
 <a href="#">Our Classes</a>
@@ -154,7 +226,7 @@ Sat - Sun: 5am – 8pm
 <a href="#">Blog post</a>
 </div>
 
-<div class="footer-links-column">
+<div class="footer-links-right">
 <a href="#">Schedules</a>
 <a href="#">Payment</a>
 <a href="#">Faqs</a>
@@ -164,56 +236,48 @@ Sat - Sun: 5am – 8pm
 </div>
 
 </div>
-  
+
 
 <div class="footer-contact">
 
-<h4>Contact Info</h4>
+<h4>Contact Us</h4>
 
 <p>
-📍 742 S Hill Street<br>
-Los Angeles, CA 90014
+<i class="fa-solid fa-location-dot"></i>
+123 Fitness Street, New York
 </p>
-
-<p>📞 (213) 555-7711</p>
-
-<p>✉ info@ironpulsefitness.com</p>
-
-</div>
-
-
-<div class="footer-newsletter">
-
-<h4>Newsletter</h4>
 
 <p>
-Subscribe to receive workout tips, gym updates,
-and exclusive training content from Iron Pulse.
+<i class="fa-solid fa-phone"></i>
+(123) 456-7890
 </p>
 
-<div class="newsletter-box">
-<input type="email" placeholder="Email address">
-<button>Join</button>
+<p>
+<i class="fa-solid fa-envelope"></i>
+info@ironpulsefitness.com
+</p>
+
+<div class="footer-social">
+
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-x-twitter"></i>
+<i class="fa-brands fa-youtube"></i>
+
 </div>
 
-<h4>We Accept</h4>
-
-<div class="payment-banner">
-<img src="images/payment-methods.png" alt="Payment methods">
 </div>
-  
-<p class="secure-text">Secure Checkout • SSL Encrypted</p>
-  
+
 </div>
 
 
 <div class="footer-bottom">
-<p>© 2026 Iron Pulse Fitness. All rights reserved.</p>
+
+<p>© 2026 Iron Pulse Fitness. All Rights Reserved.</p>
+
 </div>
 
 </footer>
-
-<script src="cart.js"></script>
 
 </body>
 </html>
