@@ -1463,6 +1463,15 @@ color:#ddd;
 font-weight:600;
 color:white;
 }
+
+.checkout-form select{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+background:#1a1a1a;
+color:white;
+border:none;
+}
 /* ===============================
    CART SHADOW
 ================================ */
