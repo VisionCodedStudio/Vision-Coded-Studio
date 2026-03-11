@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -35,7 +35,7 @@
 </header>
 
 
-<!-- CART SIDEBAR (THIS FIXES YOUR ISSUE) -->
+<!-- CART SIDEBAR -->
 
 <div id="cart-sidebar" class="cart-sidebar">
 
@@ -200,6 +200,10 @@ Continue to Payment
 
 
 
+<!-- ===============================
+FOOTER
+================================ -->
+
 <footer class="main-footer">
 
 <div class="footer-grid">
@@ -209,45 +213,106 @@ Continue to Payment
 <h3>Iron Pulse Fitness</h3>
 
 <p>
-Elite strength training programs built to develop discipline, power, and confidence.
+Elite strength training programs built to develop
+discipline, power, and confidence. Train harder,
+build strength, and unlock your true potential.
 </p>
+
+<p class="hours">
+<strong>Opening Hours</strong><br>
+Mon - Fri: 5am – 10pm<br>
+Sat - Sun: 5am – 8pm
+</p>
+
+</div>
+
+
+<div class="footer-links">
+
+<h4>Useful Link</h4>
+
+<div class="footer-links-columns">
+
+<div class="footer-links-column">
+<a href="#">About us</a>
+<a href="#">Membership</a>
+<a href="#">Our Classes</a>
+<a href="#">Instructors</a>
+<a href="#">Shop</a>
+<a href="#">Blog post</a>
+</div>
+
+<div class="footer-links-column">
+<a href="#">Schedules</a>
+<a href="#">Payment</a>
+<a href="#">Faqs</a>
+<a href="#">Contact</a>
+</div>
+
+</div>
+
+</div>
+  
+
+<div class="footer-contact">
+
+<h4>Contact Info</h4>
+
+<p>
+📍 742 S Hill Street<br>
+Los Angeles, CA 90014
+</p>
+
+<p>📞 (213) 555-7711</p>
+
+<p>✉ info@ironpulsefitness.com</p>
 
 </div>
 
 
 <div class="footer-newsletter">
 
-<h4>We Accept</h4>
+<h4>Newsletter</h4>
 
-<div class="payment-icons">
-<i class="fa-brands fa-cc-visa"></i>
-<i class="fa-brands fa-cc-mastercard"></i>
-<i class="fa-brands fa-cc-amex"></i>
-<i class="fa-brands fa-cc-paypal"></i>
-<i class="fa-brands fa-cc-apple-pay"></i>
+<p>
+Subscribe to receive workout tips, gym updates,
+and exclusive training content from Iron Pulse.
+</p>
+
+<div class="newsletter-box">
+<input type="email" placeholder="Email address">
+<button>Join</button>
 </div>
 
-<p class="secure-text">
-Secure Checkout • SSL Encrypted
-</p>
+<div class="footer-payments">
+
+<h4>We Accept</h4>
+
+<div class="payment-banner">
+<img src="images/payment-methods.png" alt="Payment methods">
+</div>
+
+<p class="secure-text">Secure Checkout • SSL Encrypted</p>
+
+</div>
 
 </div>
 
 </div>
 
 <div class="footer-bottom">
-<p>© 2026 Iron Pulse Fitness</p>
+<p>© 2026 Iron Pulse Fitness. All rights reserved.</p>
 </div>
 
 </footer>
+
+
 
 <script src="cart.js"></script>
 
 <script>
 
 /* IMPORTANT: cart variable already exists in cart.js */
-
-/* CHECKOUT ELEMENTS */
 
 const container = document.getElementById("checkout-items");
 
@@ -257,7 +322,6 @@ let tax = 0;
 let discount = 0;
 
 
-/* RENDER CHECKOUT */
 
 function renderCheckout(){
 
@@ -321,8 +385,6 @@ WI:0.05, WY:0.04
 
 
 
-/* TOTAL CALCULATIONS */
-
 function calculateTotals(){
 
 shipping = subtotal > 300 ? 0 : 12;
@@ -335,26 +397,15 @@ tax = subtotal * taxRate;
 
 const total = subtotal + shipping + tax - discount;
 
-document.getElementById("subtotal").innerText =
-"$" + subtotal.toFixed(2);
-
-document.getElementById("shipping").innerText =
-"$" + shipping.toFixed(2);
-
-document.getElementById("tax").innerText =
-"$" + tax.toFixed(2);
-
-document.getElementById("discount").innerText =
-"-$" + discount.toFixed(2);
-
-document.getElementById("checkout-total").innerText =
-"$" + total.toFixed(2);
+document.getElementById("subtotal").innerText = "$" + subtotal.toFixed(2);
+document.getElementById("shipping").innerText = "$" + shipping.toFixed(2);
+document.getElementById("tax").innerText = "$" + tax.toFixed(2);
+document.getElementById("discount").innerText = "-$" + discount.toFixed(2);
+document.getElementById("checkout-total").innerText = "$" + total.toFixed(2);
 
 }
 
 
-
-/* PROMO */
 
 function applyPromo(){
 
@@ -379,24 +430,18 @@ calculateTotals();
 
 
 
-/* STATE CHANGE LISTENER */
-
 document.getElementById("state-select")
 .addEventListener("change", calculateTotals);
 
 
 
-/* DELIVERY DATE */
-
 const delivery = new Date();
-
 delivery.setDate(delivery.getDate() + 5);
 
 document.getElementById("delivery-date").innerText =
 delivery.toLocaleDateString("en-US",{month:"short",day:"numeric"});
 
 
-/* INIT */
 
 renderCheckout();
 
