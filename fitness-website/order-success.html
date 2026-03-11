@@ -2,35 +2,118 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Order Complete | Iron Pulse Fitness</title>
+<title>Order Confirmed | Iron Pulse Fitness</title>
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<section class="order-success">
+<header>
 
-<h1>Order Successful</h1>
+<h1>Iron Pulse Fitness</h1>
 
-<p>
-Thank you for your purchase. Your Iron Pulse gear
-will be processed and shipped soon.
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="programs.html">Programs</a>
+<a href="trainers.html">Trainers</a>
+<a href="shop.html">Shop</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="cart-icon">
+<i class="fa-solid fa-bag-shopping"></i>
+<span id="cart-count">0</span>
+</div>
+
+</header>
+
+
+<section class="checkout-container">
+
+<h2>Order Confirmed</h2>
+
+<p style="margin-bottom:30px;color:#aaa;">
+Thank you for your purchase. Your order has been successfully placed.
 </p>
 
-<a href="shop.html" class="cta">
-Return to Shop
+<div class="checkout-grid">
+
+<div class="checkout-form">
+
+<h3>Order Details</h3>
+
+<div id="order-items"></div>
+
+</div>
+
+
+<div class="order-summary">
+
+<h3>Order Summary</h3>
+
+<div class="summary-row">
+<span>Subtotal</span>
+<span id="subtotal">$0</span>
+</div>
+
+<div class="summary-row">
+<span>Shipping</span>
+<span id="shipping">$0</span>
+</div>
+
+<div class="summary-row">
+<span>Tax</span>
+<span id="tax">$0</span>
+</div>
+
+<hr>
+
+<div class="summary-row total-row">
+<span>Total</span>
+<span id="final-total">$0</span>
+</div>
+
+<a href="shop.html" class="checkout-btn">
+Continue Shopping
 </a>
+
+</div>
+
+</div>
 
 </section>
 
-</body>
-</html>
+
+
+<footer class="main-footer">
+
+<div class="footer-grid">
+
+<div class="footer-about">
+
+<h3>Iron Pulse Fitness</h3>
+
+<p>
+Elite strength training programs built to develop discipline, power, and confidence.
+Train harder, build strength, and unlock your true potential.
+</p>
+
+<p class="hours">
+<strong>Opening Hours</strong><br>
+Mon - Fri: 5am – 10pm<br>
+Sat - Sun: 5am – 8pm
+</p>
+
+</div>
+
 
 <div class="footer-links">
 
@@ -57,7 +140,7 @@ Return to Shop
 </div>
 
 </div>
-  
+
 
 <div class="footer-contact">
 
@@ -88,6 +171,8 @@ and exclusive training content from Iron Pulse.
 <input type="email" placeholder="Email address">
 <button>Join</button>
 </div>
+
+
 <div class="footer-payments">
 
 <h4>We Accept</h4>
@@ -95,9 +180,13 @@ and exclusive training content from Iron Pulse.
 <div class="payment-banner">
 <img src="images/payment-methods.png" alt="Payment methods">
 </div>
-  
+
 <p class="secure-text">Secure Checkout • SSL Encrypted</p>
-  
+
+</div>
+
+</div>
+
 </div>
 
 
@@ -107,7 +196,70 @@ and exclusive training content from Iron Pulse.
 
 </footer>
 
+
+
 <script src="cart.js"></script>
+
+<script>
+
+/* LOAD ORDER */
+
+const orderCart = JSON.parse(localStorage.getItem("cart")) || [];
+
+const itemsContainer = document.getElementById("order-items");
+
+let subtotal = 0;
+
+orderCart.forEach(item => {
+
+const itemDiv = document.createElement("div");
+
+itemDiv.classList.add("checkout-item");
+
+itemDiv.innerHTML = `
+<div class="checkout-product">
+<img src="${item.image}">
+<span class="checkout-name">${item.name} x${item.quantity}</span>
+</div>
+
+<span class="checkout-price">
+$${(item.price * item.quantity).toFixed(2)}
+</span>
+`;
+
+itemsContainer.appendChild(itemDiv);
+
+subtotal += item.price * item.quantity;
+
+});
+
+
+/* SHIPPING */
+
+let shipping = subtotal > 300 ? 0 : 12;
+
+/* TAX */
+
+let tax = subtotal * 0.08;
+
+/* TOTAL */
+
+let total = subtotal + shipping + tax;
+
+
+/* DISPLAY VALUES */
+
+document.getElementById("subtotal").innerText = "$" + subtotal.toFixed(2);
+document.getElementById("shipping").innerText = "$" + shipping.toFixed(2);
+document.getElementById("tax").innerText = "$" + tax.toFixed(2);
+document.getElementById("final-total").innerText = "$" + total.toFixed(2);
+
+
+/* CLEAR CART */
+
+localStorage.removeItem("cart");
+
+</script>
 
 </body>
 </html>
