@@ -1066,6 +1066,37 @@ margin-top:20px;
 }
 
 /* ===============================
+   CART SIDEBAR LAYOUT FIX
+================================ */
+
+#cart-sidebar{
+display:flex;
+flex-direction:column;
+height:100vh;
+}
+
+/* header stays fixed */
+
+.cart-header{
+flex-shrink:0;
+}
+
+/* items scroll */
+
+#cart-items{
+flex:1;
+overflow-y:auto;
+padding-right:6px;
+}
+
+/* footer stays visible */
+
+.cart-footer{
+flex-shrink:0;
+background:#111;
+padding-top:15px;
+}
+/* ===============================
    CART ITEM ROW
 ================================ */
 
