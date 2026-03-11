@@ -846,10 +846,9 @@ text-align:center;
 }
 
 .signature-line{
-font-family:'Allura', cursive;
-font-size:44px;
+font-family:'Alex Brush', cursive;
+font-size:48px;
 color:#FF5B00;
-margin-top:10px;
 margin-bottom:5px;
 }
 
@@ -858,5 +857,6 @@ font-size:13px;
 color:#666;
 letter-spacing:1px;
 }
+
 
 
