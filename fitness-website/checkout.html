@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout | Iron Pulse Fitness</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Iron Pulse Fitness</h1>
+
+</header>
+
+<section class="checkout-container">
+
+<h2>Checkout</h2>
+
+<div class="checkout-grid">
+
+<div class="checkout-form">
+
+<h3>Shipping Information</h3>
+
+<form action="payment.html">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="text" placeholder="Address" required>
+
+<input type="text" placeholder="City" required>
+
+<input type="text" placeholder="State" required>
+
+<input type="text" placeholder="ZIP Code" required>
+
+<button type="submit" class="checkout-btn">
+Continue to Payment
+</button>
+
+</form>
+
+</div>
+
+<div class="order-summary">
+
+<h3>Order Summary</h3>
+
+<div id="checkout-items"></div>
+
+<p class="checkout-total">
+Total: <span id="checkout-total">$0</span>
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="cart.js"></script>
+
+</body>
+</html>
