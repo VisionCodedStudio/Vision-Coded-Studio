@@ -127,9 +127,14 @@ Apply
 <span id="checkout-total">$0</span>
 </div>
 
+<div class="summary-row">
+<span>Estimated Delivery</span>
+<span id="delivery-date"></span>
 </div>
 
-</div>
+</div>   <!-- close order-summary -->
+
+</div>   <!-- close checkout-grid -->
 
 </section>
 
@@ -391,12 +396,25 @@ calculateTotals();
 }
 
 
-
 /* INIT */
 
 renderCheckout();
 
-</script>
+const delivery = new Date();
 
+delivery.setDate(delivery.getDate() + 5);
+
+const deliveryDisplay = document.getElementById("delivery-date");
+
+if(deliveryDisplay){
+
+deliveryDisplay.innerText =
+delivery.toLocaleDateString("en-US", {
+month:"short",
+day:"numeric"
+});
+
+}
+  
 </body>
 </html>
