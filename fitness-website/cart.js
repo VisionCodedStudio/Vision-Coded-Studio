@@ -221,12 +221,16 @@ const closeCart = document.getElementById("close-cart");
 
 if(cartIcon){
 
+const overlay = document.getElementById("cart-overlay");
+
 cartIcon.addEventListener("click", ()=>{
-
-if(cartSidebar){
 cartSidebar.classList.add("open");
-}
+overlay.classList.add("active");
+});
 
+closeCart.addEventListener("click", ()=>{
+cartSidebar.classList.remove("open");
+overlay.classList.remove("active");
 });
 
 }
