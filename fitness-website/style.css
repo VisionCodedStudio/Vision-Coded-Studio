@@ -382,8 +382,8 @@ margin-top:4px;
 }
 
 /* ===============================
-   SHOP
-   =============================== */
+SHOP
+=============================== */
 
 .shop{
 padding:80px 120px;
@@ -396,39 +396,31 @@ gap:40px;
 margin-top:40px;
 }
 
-.program-card{
+.product-card{
 background:#181818;
-border-radius:10px;
-border:1px solid #222;
+border-radius:8px;
+padding:20px;
 text-align:center;
-overflow:hidden;
 transition:0.25s;
 }
 
-.product-card p{
-color:#aaa;
-margin-bottom:15px;
+.product-card:hover{
+transform:translateY(-6px);
 }
 
-.program-card img{
+.product-card img{
 width:100%;
-height:260px;
-object-fit:cover;
-border-radius:8px;
+height:180px;
+object-fit:contain;
 margin-bottom:15px;
 }
 
-.program-card:hover{
-transform:translateY(-8px);
-background:#1e1e1e;
+.product-card h3{
+font-size:16px;
+margin-bottom:5px;
 }
 
-.program-card h3{
-font-size:20px;
-margin-bottom:8px;
-}
-
-.program-duration{
+.product-card p{
 color:#aaa;
 font-size:14px;
 }
