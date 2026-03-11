@@ -36,6 +36,7 @@ HEADER
 
 <div class="cart-icon">
 <i class="fa-solid fa-bag-shopping"></i>
+<span id="cart-count">0</span>
 </div>
 
 </header>
@@ -50,8 +51,10 @@ SHOP HEADER
 <h2>Shop</h2>
 
 <h2 class="shop-title">Iron Pulse Products</h2>
-<p class="shop-sub">Premium equipment and essentials built for serious training.</p>
 
+<p class="shop-sub">
+Premium equipment and essentials built for serious training.
+</p>
 
 </section>
 
@@ -60,33 +63,88 @@ SHOP HEADER
 SHOP PRODUCTS
 ================================ -->
 
-<div class="shop-grid">
+<section class="shop-grid">
+
+
+<!-- PRODUCT -->
 
 <div class="product-card">
+
 <img src="images/dumbbell-set.png" alt="Dumbbell Set">
+
 <h3>Dumbbell Set</h3>
+
+<p class="product-desc">
+Heavy-duty adjustable dumbbell set designed for strength training,
+progressive overload, and full body workouts.
+</p>
+
 <p class="price">$269</p>
+
+<button class="add-cart">Add to Cart</button>
+
 </div>
 
-<div class="product-card">
-<img src="images/slam-ball.png" alt="Slam Ball Set">
-<h3>Slam Ball</h3>
-<p class="price">$189</p>
-</div>
+
+<!-- PRODUCT -->
 
 <div class="product-card">
+
+<img src="images/slam-ball.png" alt="Slam Ball">
+
+<h3>20 LBS Slam Ball</h3>
+
+<p class="product-desc">
+Durable rubber slam ball built for explosive power training,
+HIIT workouts, core strength, and conditioning drills.
+</p>
+
+<p class="price">$49</p>
+
+<button class="add-cart">Add to Cart</button>
+
+</div>
+
+
+<!-- PRODUCT -->
+
+<div class="product-card">
+
 <img src="images/gym-bag.png" alt="Gym Bag">
-<h3>Gym Bag</h3>
+
+<h3>Gym Training Bag</h3>
+
+<p class="product-desc">
+Spacious performance gym bag built to carry all your
+training gear, shoes, and workout essentials.
+</p>
+
 <p class="price">$89</p>
+
+<button class="add-cart">Add to Cart</button>
+
 </div>
+
+
+<!-- PRODUCT -->
 
 <div class="product-card">
+
 <img src="images/jump-rope.png" alt="Jump Rope">
-<h3>Jump Rope</h3>
+
+<h3>Speed Jump Rope</h3>
+
+<p class="product-desc">
+High-speed adjustable jump rope designed for conditioning,
+cardio endurance, and boxing style training.
+</p>
+
 <p class="price">$45</p>
-</div>
+
+<button class="add-cart">Add to Cart</button>
 
 </div>
+
 
 </section>
 
@@ -117,6 +175,7 @@ Sat - Sun: 5am – 8pm
 
 </div>
 
+
 <div class="footer-links">
 
 <h4>Useful Link</h4>
@@ -143,6 +202,7 @@ Sat - Sun: 5am – 8pm
 
 </div>
 
+
 <div class="footer-contact">
 
 <h4>Contact Info</h4>
@@ -157,6 +217,7 @@ Los Angeles, CA 90014
 <p>✉ info@ironpulsefitness.com</p>
 
 </div>
+
 
 <div class="footer-newsletter">
 
@@ -181,6 +242,32 @@ and exclusive training content from Iron Pulse.
 </div>
 
 </footer>
+
+
+
+<!-- ===============================
+CART SCRIPT
+================================ -->
+
+<script>
+
+let cartCount = 0;
+
+document.querySelectorAll(".add-cart").forEach(button => {
+
+button.addEventListener("click", () => {
+
+cartCount++;
+
+document.getElementById("cart-count").innerText = cartCount;
+
+alert("Item added to cart");
+
+});
+
+});
+
+</script>
 
 </body>
 </html>
