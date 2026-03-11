@@ -603,21 +603,19 @@ PAYMENT ICONS
 =============================== */
 
 .payment-icons{
-
 display:flex;
-
 gap:12px;
-
 font-size:28px;
-
 margin-top:10px;
-
 color:#aaa;
+}
 
+.payment-icons i{
+transition:0.25s;
 }
 
 .payment-icons i:hover{
-color:white;
+transform:scale(1.15);
 }
 
 /* ===============================
