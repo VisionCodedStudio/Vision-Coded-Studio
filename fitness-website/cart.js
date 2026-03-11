@@ -47,7 +47,7 @@ productCard.querySelector(".price").innerText.replace("$","")
 const image = productCard.querySelector("img").src;
 
 
-/* CHECK IF PRODUCT ALREADY EXISTS */
+/* CHECK IF PRODUCT EXISTS */
 
 let existingProduct = cart.find(item => item.name === name);
 
@@ -78,7 +78,7 @@ alert(name + " added to cart");
 
 
 /* ===============================
-   LOAD CART PAGE
+   LOAD CART ITEMS
 ================================ */
 
 function loadCart(){
@@ -99,15 +99,21 @@ let row = document.createElement("tr");
 row.innerHTML = `
 
 <td class="cart-product">
-
 <img src="${item.image}" width="60">
 <span>${item.name}</span>
-
 </td>
 
 <td>$${item.price}</td>
 
-<td>${item.quantity}</td>
+<td class="cart-qty">
+
+<button class="qty-btn" onclick="decreaseQty(${index})">-</button>
+
+<span>${item.quantity}</span>
+
+<button class="qty-btn" onclick="increaseQty(${index})">+</button>
+
+</td>
 
 <td>$${(item.price * item.quantity).toFixed(2)}</td>
 
@@ -131,6 +137,46 @@ subtotal.innerText = "$" + total.toFixed(2);
 
 
 /* ===============================
+   INCREASE QUANTITY
+================================ */
+
+function increaseQty(index){
+
+cart[index].quantity++;
+
+localStorage.setItem("cart",JSON.stringify(cart));
+
+loadCart();
+updateCartCount();
+
+}
+
+
+/* ===============================
+   DECREASE QUANTITY
+================================ */
+
+function decreaseQty(index){
+
+if(cart[index].quantity > 1){
+
+cart[index].quantity--;
+
+}else{
+
+cart.splice(index,1);
+
+}
+
+localStorage.setItem("cart",JSON.stringify(cart));
+
+loadCart();
+updateCartCount();
+
+}
+
+
+/* ===============================
    REMOVE ITEM
 ================================ */
 
@@ -147,7 +193,38 @@ updateCartCount();
 
 
 /* ===============================
-   INITIALIZE
+   CART SIDEBAR CONTROLS
+================================ */
+
+const cartIcon = document.querySelector(".cart-icon");
+const cartSidebar = document.getElementById("cart-sidebar");
+const closeCart = document.getElementById("close-cart");
+
+if(cartIcon){
+
+cartIcon.addEventListener("click", ()=>{
+
+if(cartSidebar){
+cartSidebar.classList.add("open");
+}
+
+});
+
+}
+
+if(closeCart){
+
+closeCart.addEventListener("click", ()=>{
+
+cartSidebar.classList.remove("open");
+
+});
+
+}
+
+
+/* ===============================
+   INITIALIZE CART
 ================================ */
 
 updateCartCount();
