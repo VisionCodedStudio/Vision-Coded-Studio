@@ -34,6 +34,19 @@ border-bottom:1px solid #1c1c1c;
 position:relative;
 }
 
+/* LOGO */
+
+.logo{
+position:absolute;
+left:80px;
+}
+
+.logo img{
+height:55px;
+width:auto;
+display:block;
+}
+
 header h1{
 position:absolute;
 left:80px;
