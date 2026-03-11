@@ -449,51 +449,157 @@ font-size:14px;
 }
 
 /* ===============================
-   BLOG
-   =============================== */
+BLOG HERO
+=============================== */
 
-.blog{
-padding:80px 120px;
+.blog-hero{
+text-align:center;
+padding:100px 20px 60px 20px;
+background:#0e0e0e;
+border-bottom:1px solid #1c1c1c;
 }
 
-.blog-grid{
+.blog-hero h1{
+font-size:42px;
+margin-bottom:15px;
+letter-spacing:1px;
+}
+
+.blog-hero p{
+color:#bbb;
+font-size:18px;
+max-width:700px;
+margin:auto;
+}
+
+
+/* ===============================
+BLOG GRID
+=============================== */
+
+.blog-container{
 display:grid;
-grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
 gap:40px;
-margin-top:40px;
+padding:80px;
+max-width:1200px;
+margin:auto;
 }
+
+
+/* ===============================
+BLOG CARD
+=============================== */
 
 .blog-card{
-background:#181818;
-padding:30px;
-border-radius:10px;
+background:#1a1a1a;
+border-radius:8px;
+overflow:hidden;
+transition:0.3s;
 border:1px solid #222;
-transition:0.25s;
 }
 
 .blog-card:hover{
-transform:translateY(-6px);
-background:#1e1e1e;
+transform:translateY(-8px);
+border-color:#ff4d4d;
 }
+
+
+/* BLOG IMAGE */
+
+.blog-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+
+/* BLOG TITLE */
 
 .blog-card h3{
-margin-bottom:10px;
-font-size:22px;
+padding:20px;
+font-size:20px;
+line-height:1.4;
 }
+
+
+/* BLOG TEXT */
 
 .blog-card p{
+padding:0 20px 20px 20px;
 color:#aaa;
-margin-bottom:15px;
+font-size:15px;
 }
 
+
+/* BLOG LINK */
+
 .blog-card a{
-color:#1e90ff;
+display:block;
+padding:20px;
+font-weight:bold;
+color:#ff4d4d;
 text-decoration:none;
-font-weight:500;
+transition:0.2s;
 }
 
 .blog-card a:hover{
-text-decoration:underline;
+color:white;
+}
+
+
+/* ===============================
+NEWSLETTER SECTION
+=============================== */
+
+.blog-subscribe{
+text-align:center;
+padding:100px 20px;
+background:#0e0e0e;
+border-top:1px solid #1c1c1c;
+}
+
+.blog-subscribe h2{
+font-size:32px;
+margin-bottom:15px;
+}
+
+.blog-subscribe p{
+color:#bbb;
+margin-bottom:30px;
+}
+
+
+/* SUBSCRIBE FORM */
+
+.subscribe-form{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.subscribe-form input{
+padding:12px 15px;
+border:none;
+border-radius:4px;
+width:260px;
+outline:none;
+}
+
+.subscribe-form button{
+padding:12px 22px;
+background:#ff4d4d;
+border:none;
+color:white;
+font-weight:bold;
+border-radius:4px;
+cursor:pointer;
+transition:0.25s;
+}
+
+.subscribe-form button:hover{
+background:#ff2a2a;
 }
 
 
