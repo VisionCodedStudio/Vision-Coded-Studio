@@ -641,6 +641,37 @@ color:#003087;
 .fa-cc-apple-pay{
 color:white;
 }
+
+/* ===============================
+   PAYMENT LOGOS
+   =============================== */
+
+.payment-logos{
+
+display:flex;
+gap:14px;
+margin-top:10px;
+align-items:center;
+
+}
+
+.payment-logos img{
+
+height:28px;
+width:auto;
+
+opacity:0.9;
+
+transition:0.2s;
+
+}
+
+.payment-logos img:hover{
+
+opacity:1;
+transform:scale(1.05);
+
+}
 /* ===============================
    CONTACT CENTERED
    =============================== */
