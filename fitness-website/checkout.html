@@ -9,7 +9,6 @@
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 
 <body>
@@ -36,14 +35,12 @@
 </header>
 
 
-
 <section class="checkout-container">
 
 <h2>Checkout</h2>
 
 <div class="checkout-grid">
 
-<!-- SHIPPING FORM -->
 
 <div class="checkout-form">
 
@@ -55,7 +52,8 @@
 <input type="email" placeholder="Email Address" required>
 <input type="text" placeholder="Address" required>
 <input type="text" placeholder="City" required>
-<select required>
+
+<select id="state-select" required>
 
 <option value="">Select State</option>
 
@@ -109,7 +107,10 @@
 <option value="WV">West Virginia</option>
 <option value="WI">Wisconsin</option>
 <option value="WY">Wyoming</option>
-</select><input type="text" placeholder="ZIP Code" required>
+
+</select>
+
+<input type="text" placeholder="ZIP Code" required>
 
 <button type="submit" class="checkout-btn">
 Continue to Payment
@@ -122,9 +123,6 @@ Continue to Payment
 </div>
 
 
-
-<!-- ORDER SUMMARY -->
-
 <div class="order-summary">
 
 <h3>Order Summary</h3>
@@ -133,8 +131,6 @@ Continue to Payment
 
 <hr>
 
-
-<!-- PROMO CODE -->
 
 <div class="promo-section">
 
@@ -150,8 +146,6 @@ Apply
 
 <hr>
 
-
-<!-- TOTALS -->
 
 <div class="summary-row">
 <span>Subtotal</span>
@@ -185,15 +179,13 @@ Apply
 <span id="delivery-date"></span>
 </div>
 
-</div>   <!-- close order-summary -->
+</div>
 
-</div>   <!-- close checkout-grid -->
+</div>
 
 </section>
 
 
-
-<!-- FOOTER -->
 
 <footer class="main-footer">
 
@@ -208,77 +200,28 @@ Elite strength training programs built to develop
 discipline, power, and confidence.
 </p>
 
-<p class="hours">
-<strong>Opening Hours</strong><br>
-Mon - Fri: 5am – 10pm<br>
-Sat - Sun: 5am – 8pm
-</p>
-
-</div>
-
-
-<div class="footer-links">
-
-<h4>Useful Link</h4>
-
-<div class="footer-links-columns">
-
-<div class="footer-links-column">
-<a href="#">About us</a>
-<a href="#">Membership</a>
-<a href="#">Classes</a>
-<a href="#">Trainers</a>
-</div>
-
-<div class="footer-links-column">
-<a href="#">Schedules</a>
-<a href="#">Payment</a>
-<a href="#">Faqs</a>
-<a href="#">Contact</a>
-</div>
-
-</div>
-
-</div>
-
-
-<div class="footer-contact">
-
-<h4>Contact</h4>
-
-<p>
-📍 742 S Hill Street<br>
-Los Angeles, CA
-</p>
-
-<p>📞 (213) 555-7711</p>
-
-<p>✉ info@ironpulsefitness.com</p>
-
 </div>
 
 
 <div class="footer-newsletter">
 
-<h4>Newsletter</h4>
-
-<div class="newsletter-box">
-<input type="email" placeholder="Email address">
-<button>Join</button>
-</div>
-
-<div class="footer-payments">
-
 <h4>We Accept</h4>
 
-<div class="payment-banner">
-<img src="images/payment-methods.png" alt="Payment methods">
-</div>
-  
-<p class="secure-text">Secure Checkout • SSL Encrypted</p>
-  
+<div class="payment-icons">
+<i class="fa-brands fa-cc-visa"></i>
+<i class="fa-brands fa-cc-mastercard"></i>
+<i class="fa-brands fa-cc-amex"></i>
+<i class="fa-brands fa-cc-paypal"></i>
+<i class="fa-brands fa-cc-apple-pay"></i>
 </div>
 
+<p class="secure-text">
+Secure Checkout • SSL Encrypted
+</p>
+
+</div>
+
+</div>
 
 <div class="footer-bottom">
 <p>© 2026 Iron Pulse Fitness</p>
@@ -292,7 +235,7 @@ Los Angeles, CA
 
 <script>
 
-/* LOAD CART */
+/* CART DATA */
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -317,24 +260,22 @@ const row = document.createElement("div");
 row.classList.add("checkout-item");
 
 row.innerHTML = `
+
 <div class="checkout-product">
 <img src="${item.image}">
-<span class="checkout-name">${item.name}</span>
+<span>${item.name}</span>
 </div>
 
 <div class="cart-controls">
-<button class="qty-btn" onclick="changeQty(${index},-1)">-</button>
+<button onclick="changeQty(${index},-1)">-</button>
 <span>${item.quantity}</span>
-<button class="qty-btn" onclick="changeQty(${index},1)">+</button>
+<button onclick="changeQty(${index},1)">+</button>
 </div>
 
-<span class="checkout-price">
-$${(item.price * item.quantity).toFixed(2)}
-</span>
+<span>$${(item.price * item.quantity).toFixed(2)}</span>
 
-<button class="remove-btn" onclick="removeItem(${index})">
-Remove
-</button>
+<button onclick="removeItem(${index})">Remove</button>
+
 `;
 
 container.appendChild(row);
@@ -351,7 +292,7 @@ localStorage.setItem("cart",JSON.stringify(cart));
 
 
 
-/* CHANGE QUANTITY */
+/* QUANTITY */
 
 function changeQty(index,amount){
 
@@ -367,7 +308,7 @@ renderCheckout();
 
 
 
-/* REMOVE ITEM */
+/* REMOVE */
 
 function removeItem(index){
 
@@ -379,13 +320,36 @@ renderCheckout();
 
 
 
+/* STATE TAX TABLE */
+
+const stateTaxRates = {
+
+CA:0.0725,
+GA:0.04,
+TX:0.0625,
+FL:0.06,
+NY:0.04,
+WA:0.065,
+IL:0.0625,
+PA:0.06,
+NC:0.0475,
+VA:0.053
+
+};
+
+
+
 /* TOTAL CALCULATIONS */
 
 function calculateTotals(){
 
 shipping = subtotal > 300 ? 0 : 12;
 
-tax = subtotal * 0.08;
+const state = document.getElementById("state-select").value;
+
+let taxRate = stateTaxRates[state] || 0;
+
+tax = subtotal * taxRate;
 
 const total = subtotal + shipping + tax - discount;
 
@@ -408,7 +372,7 @@ document.getElementById("checkout-total").innerText =
 
 
 
-/* PROMO CODE */
+/* PROMO */
 
 function applyPromo(){
 
@@ -440,25 +404,36 @@ calculateTotals();
 }
 
 
-/* INIT */
 
-renderCheckout();
+/* STATE CHANGE EVENT */
+
+const stateSelect = document.getElementById("state-select");
+
+if(stateSelect){
+stateSelect.addEventListener("change", calculateTotals);
+}
+
+
+
+/* DELIVERY DATE */
 
 const delivery = new Date();
 
 delivery.setDate(delivery.getDate() + 5);
 
-const deliveryDisplay = document.getElementById("delivery-date");
-
-if(deliveryDisplay){
-
-deliveryDisplay.innerText =
-delivery.toLocaleDateString("en-US", {
+document.getElementById("delivery-date").innerText =
+delivery.toLocaleDateString("en-US",{
 month:"short",
 day:"numeric"
 });
 
-}
-  
+
+
+/* INIT */
+
+renderCheckout();
+
+</script>
+
 </body>
 </html>
