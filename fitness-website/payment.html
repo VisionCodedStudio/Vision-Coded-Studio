@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -80,9 +79,41 @@ Complete Order
 
 <div id="payment-items"></div>
 
-<p class="checkout-total">
-Total: <span id="payment-total">$0</span>
-</p>
+<hr>
+
+<div class="promo-box">
+<input id="promo-input" type="text" placeholder="Promo code">
+<button onclick="applyPromo()">Apply</button>
+</div>
+
+<p id="promo-message"></p>
+
+<div class="summary-row">
+<span>Subtotal</span>
+<span id="subtotal">$0</span>
+</div>
+
+<div class="summary-row">
+<span>Shipping</span>
+<span id="shipping">$0</span>
+</div>
+
+<div class="summary-row">
+<span>Tax</span>
+<span id="tax">$0</span>
+</div>
+
+<div class="summary-row discount-row">
+<span>Discount</span>
+<span id="discount">-$0</span>
+</div>
+
+<hr>
+
+<div class="summary-row total-row">
+<span>Total</span>
+<span id="payment-total">$0</span>
+</div>
 
 </div>
 
@@ -97,9 +128,7 @@ Total: <span id="payment-total">$0</span>
 <div class="footer-grid">
 
 <div class="footer-about">
-
 <h3>Iron Pulse Fitness</h3>
-
 <p>
 Elite strength training programs built to develop
 discipline, power, and confidence. Train harder,
@@ -111,14 +140,10 @@ build strength, and unlock your true potential.
 Mon - Fri: 5am – 10pm<br>
 Sat - Sun: 5am – 8pm
 </p>
-
 </div>
 
-
 <div class="footer-links">
-
 <h4>Useful Link</h4>
-
 <div class="footer-links-columns">
 
 <div class="footer-links-column">
@@ -138,12 +163,9 @@ Sat - Sun: 5am – 8pm
 </div>
 
 </div>
-
 </div>
 
-
 <div class="footer-contact">
-
 <h4>Contact Info</h4>
 
 <p>
@@ -154,12 +176,9 @@ Los Angeles, CA 90014
 <p>📞 (213) 555-7711</p>
 
 <p>✉ info@ironpulsefitness.com</p>
-
 </div>
 
-
 <div class="footer-newsletter">
-
 <h4>Newsletter</h4>
 
 <p>
@@ -173,7 +192,6 @@ and exclusive training content from Iron Pulse.
 </div>
 
 <div class="footer-payments">
-
 <h4>We Accept</h4>
 
 <div class="payment-banner">
@@ -183,11 +201,9 @@ and exclusive training content from Iron Pulse.
 <p class="secure-text">Secure Checkout • SSL Encrypted</p>
 
 </div>
-
 </div>
 
 </div>
-
 
 <div class="footer-bottom">
 <p>© 2026 Iron Pulse Fitness. All rights reserved.</p>
@@ -195,19 +211,23 @@ and exclusive training content from Iron Pulse.
 
 </footer>
 
-<script src="cart.js"></script>
 
+<script src="cart.js"></script>
 
 <script>
 
-/* LOAD CART WITHOUT CONFLICTING WITH cart.js */
+/* ===============================
+LOAD CART
+=============================== */
 
 const paymentCart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const itemsContainer = document.getElementById("payment-items");
-const totalDisplay = document.getElementById("payment-total");
 
-let total = 0;
+let subtotal = 0;
+let shipping = 0;
+let tax = 0;
+let discount = 0;
 
 paymentCart.forEach(item => {
 
@@ -220,20 +240,71 @@ itemDiv.innerHTML = `
 <img src="${item.image}">
 <span class="checkout-name">${item.name} x${item.quantity}</span>
 </div>
-
-<span class="checkout-price">
-$${(item.price * item.quantity).toFixed(2)}
-</span>
+<span class="checkout-price">$${(item.price * item.quantity).toFixed(2)}</span>
 `;
 
 itemsContainer.appendChild(itemDiv);
 
-total += item.price * item.quantity;
+subtotal += item.price * item.quantity;
 
 });
 
-totalDisplay.innerText = "$" + total.toFixed(2);
 
+/* SHIPPING */
+
+if(subtotal > 300){
+shipping = 0;
+}else{
+shipping = 12;
+}
+
+
+/* TAX */
+
+tax = subtotal * 0.08;
+
+
+/* UPDATE TOTALS */
+
+function updateTotals(){
+
+const total = subtotal + shipping + tax - discount;
+
+document.getElementById("subtotal").innerText = "$" + subtotal.toFixed(2);
+document.getElementById("shipping").innerText = "$" + shipping.toFixed(2);
+document.getElementById("tax").innerText = "$" + tax.toFixed(2);
+document.getElementById("discount").innerText = "-$" + discount.toFixed(2);
+document.getElementById("payment-total").innerText = "$" + total.toFixed(2);
+
+}
+
+updateTotals();
+
+
+/* PROMO CODES */
+
+function applyPromo(){
+
+const code = document.getElementById("promo-input").value;
+const message = document.getElementById("promo-message");
+
+if(code === "IRON10"){
+discount = subtotal * 0.10;
+message.innerText = "10% discount applied";
+}
+
+else if(code === "FREESHIP"){
+shipping = 0;
+message.innerText = "Free shipping applied";
+}
+
+else{
+message.innerText = "Invalid promo code";
+}
+
+updateTotals();
+
+}
 
 
 /* CARD INPUT FORMAT */
@@ -246,7 +317,6 @@ cardNumber.addEventListener("input", function(e){
 
 let value = e.target.value.replace(/\D/g,"").substring(0,16);
 let formatted = value.match(/.{1,4}/g);
-
 e.target.value = formatted ? formatted.join(" ") : "";
 
 });
@@ -282,15 +352,11 @@ for(let i = number.length - 1; i >= 0; i--){
 let digit = parseInt(number.charAt(i));
 
 if(shouldDouble){
-
 digit *= 2;
-
 if(digit > 9) digit -= 9;
-
 }
 
 sum += digit;
-
 shouldDouble = !shouldDouble;
 
 }
@@ -304,11 +370,8 @@ document.getElementById("payment-form").addEventListener("submit", function(e){
 const cardVal = cardNumber.value;
 
 if(!validCard(cardVal)){
-
 alert("Invalid credit card number");
-
 e.preventDefault();
-
 }
 
 });
