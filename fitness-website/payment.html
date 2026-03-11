@@ -9,6 +9,7 @@
 <title>Payment | Iron Pulse Fitness</title>
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
@@ -90,9 +91,6 @@ Total: <span id="payment-total">$0</span>
 </section>
 
 
-<!-- ===============================
-FOOTER
-================================ -->
 
 <footer class="main-footer">
 
@@ -199,31 +197,33 @@ and exclusive training content from Iron Pulse.
 
 <script src="cart.js"></script>
 
+
 <script>
 
-/* ===============================
-LOAD CART FROM LOCAL STORAGE
-=============================== */
+/* LOAD CART WITHOUT CONFLICTING WITH cart.js */
 
-const cart = JSON.parse(localStorage.getItem("cart")) || [];
+const paymentCart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const itemsContainer = document.getElementById("payment-items");
 const totalDisplay = document.getElementById("payment-total");
 
 let total = 0;
 
-cart.forEach(item => {
+paymentCart.forEach(item => {
 
 const itemDiv = document.createElement("div");
 
-itemDiv.classList.add("cart-item");
+itemDiv.classList.add("checkout-item");
 
 itemDiv.innerHTML = `
-<div class="cart-product">
-<img src="${item.image}" width="50">
-<span>${item.name} x${item.quantity}</span>
+<div class="checkout-product">
+<img src="${item.image}">
+<span class="checkout-name">${item.name} x${item.quantity}</span>
 </div>
-<span>$${(item.price * item.quantity).toFixed(2)}</span>
+
+<span class="checkout-price">
+$${(item.price * item.quantity).toFixed(2)}
+</span>
 `;
 
 itemsContainer.appendChild(itemDiv);
@@ -235,6 +235,8 @@ total += item.price * item.quantity;
 totalDisplay.innerText = "$" + total.toFixed(2);
 
 
+
+/* CARD INPUT FORMAT */
 
 const cardNumber = document.getElementById("card-number");
 const expInput = document.getElementById("card-exp");
@@ -249,7 +251,6 @@ e.target.value = formatted ? formatted.join(" ") : "";
 
 });
 
-
 expInput.addEventListener("input", function(e){
 
 let value = e.target.value.replace(/\D/g,"").substring(0,4);
@@ -262,11 +263,12 @@ e.target.value = value;
 
 });
 
-
 cvvInput.addEventListener("input", function(e){
 e.target.value = e.target.value.replace(/\D/g,"");
 });
 
+
+/* CARD VALIDATION */
 
 function validCard(number){
 
