@@ -35,12 +35,12 @@
 </header>
 
 
+
 <section class="checkout-container">
 
 <h2>Checkout</h2>
 
 <div class="checkout-grid">
-
 
 <div class="checkout-form">
 
@@ -123,6 +123,7 @@ Continue to Payment
 </div>
 
 
+
 <div class="order-summary">
 
 <h3>Order Summary</h3>
@@ -130,7 +131,6 @@ Continue to Payment
 <div id="checkout-items"></div>
 
 <hr>
-
 
 <div class="promo-section">
 
@@ -145,7 +145,6 @@ Apply
 <p id="promo-message"></p>
 
 <hr>
-
 
 <div class="summary-row">
 <span>Subtotal</span>
@@ -196,8 +195,7 @@ Apply
 <h3>Iron Pulse Fitness</h3>
 
 <p>
-Elite strength training programs built to develop
-discipline, power, and confidence.
+Elite strength training programs built to develop discipline, power, and confidence.
 </p>
 
 </div>
@@ -235,9 +233,9 @@ Secure Checkout • SSL Encrypted
 
 <script>
 
-/* CART DATA */
+/* IMPORTANT: cart variable already exists in cart.js */
 
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
+/* CHECKOUT ELEMENTS */
 
 const container = document.getElementById("checkout-items");
 
@@ -262,22 +260,20 @@ const row = document.createElement("div");
 row.classList.add("checkout-item");
 
 row.innerHTML = `
-
 <div class="checkout-product">
 <img src="${item.image}">
 <span>${item.name}</span>
 </div>
 
 <div class="cart-controls">
-<button onclick="changeQty(${index},-1)">-</button>
+<button onclick="decreaseQty(${index})">-</button>
 <span>${item.quantity}</span>
-<button onclick="changeQty(${index},1)">+</button>
+<button onclick="increaseQty(${index})">+</button>
 </div>
 
 <span>$${(item.price * item.quantity).toFixed(2)}</span>
 
 <button onclick="removeItem(${index})">Remove</button>
-
 `;
 
 container.appendChild(row);
@@ -288,36 +284,6 @@ subtotal += item.price * item.quantity;
 
 calculateTotals();
 
-localStorage.setItem("cart",JSON.stringify(cart));
-
-}
-
-
-
-/* QUANTITY */
-
-function changeQty(index,amount){
-
-cart[index].quantity += amount;
-
-if(cart[index].quantity <= 0){
-cart.splice(index,1);
-}
-
-renderCheckout();
-
-}
-
-
-
-/* REMOVE ITEM */
-
-function removeItem(index){
-
-cart.splice(index,1);
-
-renderCheckout();
-
 }
 
 
@@ -326,56 +292,19 @@ renderCheckout();
 
 const stateTaxRates = {
 
-AL:0.04,
-AK:0,
-AZ:0.056,
-AR:0.065,
-CA:0.0725,
-CO:0.029,
-CT:0.0635,
-DE:0,
-FL:0.06,
-GA:0.04,
-HI:0.04,
-ID:0.06,
-IL:0.0625,
-IN:0.07,
-IA:0.06,
-KS:0.065,
-KY:0.06,
-LA:0.0445,
-ME:0.055,
-MD:0.06,
-MA:0.0625,
-MI:0.06,
-MN:0.06875,
-MS:0.07,
-MO:0.04225,
-MT:0,
-NE:0.055,
-NV:0.0685,
-NH:0,
-NJ:0.06625,
-NM:0.05125,
-NY:0.04,
-NC:0.0475,
-ND:0.05,
-OH:0.0575,
-OK:0.045,
-OR:0,
-PA:0.06,
-RI:0.07,
-SC:0.06,
-SD:0.045,
-TN:0.07,
-TX:0.0625,
-UT:0.0485,
-VT:0.06,
-VA:0.053,
-WA:0.065,
-WV:0.06,
-WI:0.05,
-WY:0.04
+AL:0.04, AK:0, AZ:0.056, AR:0.065,
+CA:0.0725, CO:0.029, CT:0.0635, DE:0,
+FL:0.06, GA:0.04, HI:0.04, ID:0.06,
+IL:0.0625, IN:0.07, IA:0.06, KS:0.065,
+KY:0.06, LA:0.0445, ME:0.055, MD:0.06,
+MA:0.0625, MI:0.06, MN:0.06875, MS:0.07,
+MO:0.04225, MT:0, NE:0.055, NV:0.0685,
+NH:0, NJ:0.06625, NM:0.05125, NY:0.04,
+NC:0.0475, ND:0.05, OH:0.0575, OK:0.045,
+OR:0, PA:0.06, RI:0.07, SC:0.06,
+SD:0.045, TN:0.07, TX:0.0625, UT:0.0485,
+VT:0.06, VA:0.053, WA:0.065, WV:0.06,
+WI:0.05, WY:0.04
 
 };
 
@@ -422,23 +351,15 @@ const code = document.getElementById("promo-code").value;
 const message = document.getElementById("promo-message");
 
 if(code === "IRON10"){
-
 discount = subtotal * 0.10;
 message.innerText = "10% discount applied";
-
 }
-
 else if(code === "FREESHIP"){
-
 shipping = 0;
 message.innerText = "Free shipping applied";
-
 }
-
 else{
-
 message.innerText = "Invalid promo code";
-
 }
 
 calculateTotals();
@@ -447,13 +368,10 @@ calculateTotals();
 
 
 
-/* STATE CHANGE EVENT */
+/* STATE CHANGE */
 
-const stateSelect = document.getElementById("state-select");
-
-if(stateSelect){
-stateSelect.addEventListener("change", calculateTotals);
-}
+document.getElementById("state-select")
+.addEventListener("change", calculateTotals);
 
 
 
@@ -464,10 +382,7 @@ const delivery = new Date();
 delivery.setDate(delivery.getDate() + 5);
 
 document.getElementById("delivery-date").innerText =
-delivery.toLocaleDateString("en-US",{
-month:"short",
-day:"numeric"
-});
+delivery.toLocaleDateString("en-US",{month:"short",day:"numeric"});
 
 
 
@@ -476,3 +391,6 @@ day:"numeric"
 renderCheckout();
 
 </script>
+
+</body>
+</html>
