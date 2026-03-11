@@ -1420,12 +1420,12 @@ background:#187bcd;
 .card-row{
 display:flex;
 gap:10px;
+margin-bottom:15px;
 }
 
 .card-row input{
 flex:1;
 }
-
 /* ===============================
    CART SHADOW
 ================================ */
