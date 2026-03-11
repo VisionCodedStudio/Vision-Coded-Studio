@@ -15,14 +15,36 @@
 <body>
 
 <header>
+
 <h1>Iron Pulse Fitness</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="programs.html">Programs</a>
+<a href="trainers.html">Trainers</a>
+<a href="shop.html">Shop</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+</nav>
+
 </header>
 
-<section class="payment-container">
 
-<h2>Payment Details</h2>
+<section class="checkout-container">
 
-<form action="order-success.html">
+<h2>Payment</h2>
+
+<div class="checkout-grid">
+
+
+<!-- PAYMENT FORM -->
+
+<div class="checkout-form">
+
+<h3>Card Information</h3>
+
+<form id="payment-form" action="order-success.html">
 
 <input id="card-name" type="text" placeholder="Cardholder Name" required>
 
@@ -44,22 +66,80 @@ Complete Order
 
 <a href="checkout.html" class="back-btn">← Back to Checkout</a>
 
+</div>
+
+
+
+<!-- ORDER SUMMARY -->
+
+<div class="order-summary">
+
+<h3>Order Summary</h3>
+
+<div id="payment-items"></div>
+
+<p class="checkout-total">
+Total: <span id="payment-total">$0</span>
+</p>
+
+</div>
+
+
+</div>
+
 </section>
 
 
 <script>
+
+
+/* ===============================
+LOAD CART FROM LOCAL STORAGE
+=============================== */
+
+const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+const itemsContainer = document.getElementById("payment-items");
+const totalDisplay = document.getElementById("payment-total");
+
+let total = 0;
+
+cart.forEach(item => {
+
+const itemDiv = document.createElement("div");
+
+itemDiv.classList.add("cart-item");
+
+itemDiv.innerHTML = `
+<div class="cart-product">
+<img src="${item.image}" width="50">
+<span>${item.name} x${item.quantity}</span>
+</div>
+<span>$${(item.price * item.quantity).toFixed(2)}</span>
+`;
+
+itemsContainer.appendChild(itemDiv);
+
+total += item.price * item.quantity;
+
+});
+
+totalDisplay.innerText = "$" + total.toFixed(2);
+
+
+
+/* ===============================
+CARD INPUT FORMAT
+=============================== */
 
 const cardNumber = document.getElementById("card-number");
 const expInput = document.getElementById("card-exp");
 const cvvInput = document.getElementById("card-cvv");
 
 
-/* CARD NUMBER AUTO FORMAT */
-
 cardNumber.addEventListener("input", function(e){
 
-let value = e.target.value.replace(/\D/g,"");
-value = value.substring(0,16);
+let value = e.target.value.replace(/\D/g,"").substring(0,16);
 
 let formatted = value.match(/.{1,4}/g);
 
@@ -68,16 +148,12 @@ e.target.value = formatted ? formatted.join(" ") : "";
 });
 
 
-/* EXP DATE FORMAT */
-
 expInput.addEventListener("input", function(e){
 
 let value = e.target.value.replace(/\D/g,"").substring(0,4);
 
 if(value.length >= 3){
-
 value = value.substring(0,2) + "/" + value.substring(2);
-
 }
 
 e.target.value = value;
@@ -85,16 +161,14 @@ e.target.value = value;
 });
 
 
-/* CVV NUMBERS ONLY */
-
 cvvInput.addEventListener("input", function(e){
-
 e.target.value = e.target.value.replace(/\D/g,"");
-
 });
 
 
-/* LUHN CARD VALIDATION */
+/* ===============================
+LUHN CARD VALIDATION
+=============================== */
 
 function validCard(number){
 
@@ -126,7 +200,7 @@ return sum % 10 === 0;
 }
 
 
-document.querySelector("form").addEventListener("submit", function(e){
+document.getElementById("payment-form").addEventListener("submit", function(e){
 
 const cardVal = cardNumber.value;
 
@@ -139,6 +213,7 @@ e.preventDefault();
 }
 
 });
+
 
 </script>
 
