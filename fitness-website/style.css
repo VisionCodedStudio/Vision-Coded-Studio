@@ -1417,6 +1417,14 @@ margin-top:10px;
 background:#187bcd;
 }
 
+.card-row{
+display:flex;
+gap:10px;
+}
+
+.card-row input{
+flex:1;
+}
 
 /* ===============================
    CART SHADOW
