@@ -533,6 +533,35 @@ line-height:1.6;
 }
 
 /* ===============================
+SCHEDULE PAGE
+=============================== */
+
+.schedule-coming{
+padding:80px 20px;
+display:flex;
+justify-content:center;
+text-align:center;
+}
+
+.schedule-box{
+max-width:600px;
+background:#181818;
+border:1px solid #222;
+padding:50px;
+border-radius:10px;
+}
+
+.schedule-box i{
+font-size:40px;
+color:#1e90ff;
+margin-bottom:15px;
+}
+
+.schedule-box p{
+color:#aaa;
+margin:15px 0 25px;
+}
+/* ===============================
 SHOP PRODUCTS
 =============================== */
 
