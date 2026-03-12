@@ -752,6 +752,16 @@ color:#777;
 font-size:14px;
 }
 
+.footer-bottom a{
+color:#1e90ff;
+text-decoration:none;
+margin-left:6px;
+}
+
+.footer-bottom a:hover{
+text-decoration:underline;
+}
+
 /* PAYMENT METHODS BANNER */
 
 .payment-banner{
