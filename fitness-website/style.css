@@ -28,12 +28,8 @@ header{
 display:flex;
 align-items:center;
 justify-content:center;
-padding:20px 80px;
-background:black;
-border-bottom:1px solid #1c1c1c;
-position:relative;
-}
-
+padding:28px 80px;
+   
 /* LOGO */
 
 .logo{
