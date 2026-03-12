@@ -696,6 +696,17 @@ color:#aaa;
 .membership-card li{
 margin-bottom:8px;
 }
+
+.popular{
+background:#1e90ff;
+color:white;
+padding:6px 12px;
+font-size:12px;
+border-radius:20px;
+display:inline-block;
+margin-bottom:12px;
+font-weight:600;
+}
 /* ===============================
    FOOTER
    =============================== */
