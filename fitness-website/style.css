@@ -1757,10 +1757,29 @@ grid-template-columns:1fr;
 grid-template-columns:1fr;
 gap:35px;
 text-align:center;
+justify-items:center;
 }
 
+/* FOOTER COLUMN ALIGNMENT */
+
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-newsletter{
+text-align:center;
+align-items:center;
+}
+
+/* LINKS */
+
 .footer-links-columns{
+display:flex;
 justify-content:center;
+gap:40px;
+}
+
+.footer-links-column{
+align-items:center;
 }
 
 /* NEWSLETTER */
@@ -1768,12 +1787,31 @@ justify-content:center;
 .newsletter-box{
 display:flex;
 justify-content:center;
+align-items:center;
 flex-wrap:wrap;
 gap:8px;
 }
 
 .newsletter-box input{
 width:240px;
+max-width:90%;
+}
+
+.newsletter-box button{
+width:90px;
+}
+
+/* PAYMENT ICONS */
+
+.payment-icons,
+.payment-logos{
+justify-content:center;
+}
+
+/* COPYRIGHT */
+
+.footer-bottom{
+text-align:center;
 }
 
 /* CONTACT */
