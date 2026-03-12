@@ -105,9 +105,9 @@ align-items:flex-start;
 padding:0 120px;
 
 background:
-linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
 url("./images/hero.jpg");
-
+   
 background-size:cover;
 background-position:center;
 }
@@ -129,20 +129,19 @@ color:#ccc;
    =============================== */
 
 .cta{
-padding:16px 34px;
+padding:18px 36px;
 background:#1e90ff;
 color:white;
 text-decoration:none;
 border-radius:6px;
 font-weight:600;
-transition:0.25s;
+transition: all .25s ease;
 display:inline-block;
 }
 
 .cta:hover{
 background:#187bcd;
 }
-
 
 /* ===============================
    PAGE TITLE
