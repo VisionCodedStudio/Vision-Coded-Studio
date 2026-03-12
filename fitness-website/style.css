@@ -427,6 +427,30 @@ transition:.25s;
 transform:translateY(-2px);
 box-shadow:0 12px 35px rgba(30,144,255,.4);
 }
+
+/* ===============================
+BUSINESS CONTACT
+=============================== */
+
+.contact-business{
+text-align:center;
+margin-bottom:40px;
+}
+
+.contact-business p{
+color:#aaa;
+margin:6px 0;
+font-size:14px;
+}
+
+.contact-business a{
+color:#1e90ff;
+text-decoration:none;
+}
+
+.contact-business a:hover{
+text-decoration:underline;
+}
 /* ===============================
    TRAINERS
    =============================== */
