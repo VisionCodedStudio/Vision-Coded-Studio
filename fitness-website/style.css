@@ -1661,31 +1661,38 @@ MOBILE RESPONSIVE
 /* HEADER */
 
 header{
-flex-direction:column;
+display:flex;
 align-items:center;
-padding:22px 25px;
-gap:14px;
+justify-content:center;
+padding:20px 25px;
+position:relative;
 }
 
 .logo{
-position:static;
-transform:none;
+position:absolute;
+left:25px;
+top:50%;
+transform:translateY(-50%);
 }
 
 .logo img{
-height:80px;
+height:70px;
 }
+
+/* NAV */
 
 nav{
-flex-wrap:wrap;
-justify-content:center;
+display:flex;
 gap:18px;
-font-size:15px;
+font-size:14px;
 }
 
+/* CART */
+
 .cart-icon{
-position:static;
-margin-top:6px;
+position:absolute;
+right:25px;
+font-size:20px;
 }
 
 /* HERO */
@@ -1696,7 +1703,7 @@ height:80vh;
 }
 
 .home-hero h2{
-font-size:40px;
+font-size:38px;
 line-height:1.2;
 }
 
@@ -1708,13 +1715,13 @@ max-width:420px;
 /* PAGE TITLE */
 
 .page-title h2{
-font-size:36px;
+font-size:34px;
 }
 
 /* TRAINERS */
 
 .trainers{
-padding:40px 30px;
+padding:40px 25px;
 }
 
 .trainer-grid{
@@ -1724,7 +1731,7 @@ grid-template-columns:1fr;
 /* SHOP */
 
 .shop{
-padding:40px 30px;
+padding:40px 25px;
 }
 
 .shop-grid{
@@ -1740,21 +1747,15 @@ grid-template-columns:1fr;
 /* BLOG */
 
 .blog-container{
-padding:40px 25px;
+padding:40px 20px;
 grid-template-columns:1fr;
-}
-
-/* CONTACT */
-
-.contact-center{
-padding:80px 20px;
 }
 
 /* FOOTER */
 
 .footer-grid{
 grid-template-columns:1fr;
-gap:40px;
+gap:35px;
 text-align:center;
 }
 
@@ -1762,13 +1763,23 @@ text-align:center;
 justify-content:center;
 }
 
-.footer-links-column{
-align-items:center;
-}
+/* NEWSLETTER */
 
 .newsletter-box{
+display:flex;
 justify-content:center;
 flex-wrap:wrap;
+gap:8px;
+}
+
+.newsletter-box input{
+width:240px;
+}
+
+/* CONTACT */
+
+.contact-center{
+padding:70px 20px;
 }
 
 }
