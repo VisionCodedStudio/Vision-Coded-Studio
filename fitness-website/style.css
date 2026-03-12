@@ -1715,6 +1715,8 @@ padding:40px 25px;
 grid-template-columns:1fr;
 }
 
+/* FOOTER MOBILE */
+
 .footer-grid{
 grid-template-columns:1fr;
 gap:40px;
@@ -1722,6 +1724,14 @@ text-align:center;
 }
 
 .footer-links-columns{
+justify-content:center;
+}
+
+.footer-links-column{
+align-items:center;
+}
+
+.newsletter-box{
 justify-content:center;
 }
 
