@@ -39,6 +39,8 @@ position:relative;
 .logo{
 position:absolute;
 left:80px;
+display:flex;
+align-items:center;
 }
 
 .logo img{
