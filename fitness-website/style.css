@@ -1883,3 +1883,56 @@ font-size:12px;
 }
 
 }
+
+/* =====================================
+SMALL PHONE FIX
+===================================== */
+
+@media (max-width:480px){
+
+/* ABOUT PAGE FIX */
+
+.about-hero{
+height:auto;
+min-height:60vh;
+padding:60px 20px;
+}
+
+/* ABOUT TEXT */
+
+.about-text{
+max-width:100%;
+}
+
+/* CONTACT PAGE FIX */
+
+.contact-section{
+padding:80px 20px;
+}
+
+/* CONTACT FORM */
+
+.contact-form-box{
+padding:25px;
+}
+
+/* INPUTS */
+
+.contact-form-box input,
+.contact-form-box textarea{
+font-size:14px;
+}
+
+/* HERO TEXT SIZE */
+
+.home-hero h2{
+font-size:30px;
+line-height:1.2;
+}
+
+.home-hero p{
+font-size:14px;
+max-width:320px;
+}
+
+}
