@@ -1741,12 +1741,12 @@ padding:80px 20px;
 
 }
 
-.logo img{
-height:120px;
+header{
+padding:35px 80px;
 }
 
-header{
-padding:20px 20px;
+.logo img{
+height:110px;
 }
 
 @media (max-width:768px){
