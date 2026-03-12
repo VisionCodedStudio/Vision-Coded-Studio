@@ -1749,6 +1749,18 @@ header{
 padding:20px 20px;
 }
 
+@media (max-width:768px){
+
+.logo img{
+height:90px;
+}
+
+header{
+padding:25px 30px;
+}
+
+}
+
 /* =====================================
 SMALL PHONE
 ===================================== */
