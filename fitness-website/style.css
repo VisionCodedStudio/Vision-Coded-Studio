@@ -1651,11 +1651,14 @@ padding:60px 40px;
 
 }
 
+
 /* =====================================
 MOBILE RESPONSIVE
 ===================================== */
 
 @media (max-width:768px){
+
+/* HEADER */
 
 header{
 padding:25px 30px;
@@ -1665,13 +1668,15 @@ padding:25px 30px;
 left:30px;
 }
 
+.logo img{
+height:90px;
+}
+
 .cart-icon{
 right:30px;
 }
 
-/* nav{
-display:none;
-} */
+/* HERO */
 
 .home-hero{
 padding:0 30px;
@@ -1686,9 +1691,13 @@ font-size:42px;
 font-size:15px;
 }
 
+/* PAGE TITLE */
+
 .page-title h2{
 font-size:36px;
 }
+
+/* TRAINERS */
 
 .trainers{
 padding:40px 30px;
@@ -1698,6 +1707,8 @@ padding:40px 30px;
 grid-template-columns:1fr;
 }
 
+/* SHOP */
+
 .shop{
 padding:40px 30px;
 }
@@ -1706,16 +1717,20 @@ padding:40px 30px;
 grid-template-columns:1fr;
 }
 
+/* PROGRAMS */
+
 .program-grid{
 grid-template-columns:1fr;
 }
+
+/* BLOG */
 
 .blog-container{
 padding:40px 25px;
 grid-template-columns:1fr;
 }
 
-/* FOOTER MOBILE */
+/* FOOTER */
 
 .footer-grid{
 grid-template-columns:1fr;
@@ -1741,25 +1756,6 @@ padding:80px 20px;
 
 }
 
-header{
-padding:35px 80px;
-}
-
-.logo img{
-height:110px;
-}
-
-@media (max-width:768px){
-
-.logo img{
-height:90px;
-}
-
-header{
-padding:25px 30px;
-}
-
-}
 
 /* =====================================
 SMALL PHONE
