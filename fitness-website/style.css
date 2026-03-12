@@ -708,9 +708,19 @@ margin-bottom:12px;
 font-weight:600;
 }
 
+/* ===============================
+COMING SOON BUTTON
+=============================== */
+
 .coming-soon{
-opacity:0.7;
+opacity:.7;
 cursor:not-allowed;
+}
+
+.soon-label{
+font-size:13px;
+color:#888;
+margin-top:10px;
 }
 /* ===============================
    FOOTER
