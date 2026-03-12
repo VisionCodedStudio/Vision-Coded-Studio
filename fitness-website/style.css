@@ -1812,30 +1812,43 @@ height:24px;
 object-fit:contain;
 }
 
-/* PAYMENT SECTION PERFECT CENTER */
+/* PAYMENT SECTION CENTER FIX */
 
-.payment-section{
+.footer-newsletter{
 display:flex;
 flex-direction:column;
 align-items:center;
 text-align:center;
 }
 
-.payment-icons,
-.payment-logos{
+.footer-newsletter h4{
+text-align:center;
+}
+
+/* payment icons row */
+
+.payment-icons{
 display:flex;
 justify-content:center;
 align-items:center;
 gap:18px;
 flex-wrap:wrap;
-margin:10px auto;
+margin:12px auto;
 width:100%;
 }
 
-.payment-icons img,
-.payment-logos img{
+/* icon size */
+
+.payment-icons img{
 height:26px;
 object-fit:contain;
+}
+
+/* secure checkout text */
+
+.secure-checkout{
+text-align:center;
+margin-top:10px;
 }
    
 /* COPYRIGHT */
