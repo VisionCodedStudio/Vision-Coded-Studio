@@ -499,6 +499,38 @@ font-size:14px;
 margin-top:4px;
 }
 
+/* ===============================
+FAQ
+=============================== */
+
+.faq-section{
+padding:80px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.faq-container{
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.faq-item{
+background:#181818;
+border:1px solid #222;
+padding:25px;
+border-radius:10px;
+}
+
+.faq-item h3{
+margin-bottom:8px;
+}
+
+.faq-item p{
+color:#aaa;
+font-size:14px;
+line-height:1.6;
+}
 
 /* ===============================
 SHOP PRODUCTS
