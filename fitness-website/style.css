@@ -30,6 +30,8 @@ align-items:center;
 justify-content:center;
 padding:35px 80px;
 position:relative;
+background:#000;
+border-bottom:1px solid #1c1c1c;
 }
 
 /* LOGO */
