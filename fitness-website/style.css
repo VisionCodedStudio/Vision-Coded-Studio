@@ -619,6 +619,37 @@ transition:0.25s;
 background:#187bcd;
 }
 
+/* ===============================
+PRIVACY POLICY PAGE
+=============================== */
+
+.privacy-policy{
+padding:100px 20px;
+display:flex;
+justify-content:center;
+}
+
+.policy-container{
+max-width:900px;
+line-height:1.8;
+font-size:16px;
+}
+
+.policy-container h1{
+font-size:42px;
+margin-bottom:25px;
+}
+
+.policy-container h3{
+margin-top:35px;
+margin-bottom:10px;
+color:#1e90ff;
+}
+
+.policy-container p{
+margin-bottom:16px;
+color:#ccc;
+}
 
 /* ===============================
    FOOTER
