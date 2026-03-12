@@ -1650,8 +1650,6 @@ padding:60px 40px;
 }
 
 }
-
-
 /* =====================================
 MOBILE RESPONSIVE
 ===================================== */
@@ -1784,13 +1782,25 @@ flex-wrap:wrap;
 
 .newsletter-box input{
 width:240px;
+max-width:90%;
 }
 
 /* PAYMENT ICONS */
 
 .payment-icons,
 .payment-logos{
+display:flex;
 justify-content:center;
+align-items:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:10px;
+}
+
+.payment-icons img,
+.payment-logos img{
+height:24px;
+object-fit:contain;
 }
 
 /* COPYRIGHT */
@@ -1806,7 +1816,6 @@ padding:70px 20px;
 }
 
 }
-
 
 /* =====================================
 SMALL PHONE
