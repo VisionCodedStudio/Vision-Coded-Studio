@@ -504,7 +504,6 @@ max-width:1200px;
 margin:auto;
 }
 
-
 /* ===============================
 BLOG CARD
 =============================== */
@@ -519,7 +518,7 @@ border:1px solid #222;
 
 .blog-card:hover{
 transform:translateY(-8px);
-border-color:#ff4d4d;
+border-color:#1e90ff;
 }
 
 
@@ -556,13 +555,13 @@ font-size:15px;
 display:block;
 padding:20px;
 font-weight:bold;
-color:#ff4d4d;
+color:#1e90ff;
 text-decoration:none;
 transition:0.2s;
 }
 
 .blog-card a:hover{
-color:white;
+color:#187bcd;
 }
 
 
@@ -607,7 +606,7 @@ outline:none;
 
 .subscribe-form button{
 padding:12px 22px;
-background:#ff4d4d;
+background:#1e90ff;
 border:none;
 color:white;
 font-weight:bold;
@@ -617,7 +616,7 @@ transition:0.25s;
 }
 
 .subscribe-form button:hover{
-background:#ff2a2a;
+background:#187bcd;
 }
 
 
