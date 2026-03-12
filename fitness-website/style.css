@@ -49,13 +49,6 @@ width:auto;
 display:block;
 }
 
-header h1{
-position:absolute;
-left:80px;
-font-size:22px;
-letter-spacing:1px;
-}
-
 nav{
 display:flex;
 gap:30px;
