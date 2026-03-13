@@ -518,9 +518,9 @@ transition:all .35s ease;
 
 .portfolio-card img{
 width:100%;
-height:320px;
+height:380px;
 object-fit:cover;
-object-position:65% center;
+object-position:70% center;
 transition:transform .5s ease;
 }
 
@@ -858,6 +858,7 @@ font-size:13px;
 color:#666;
 letter-spacing:1px;
 }
+
 
 
 
