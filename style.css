@@ -839,7 +839,7 @@ width:100%;
 }
 
 /* =========================================
-HERO (UPGRADE - KEEP YOUR STRUCTURE)
+HERO (CLEAN LIGHT ORANGE VERSION)
 ========================================= */
 
 .hero{
@@ -848,51 +848,21 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
-background: #0f0f0f;
-color: white;
-position: relative;
-overflow: hidden;
 padding: 40px 20px;
+
+/* 🔥 YOUR ORIGINAL SOFT ORANGE */
+background: linear-gradient(135deg, #fff6f0, #ffe3d3);
 }
 
-/* 🔥 MAIN ORANGE GLOW */
-.hero::before{
-content: "";
-position: absolute;
-width: 500px;
-height: 500px;
-background: radial-gradient(circle, rgba(255,69,0,0.35), transparent 70%);
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-filter: blur(120px);
-z-index: 0;
-}
-
-/* 🔥 SECOND GLOW (depth) */
-.hero::after{
-content: "";
-position: absolute;
-width: 300px;
-height: 300px;
-background: radial-gradient(circle, rgba(255,120,0,0.2), transparent 70%);
-top: 20%;
-right: 20%;
-filter: blur(100px);
-z-index: 0;
-}
-
+/* CONTENT */
 .hero-content{
-position: relative;
-z-index: 1;
 max-width: 800px;
 }
 
-/* LOGO GLOW */
+/* LOGO */
 .hero-logo{
-width: 140px;
+width: 120px;
 margin-bottom: 20px;
-filter: drop-shadow(0 0 15px rgba(255,69,0,0.7));
 }
 
 /* HEADLINE */
@@ -901,30 +871,30 @@ font-size: 3rem;
 line-height: 1.2;
 letter-spacing: -1px;
 margin-bottom: 20px;
+color: #111;
 }
 
 /* SUBTEXT */
 .hero p{
 font-size: 1.1rem;
-color: #bdbdbd;
+color: #555;
 margin-bottom: 30px;
 }
 
-/* BUTTON (MATCH YOUR CLASS) */
+/* BUTTON */
 .btn-primary{
 display: inline-block;
-padding: 14px 32px;
+padding: 14px 30px;
 background: #FF4500;
 color: #fff;
 text-decoration: none;
 font-weight: 600;
 border-radius: 8px;
 transition: 0.3s ease;
-box-shadow: 0 0 20px rgba(255,69,0,0.6);
 }
 
-/* HOVER = 🔥🔥🔥 */
+/* HOVER */
 .btn-primary:hover{
-transform: translateY(-3px);
-box-shadow: 0 0 45px rgba(255,69,0,0.95);
+transform: translateY(-2px);
+background: #e63e00;
 }
