@@ -175,16 +175,11 @@ align-items:center;
 justify-content:center;
 gap:8px;
 }
-display:inline-flex;
-align-items:center;
-justify-content:center;
-gap:8px;
-}
 
 .btn-primary:hover{
 background:#e24c00;
-transform:translateY(-2px);
-box-shadow:0 12px 30px rgba(255,91,0,0.35);
+transform:translateY(-3px);
+box-shadow:0 15px 35px rgba(255,91,0,0.35);
 }
 
 .btn-primary span{
@@ -777,11 +772,9 @@ font-size:13px;
 color:#777;
 }
 
-.footer-col ul li a:hover
-
-.footer-contact a{
-color:#333;
-text-decoration:none;
+.footer-col ul li a:hover{
+color:#FF5B00;
+transform:translateX(3px);
 }
 
 .footer-contact a:hover{
@@ -907,6 +900,7 @@ margin-right:auto;
 }
 
 .hero h1{
+line-height:1.15;
 max-width:700px;
 margin-left:auto;
 margin-right:auto;
@@ -927,18 +921,6 @@ flex-wrap:wrap;
 
 /* 🔥 ADD THIS RIGHT HERE (DO NOT MOVE ABOVE) */
 
-.hero h1{
-line-height:1.15;
-max-width:800px;
-margin-left:auto;
-margin-right:auto;
-}
-
-.btn-primary:hover{
-background:#e24c00;
-transform:translateY(-3px);
-box-shadow:0 15px 35px rgba(255,91,0,0.35);
-}
 
 .btn-secondary{
 color:#FF5B00;
