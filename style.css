@@ -859,8 +859,92 @@ color:#666;
 letter-spacing:1px;
 }
 
+/* ===============================
+NEW HERO SECTION (VCS UPGRADE)
+================================ */
 
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:radial-gradient(circle at center, #1a1a1a 0%, #0d0d0d 100%);
+padding:0 20px;
+position:relative;
+overflow:hidden;
+color:white;
+}
 
+.hero::before{
+content:"";
+position:absolute;
+width:400px;
+height:400px;
+background:#FF5B00;
+filter:blur(150px);
+opacity:0.2;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+z-index:0;
+}
+
+.hero-content{
+max-width:800px;
+z-index:1;
+}
+
+.hero h1{
+font-size:3rem;
+font-weight:700;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.1rem;
+color:#ccc;
+margin-bottom:30px;
+line-height:1.7;
+}
+
+/* buttons */
+.hero-buttons{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.btn-secondary{
+border:2px solid #FF5B00;
+color:#FF5B00;
+padding:16px 38px;
+border-radius:12px;
+font-weight:600;
+text-decoration:none;
+transition:0.3s;
+}
+
+.btn-secondary:hover{
+background:#FF5B00;
+color:#fff;
+transform:translateY(-2px);
+}
+
+/* mobile */
+@media(max-width:600px){
+
+.hero h1{
+font-size:2rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+}
 
 
 
