@@ -839,11 +839,11 @@ width:100%;
 }
 
 /* =========================================
-HERO SECTION (PREMIUM DARK + ORANGE GLOW)
+HERO (UPGRADE - KEEP YOUR STRUCTURE)
 ========================================= */
 
 .hero{
-height: 100vh;
+min-height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -852,9 +852,10 @@ background: #0f0f0f;
 color: white;
 position: relative;
 overflow: hidden;
+padding: 40px 20px;
 }
 
-/* 🔥 ORANGE GLOW BACKGROUND */
+/* 🔥 MAIN ORANGE GLOW */
 .hero::before{
 content: "";
 position: absolute;
@@ -868,7 +869,7 @@ filter: blur(120px);
 z-index: 0;
 }
 
-/* subtle secondary glow */
+/* 🔥 SECOND GLOW (depth) */
 .hero::after{
 content: "";
 position: absolute;
@@ -885,22 +886,21 @@ z-index: 0;
 position: relative;
 z-index: 1;
 max-width: 800px;
-padding: 20px;
 }
 
-/* LOGO */
+/* LOGO GLOW */
 .hero-logo{
 width: 140px;
-margin-bottom: 25px;
-filter: drop-shadow(0 0 15px rgba(255,69,0,0.6));
+margin-bottom: 20px;
+filter: drop-shadow(0 0 15px rgba(255,69,0,0.7));
 }
 
 /* HEADLINE */
 .hero h1{
 font-size: 3rem;
 line-height: 1.2;
-margin-bottom: 20px;
 letter-spacing: -1px;
+margin-bottom: 20px;
 }
 
 /* SUBTEXT */
@@ -910,12 +910,12 @@ color: #bdbdbd;
 margin-bottom: 30px;
 }
 
-/* BUTTON */
-.hero-btn{
+/* BUTTON (MATCH YOUR CLASS) */
+.btn-primary{
 display: inline-block;
-padding: 14px 30px;
+padding: 14px 32px;
 background: #FF4500;
-color: white;
+color: #fff;
 text-decoration: none;
 font-weight: 600;
 border-radius: 8px;
@@ -923,8 +923,8 @@ transition: 0.3s ease;
 box-shadow: 0 0 20px rgba(255,69,0,0.6);
 }
 
-/* HOVER EFFECT */
-.hero-btn:hover{
+/* HOVER = 🔥🔥🔥 */
+.btn-primary:hover{
 transform: translateY(-3px);
-box-shadow: 0 0 40px rgba(255,69,0,0.95);
+box-shadow: 0 0 45px rgba(255,69,0,0.95);
 }
