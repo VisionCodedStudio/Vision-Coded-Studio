@@ -116,10 +116,10 @@ align-items:center;
 
 header h1{
 font-size:3rem;
-font-weight:700;
-letter-spacing:1px;
-color:#000;
-margin-bottom:25px;
+font-weight:400; /* important */
+letter-spacing:-0.5px;
+font-family:'DM Serif Display', serif; /* reinforce system */
+color:#111;
 }
 
 header p{
@@ -201,8 +201,8 @@ font-size:1rem;
 border-radius:12px;
 cursor:pointer;
 transition:0.3s;
-text-transform:uppercase;
-letter-spacing:1px;
+text-transform:none;
+letter-spacing:0.5px;
 display:inline-block;
 text-decoration:none;
 }
