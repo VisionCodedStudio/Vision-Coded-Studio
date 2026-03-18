@@ -838,72 +838,93 @@ width:100%;
 
 }
 
-/* ===============================
-REAL HERO CONTROL (FIXED)
-================================ */
+/* =========================================
+HERO SECTION (PREMIUM DARK + ORANGE GLOW)
+========================================= */
 
 .hero{
-padding:120px 20px 90px;
-text-align:center;
-position:relative;
-
-/* 🔥 FULL BACKGROUND BLEND */
-background:linear-gradient(
-to bottom,
-#f8f8f8 0%,
-#ffe5d6 40%,
-#ffd2b8 60%,
-#eeeeee 100%
-);
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background: #0f0f0f;
+color: white;
+position: relative;
+overflow: hidden;
 }
 
-/* 🔥 KEEP CONTENT ABOVE GLOW */
+/* 🔥 ORANGE GLOW BACKGROUND */
+.hero::before{
+content: "";
+position: absolute;
+width: 500px;
+height: 500px;
+background: radial-gradient(circle, rgba(255,69,0,0.35), transparent 70%);
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+filter: blur(120px);
+z-index: 0;
+}
+
+/* subtle secondary glow */
+.hero::after{
+content: "";
+position: absolute;
+width: 300px;
+height: 300px;
+background: radial-gradient(circle, rgba(255,120,0,0.2), transparent 70%);
+top: 20%;
+right: 20%;
+filter: blur(100px);
+z-index: 0;
+}
+
 .hero-content{
-position:relative;
-z-index:1;
+position: relative;
+z-index: 1;
+max-width: 800px;
+padding: 20px;
 }
 
 /* LOGO */
 .hero-logo{
-width:280px;
-max-width:90%;
-margin-bottom:25px;
+width: 140px;
+margin-bottom: 25px;
+filter: drop-shadow(0 0 15px rgba(255,69,0,0.6));
 }
 
 /* HEADLINE */
 .hero h1{
-font-size:2.8rem;
-max-width:720px;
-margin:0 auto 18px;
-line-height:1.2;
-font-weight:700;
+font-size: 3rem;
+line-height: 1.2;
+margin-bottom: 20px;
+letter-spacing: -1px;
 }
 
 /* SUBTEXT */
 .hero p{
-font-size:1.1rem;
-color:#555;
-max-width:650px;
-margin:0 auto 30px;
-line-height:1.6;
+font-size: 1.1rem;
+color: #bdbdbd;
+margin-bottom: 30px;
 }
 
-/* BUTTONS */
-.hero-buttons{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
+/* BUTTON */
+.hero-btn{
+display: inline-block;
+padding: 14px 30px;
+background: #FF4500;
+color: white;
+text-decoration: none;
+font-weight: 600;
+border-radius: 8px;
+transition: 0.3s ease;
+box-shadow: 0 0 20px rgba(255,69,0,0.6);
 }
 
-/* 🔥 GLOW ANIMATION */
-@keyframes heroGlow{
-from{
-transform:translate(-50%,-50%) scale(1);
-opacity:0.85;
-}
-to{
-transform:translate(-50%,-50%) scale(1.2);
-opacity:1;
-}
+/* HOVER EFFECT */
+.hero-btn:hover{
+transform: translateY(-3px);
+box-shadow: 0 0 40px rgba(255,69,0,0.95);
 }
