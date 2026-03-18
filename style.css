@@ -863,18 +863,21 @@ top:50%;
 left:50%;
 transform:translate(-50%,-50%);
 
-width:700px;
-height:700px;
+width:900px;
+height:900px;
 
+/* 🔥 STRONGER ORANGE */
 background:radial-gradient(
 circle,
-rgba(255,91,0,0.35),
-rgba(255,91,0,0.15),
+rgba(255,91,0,0.7) 0%,
+rgba(255,91,0,0.4) 25%,
+rgba(255,91,0,0.2) 45%,
 transparent 70%
 );
 
-filter:blur(120px);
+filter:blur(140px);
 z-index:0;
+}
 
 animation:heroGlow 4s ease-in-out infinite alternate;
 }
