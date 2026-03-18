@@ -1017,68 +1017,64 @@ flex-direction:column;
 align-items:center; /* 🔥 THIS LOCKS CENTER */
 }
 
-/* ===============================
-LEGAL PAGE — CLEAN AGENCY STYLE
-=============================== */
+/* ===== FORCE LEGAL STYLE RESET ===== */
 
 .legal-page{
-padding:120px 20px 80px;
-background:#ffffff;
+background:#fff !important;
+padding:100px 20px !important;
+display:block !important;
 }
 
 .legal-wrapper{
-max-width:900px;
-margin:0 auto;
-text-align:left;
+max-width:750px !important;
+margin:0 auto !important;
+padding:0 !important;
+background:none !important;
+box-shadow:none !important;
+border:none !important;
 }
 
 /* TITLE */
 
 .legal-wrapper h1{
-font-size:2.6rem;
-margin-bottom:10px;
-text-align:left;
+text-align:left !important;
+font-size:2.5rem !important;
+margin-bottom:10px !important;
 }
 
 /* DATE */
 
 .legal-date{
-display:block;
-margin-bottom:30px;
-color:#888;
-font-size:0.9rem;
+display:block !important;
+margin-bottom:25px !important;
+color:#999 !important;
 }
 
-/* INTRO */
+/* TEXT */
 
 .legal-wrapper p{
-font-size:1rem;
-color:#444;
-line-height:1.8;
-margin-bottom:16px;
-max-width:700px;
+text-align:left !important;
+font-size:1rem !important;
+line-height:1.8 !important;
+color:#444 !important;
+max-width:650px !important;
 }
 
-/* SECTION HEADERS */
+/* HEADINGS */
 
 .legal-wrapper h3{
-margin-top:45px;
-margin-bottom:10px;
-font-size:1.3rem;
-color:#111;
+text-align:left !important;
+margin-top:40px !important;
+font-size:1.3rem !important;
 }
 
-/* DIVIDER LINE */
+/* ORANGE LINE */
 
 .legal-wrapper h3::after{
 content:"";
 display:block;
-width:50px;
+width:40px;
 height:2px;
 background:#FF5B00;
 margin-top:8px;
-}
-
-.legal-wrapper{
-padding-left:10px;
 }
