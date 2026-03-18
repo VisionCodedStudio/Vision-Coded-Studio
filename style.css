@@ -885,10 +885,9 @@ overflow:hidden;
 /* slightly cleaner light tone */
 background:linear-gradient(
 to bottom,
-#fafafa,
-#eeeeee
+#eef1f4,
+#d6dde4
 );
-}
 
 /* subtle orange glow (keep your vibe) */
 .hero::before{
