@@ -874,3 +874,8 @@ justify-content:center;
 gap:20px;
 flex-wrap:wrap;
 }
+
+.logo img{
+height:70px;
+width:auto;
+}
