@@ -44,7 +44,7 @@ position:absolute;
 left:30px;
 top:50%;
 transform:translateY(-50%);
-height:80px; /* 🔥 CHANGE THIS */
+height:110px; /* 🔥 CHANGE THIS */
 width:auto;
 }
 
