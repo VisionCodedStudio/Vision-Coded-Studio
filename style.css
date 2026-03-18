@@ -162,13 +162,19 @@ text-decoration:none;
 background:#FF5B00;
 color:#fff;
 border:none;
-padding:16px 38px;
+padding:18px 44px; /* UPDATED */
 border-radius:12px;
 font-weight:600;
 letter-spacing:1px;
+font-size:1.05rem; /* ADD THIS */
 transition:all .25s ease;
 box-shadow:0 6px 18px rgba(255,91,0,0.25);
 
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+}
 display:inline-flex;
 align-items:center;
 justify-content:center;
@@ -901,9 +907,9 @@ margin-right:auto;
 }
 
 .hero h1{
-font-size:3rem;
-font-weight:700;
-margin-bottom:20px;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
 }
 
 .hero p{
