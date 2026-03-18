@@ -722,15 +722,15 @@ height:3px;
 ==================== */
 
 .vcs-footer{
-background:#ffffff; /* 🔥 clean white like you want */
+background:#ffffff; /* clean white like you wanted */
 
-padding:70px 8%; /* ✅ your original spacing back */
+padding:70px 0; /* 🔥 gives height back */
 
-border-top:1px solid rgba(0,0,0,0.06);
+border-top:1px solid rgba(0,0,0,0.08);
 
 box-shadow:0 -10px 30px rgba(0,0,0,0.04);
 
-margin-top:40px;
+margin-top:60px; /* 🔥 separates from hero cleanly */
 }
 
 /* GRID TIGHTENED */
