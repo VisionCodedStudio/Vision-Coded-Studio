@@ -39,6 +39,15 @@ font-weight:600;
 position:relative; /* ADD THIS */
 }
 
+.nav-logo{
+position:absolute;
+left:30px;
+top:50%;
+transform:translateY(-50%);
+height:32px;
+width:auto;
+}
+
 .nav a{
 text-decoration:none;
 color:#111;
