@@ -1018,73 +1018,63 @@ align-items:center; /* 🔥 THIS LOCKS CENTER */
 }
 
 /* ===============================
-LEGAL PAGES (LUXURY FIX)
+LEGAL PAGE — CLEAN AGENCY STYLE
 =============================== */
 
 .legal-page{
-padding:120px 20px;
-display:flex;
-justify-content:center;
-background:#f7f7f7;
+padding:120px 20px 80px;
+background:#ffffff;
 }
 
 .legal-wrapper{
-max-width:850px;
-width:100%;
-
-background:#ffffff;
-
-padding:60px 70px;
-
-border-radius:18px;
-
-box-shadow:0 30px 80px rgba(0,0,0,0.08);
-
+max-width:900px;
+margin:0 auto;
 text-align:left;
 }
 
 /* TITLE */
 
 .legal-wrapper h1{
-text-align:center;
-font-size:2.4rem;
+font-size:2.6rem;
 margin-bottom:10px;
+text-align:left;
 }
 
 /* DATE */
 
 .legal-date{
 display:block;
-text-align:center;
-margin-bottom:40px;
-color:#999;
+margin-bottom:30px;
+color:#888;
 font-size:0.9rem;
-letter-spacing:0.5px;
 }
 
-/* HEADINGS */
+/* INTRO */
+
+.legal-wrapper p{
+font-size:1rem;
+color:#444;
+line-height:1.8;
+margin-bottom:16px;
+max-width:700px;
+}
+
+/* SECTION HEADERS */
 
 .legal-wrapper h3{
-margin-top:35px;
+margin-top:45px;
 margin-bottom:10px;
-font-size:1.2rem;
+font-size:1.3rem;
 color:#111;
 }
 
-/* PARAGRAPHS */
+/* DIVIDER LINE */
 
-.legal-wrapper p{
-font-size:0.95rem;
-line-height:1.8;
-color:#555;
-}
-
-/* MOBILE */
-
-@media (max-width:600px){
-
-.legal-wrapper{
-padding:40px 25px;
-}
-
+.legal-wrapper h3::after{
+content:"";
+display:block;
+width:50px;
+height:2px;
+background:#FF5B00;
+margin-top:8px;
 }
