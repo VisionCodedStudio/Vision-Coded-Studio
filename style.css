@@ -787,8 +787,7 @@ transition:all 0.25s ease;
 
 .footer-col ul li a:hover{
 color:#FF5B00;
-transform:translateX(4px);
-text-shadow:0 0 8px rgba(255,91,0,0.3);
+transform:translateX(3px);
 }
 
 /* CONTACT */
@@ -851,15 +850,6 @@ color:#777;
 }
 
 /* RESPONSIVE FIX */
-
-@media (max-width:800px){
-
-.footer-container{
-grid-template-columns:1fr 1fr;
-gap:30px;
-}
-
-}
 
 @media (max-width:500px){
 
