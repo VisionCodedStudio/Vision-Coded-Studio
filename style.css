@@ -276,21 +276,29 @@ ABOUT CARD
 ================================================== */
 
 
-.about-card strong{
-display:block;
-font-size:1.3rem;
-margin-top:30px;
-margin-bottom:12px;
+/* ==================================================
+ABOUT CARD
+================================================== */
 
-font-family:'DM Serif Display', serif;
-color:#FF5B00;
-
-letter-spacing:0.8px;
-text-shadow:0 0 10px rgba(255,91,0,0.25);
+.about-card{
+max-width:650px;
+margin:40px auto;
+padding:45px 40px;
+background:#ffffff;
+border-radius:10px;
+box-shadow:0 20px 40px rgba(0,0,0,0.08);
 }
 
 .about-card p{
 margin-bottom:12px;
+}
+
+.about-card strong{
+display:block;
+font-size:1.2rem;
+margin-top:28px;
+margin-bottom:6px;
+}
 }
 
 /* ==================================================
