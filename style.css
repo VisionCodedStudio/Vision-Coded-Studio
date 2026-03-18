@@ -866,7 +866,7 @@ height:500px;
 
 background:radial-gradient(
 circle,
-rgba(255,91,0,0.08),
+rgba(255,91,0,0.12)
 transparent 70%
 );
 
@@ -891,13 +891,6 @@ font-size:1.05rem;
 color:#555;
 max-width:650px;
 margin:0 auto 25px;
-}
-
-.hero-buttons{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
 }
 
 .hero-buttons{
