@@ -1018,32 +1018,46 @@ align-items:center; /* 🔥 THIS LOCKS CENTER */
 }
 
 /* ===============================
-LEGAL PAGES (PRIVACY / TERMS)
+LEGAL PAGE (PREMIUM FIX)
 =============================== */
 
-/* LEGAL PAGE */
-
 .legal-page{
-max-width:800px;
-margin:80px auto;
+max-width:900px;
+margin:100px auto;
 padding:0 20px;
 text-align:left;
 }
 
+/* TITLE */
 .legal-page h1{
-font-size:2.5rem;
-margin-bottom:20px;
+font-size:2.8rem;
+margin-bottom:10px;
+text-align:center;
 }
 
+/* DATE */
+.legal-page strong{
+display:block;
+text-align:center;
+margin-bottom:30px;
+color:#777;
+font-weight:500;
+}
+
+/* PARAGRAPHS */
+.legal-page p{
+font-size:1rem;
+color:#555;
+line-height:1.8;
+margin-bottom:16px;
+}
+
+/* SECTION HEADINGS */
 .legal-page h3{
-margin-top:30px;
+margin-top:35px;
 margin-bottom:10px;
 font-size:1.2rem;
-}
-
-.legal-page p{
-margin-bottom:12px;
-font-size:0.95rem;
-color:#555;
-line-height:1.7;
+color:#111;
+border-left:3px solid #FF5B00;
+padding-left:10px;
 }
