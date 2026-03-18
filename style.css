@@ -271,10 +271,6 @@ padding:0 20px;
 width:100%;
 }
 
-/* ==================================================
-ABOUT CARD
-================================================== */
-
 
 /* ==================================================
 ABOUT CARD
@@ -283,10 +279,19 @@ ABOUT CARD
 .about-card{
 max-width:650px;
 margin:40px auto;
+
 padding:45px 40px;
+
 background:#ffffff;
-border-radius:10px;
-box-shadow:0 20px 40px rgba(0,0,0,0.08);
+
+border-radius:12px;
+
+/* 🔥 THIS IS WHAT YOU LOST */
+box-shadow:0 25px 60px rgba(0,0,0,0.12);
+
+border:1px solid rgba(0,0,0,0.05);
+
+text-align:center;
 }
 
 .about-card p{
@@ -299,6 +304,20 @@ font-size:1.2rem;
 margin-top:28px;
 margin-bottom:6px;
 }
+
+.signature{
+font-style:italic;
+font-family:'DM Serif Display', serif;
+
+margin-top:10px;
+font-size:1.05rem;
+color:#444;
+}
+
+.founder{
+margin-top:5px;
+font-size:0.9rem;
+color:#777;
 }
 
 /* ==================================================
