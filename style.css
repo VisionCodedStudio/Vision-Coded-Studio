@@ -1018,86 +1018,73 @@ align-items:center; /* 🔥 THIS LOCKS CENTER */
 }
 
 /* ===============================
-LEGAL PAGE — LUXURY STYLE
+LEGAL PAGES (LUXURY FIX)
 =============================== */
 
 .legal-page{
 padding:120px 20px;
 display:flex;
 justify-content:center;
+background:#f7f7f7;
 }
 
-/* CARD CONTAINER */
 .legal-wrapper{
-max-width:900px;
+max-width:850px;
 width:100%;
 
 background:#ffffff;
 
-padding:60px 60px;
+padding:60px 70px;
 
 border-radius:18px;
 
-box-shadow:
-0 20px 60px rgba(0,0,0,0.08),
-0 5px 20px rgba(0,0,0,0.04);
+box-shadow:0 30px 80px rgba(0,0,0,0.08);
 
-border:1px solid rgba(0,0,0,0.05);
+text-align:left;
 }
 
 /* TITLE */
+
 .legal-wrapper h1{
-font-size:2.6rem;
 text-align:center;
+font-size:2.4rem;
 margin-bottom:10px;
 }
 
 /* DATE */
-.legal-wrapper .legal-date{
+
+.legal-date{
 display:block;
 text-align:center;
-margin-bottom:35px;
-color:#888;
+margin-bottom:40px;
+color:#999;
 font-size:0.9rem;
+letter-spacing:0.5px;
 }
 
-/* INTRO PARAGRAPH */
-.legal-wrapper p{
-font-size:1rem;
-color:#555;
-line-height:1.85;
-margin-bottom:18px;
-}
+/* HEADINGS */
 
-/* SECTION HEADINGS */
 .legal-wrapper h3{
 margin-top:35px;
-margin-bottom:12px;
-font-size:1.25rem;
+margin-bottom:10px;
+font-size:1.2rem;
 color:#111;
-
-position:relative;
-padding-left:16px;
 }
 
-/* ORANGE ACCENT BAR */
-.legal-wrapper h3::before{
-content:"";
-position:absolute;
-left:0;
-top:6px;
-height:16px;
-width:3px;
-background:#FF5B00;
-border-radius:2px;
+/* PARAGRAPHS */
+
+.legal-wrapper p{
+font-size:0.95rem;
+line-height:1.8;
+color:#555;
 }
 
-/* SECTION DIVIDER (subtle spacing boost) */
-.legal-wrapper h3 + p{
-margin-bottom:20px;
+/* MOBILE */
+
+@media (max-width:600px){
+
+.legal-wrapper{
+padding:40px 25px;
 }
 
-/* BACKGROUND FOR PAGE */
-body{
-background:#f7f7f7;
 }
