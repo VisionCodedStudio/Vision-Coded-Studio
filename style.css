@@ -211,13 +211,18 @@ text-decoration:none;
 background:#FF5B00;
 color:#fff;
 border:none;
-padding:18px 44px; /* UPDATED */
+
+padding:18px 44px;
 border-radius:12px;
+
 font-weight:600;
 letter-spacing:1px;
-font-size:1.05rem; /* ADD THIS */
+font-size:1.05rem;
+
 transition:all .25s ease;
-box-shadow:0 6px 18px rgba(255,91,0,0.25);
+
+/* 🔥 THIS IS THE UPGRADE */
+box-shadow:0 12px 30px rgba(255,91,0,0.25);
 
 display:inline-flex;
 align-items:center;
@@ -917,8 +922,9 @@ margin-bottom:30px;
 /* HEADLINE (clean hierarchy) */
 .hero h1{
 font-size:2.9rem;
-line-height:1.2;
+line-height:1.15;
 margin-bottom:20px;
+max-width:650px; /* 🔥 THIS IS THE FIX */
 }
 
 .hero p{
