@@ -1017,3 +1017,32 @@ flex-direction:column;
 align-items:center; /* 🔥 THIS LOCKS CENTER */
 }
 
+/* ===============================
+LEGAL PAGES (PRIVACY / TERMS)
+=============================== */
+
+.legal-page{
+max-width:800px;
+margin:80px auto;
+padding:0 20px;
+text-align:left;
+}
+
+.legal-page h1{
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+.legal-page h3{
+margin-top:30px;
+margin-bottom:10px;
+font-size:1.2rem;
+}
+
+.legal-page p{
+margin-bottom:12px;
+}
+
+.legal-page ul{
+margin:10px 0 15px 20px;
+}
