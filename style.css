@@ -900,3 +900,40 @@ justify-content:center;
 gap:20px;
 flex-wrap:wrap;
 }
+
+/* 🔥 ADD THIS RIGHT HERE (DO NOT MOVE ABOVE) */
+
+.hero h1{
+line-height:1.15;
+max-width:800px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.btn-primary:hover{
+background:#e24c00;
+transform:translateY(-3px);
+box-shadow:0 15px 35px rgba(255,91,0,0.35);
+}
+
+.btn-secondary{
+color:#FF5B00;
+font-weight:600;
+text-decoration:none;
+position:relative;
+}
+
+.btn-secondary::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-4px;
+width:0%;
+height:2px;
+background:#FF5B00;
+transition:0.3s;
+}
+
+.btn-secondary:hover::after{
+width:100%;
+}
