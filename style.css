@@ -44,7 +44,7 @@ position:absolute;
 left:30px;
 top:50%;
 transform:translateY(-50%);
-height:32px;
+height:60px; /* 🔥 CHANGE THIS */
 width:auto;
 }
 
@@ -875,7 +875,3 @@ gap:20px;
 flex-wrap:wrap;
 }
 
-.logo img{
-height:70px;
-width:auto;
-}
