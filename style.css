@@ -35,6 +35,8 @@ align-items:center;
 gap:40px;
 padding:25px 0;
 font-weight:600;
+
+position:relative; /* ADD THIS */
 }
 
 .nav a{
