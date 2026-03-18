@@ -739,10 +739,11 @@ margin-top:40px;
 display:grid;
 grid-template-columns:repeat(4,1fr);
 
-gap:25px; /* 🔥 tighter */
+gap:60px; /* 🔥 THIS spreads everything out */
 
-max-width:900px; /* 🔥 pulls everything together */
+max-width:1200px; /* 🔥 wider container */
 margin:0 auto;
+padding:0 40px; /* 🔥 adds breathing room on sides */
 }
 
 /* HEADINGS STRONGER */
