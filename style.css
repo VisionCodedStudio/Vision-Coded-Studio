@@ -866,13 +866,14 @@ height:500px;
 
 background:radial-gradient(
 circle,
-rgba(255,91,0,0.12)
+rgba(255,91,0,0.12),
 transparent 70%
 );
 
 filter:blur(80px);
 z-index:0;
 }
+
 .hero-logo{
 width:280px;
 max-width:90%;
@@ -900,7 +901,6 @@ gap:20px;
 flex-wrap:wrap;
 }
 
-/* 🔥 ADD THIS */
 .hero-content{
 position:relative;
 z-index:1;
