@@ -846,40 +846,15 @@ REAL HERO CONTROL (FIXED)
 padding:120px 20px 90px;
 text-align:center;
 position:relative;
-overflow:hidden;
 
+/* 🔥 FULL BACKGROUND BLEND */
 background:linear-gradient(
 to bottom,
-#f8f8f8,
-#eeeeee
+#f8f8f8 0%,
+#ffe5d6 40%,
+#ffd2b8 60%,
+#eeeeee 100%
 );
-}
-
-/* 🔥 ORANGE GLOW */
-.hero::before{
-content:"";
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-
-width:900px;
-height:900px;
-
-/* 🔥 STRONGER ORANGE */
-background:radial-gradient(
-circle,
-rgba(255,91,0,0.7) 0%,
-rgba(255,91,0,0.4) 25%,
-rgba(255,91,0,0.2) 45%,
-transparent 70%
-);
-
-filter:blur(140px);
-z-index:0;
-}
-
-animation:heroGlow 4s ease-in-out infinite alternate;
 }
 
 /* 🔥 KEEP CONTENT ABOVE GLOW */
