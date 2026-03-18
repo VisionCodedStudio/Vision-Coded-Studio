@@ -1021,6 +1021,8 @@ align-items:center; /* 🔥 THIS LOCKS CENTER */
 LEGAL PAGES (PRIVACY / TERMS)
 =============================== */
 
+/* LEGAL PAGE */
+
 .legal-page{
 max-width:800px;
 margin:80px auto;
@@ -1041,8 +1043,7 @@ font-size:1.2rem;
 
 .legal-page p{
 margin-bottom:12px;
-}
-
-.legal-page ul{
-margin:10px 0 15px 20px;
+font-size:0.95rem;
+color:#555;
+line-height:1.7;
 }
