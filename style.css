@@ -879,7 +879,7 @@ width:100%;
 height:100%;
 
 /* 👇 THIS IS THE OVERLAY */
-background:rgba(0,0,0,0.015);
+background:rgba(0,0,0,0.035);
    
 z-index:0;
 }
