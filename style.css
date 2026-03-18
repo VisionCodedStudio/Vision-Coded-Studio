@@ -670,14 +670,10 @@ height:3px;
 ==================== */
 
 .vcs-footer{
-background:linear-gradient(
-to bottom,
-#eeeeee,
-#ffffff
-);
+background:#f1f1f1; /* 🔥 FIXED */
 padding:70px 8%;
-border-top:1px solid rgba(255,91,0,0.3);
-box-shadow:0 -10px 40px rgba(255,91,0,0.08);
+border-top:1px solid rgba(0,0,0,0.06);
+box-shadow:0 -15px 40px rgba(0,0,0,0.05);
 margin-top:80px;
 }
 
