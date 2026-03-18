@@ -864,13 +864,29 @@ CLEAN HERO (NO BREAKING LAYOUT)
 ================================ */
 
 .hero{
+position:relative;
 padding:80px 20px 60px;
 text-align:center;
+overflow:hidden;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+/* 👇 THIS IS THE OVERLAY */
+background:rgba(0,0,0,0.03);
+
+z-index:0;
 }
 
 .hero-content{
-max-width:800px;
-margin:0 auto;
+position:relative;
+z-index:1;
 }
 
 .hero-logo{
