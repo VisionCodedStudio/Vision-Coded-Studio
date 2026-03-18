@@ -44,7 +44,7 @@ position:absolute;
 left:30px;
 top:50%;
 transform:translateY(-50%);
-height:110px; /* 🔥 CHANGE THIS */
+height:120px; /* 🔥 CHANGE THIS */
 width:auto;
 }
 
@@ -843,11 +843,36 @@ REAL HERO CONTROL (FIXED)
 ================================ */
 
 .hero{
-padding:60px 20px 40px;
-background:#eeeeee;
+padding:100px 20px 80px;
 text-align:center;
+position:relative;
+overflow:hidden;
+
+background:linear-gradient(
+to bottom,
+#f8f8f8,
+#eeeeee
+);
 }
 
+.hero::before{
+content:"";
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:500px;
+height:500px;
+
+background:radial-gradient(
+circle,
+rgba(255,91,0,0.08),
+transparent 70%
+);
+
+filter:blur(80px);
+z-index:0;
+}
 .hero-logo{
 width:280px;
 max-width:90%;
@@ -875,3 +900,15 @@ gap:20px;
 flex-wrap:wrap;
 }
 
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+/* 🔥 ADD THIS */
+.hero-content{
+position:relative;
+z-index:1;
+}
