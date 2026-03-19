@@ -13,16 +13,19 @@ height:100%;
 }
 
 body{
-font-family:'Poppins',sans-serif;
-background:#ffffff;
-color:#111;
-line-height:1.6;
-text-align:center;
-min-height:100vh;
-display:flex;
-flex-direction:column;
-}
+  font-family:'Poppins',sans-serif;
+  background:#ffffff;
+  color:#111;
+  line-height:1.6;
 
+  /* 🔥 FIX */
+  text-align:left;
+
+  min-height:100vh;
+
+  /* 🔥 REMOVE FLEX FOR NORMAL FLOW */
+  display:block;
+}
 /* =========================================
 TYPOGRAPHY SYSTEM
 ========================================= */
