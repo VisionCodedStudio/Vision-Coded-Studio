@@ -1019,62 +1019,65 @@ align-items:center; /* 🔥 THIS LOCKS CENTER */
 
 /* ===== FORCE LEGAL STYLE RESET ===== */
 
+/* LEGAL PAGE FIX */
 .legal-page{
-background:#fff !important;
-padding:100px 20px !important;
-display:block !important;
+padding:80px 20px;
+background:#fff;
 }
 
 .legal-wrapper{
-max-width:750px !important;
-margin:0 auto !important;
-padding:0 !important;
-background:none !important;
-box-shadow:none !important;
-border:none !important;
+max-width:900px;
+margin:0 auto;
+text-align:left;
 }
-
-/* TITLE */
 
 .legal-wrapper h1{
-text-align:left !important;
-font-size:2.5rem !important;
-margin-bottom:10px !important;
+font-family:'DM Serif Display', serif;
+font-size:2.5rem;
+margin-bottom:10px;
 }
-
-/* DATE */
 
 .legal-date{
-display:block !important;
-margin-bottom:25px !important;
-color:#999 !important;
+display:block;
+margin-bottom:30px;
+color:#888;
 }
 
-/* TEXT */
-
-.legal-wrapper p{
-text-align:left !important;
-font-size:1rem !important;
-line-height:1.8 !important;
-color:#444 !important;
-max-width:650px !important;
+.legal-wrapper h2{
+margin-top:40px;
+font-size:1.5rem;
+color:#FF4500;
 }
-
-/* HEADINGS */
 
 .legal-wrapper h3{
-text-align:left !important;
-margin-top:40px !important;
-font-size:1.3rem !important;
+margin-top:25px;
+font-size:1.2rem;
 }
 
-/* ORANGE LINE */
+.legal-wrapper p{
+margin:15px 0;
+color:#555;
+line-height:1.7;
+}
 
-.legal-wrapper h3::after{
-content:"";
-display:block;
-width:40px;
-height:2px;
-background:#FF5B00;
-margin-top:8px;
+.legal-wrapper ul{
+margin-left:20px;
+margin-bottom:20px;
+}
+
+.legal-wrapper li{
+margin-bottom:8px;
+}
+
+/* FORCE LEGAL PAGE TO BE NORMAL */
+.legal-page{
+text-align:left;
+}
+
+.legal-wrapper{
+text-align:left;
+}
+
+.legal-wrapper *{
+text-align:left;
 }
