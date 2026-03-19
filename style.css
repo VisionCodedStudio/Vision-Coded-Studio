@@ -1017,32 +1017,32 @@ flex-direction:column;
 align-items:center; /* 🔥 THIS LOCKS CENTER */
 }
 /* ===============================
-LEGAL PAGE (REAL FIX)
+LEGAL PAGE - REAL DOCUMENT LAYOUT
 ================================ */
 
 .legal-page{
 padding:80px 20px;
 background:#fff;
-display:block;
 }
 
-/* CONTAINER */
+/* 🔥 MAIN FIX */
 .legal-wrapper{
-max-width:900px;
+max-width:800px;
 margin:0 auto;
+
+/* THIS IS WHAT FIXES EVERYTHING */
 text-align:left;
 }
 
-/* REMOVE CENTER FORCE */
+/* FORCE ALL TEXT LEFT */
 .legal-wrapper *{
 text-align:left !important;
 }
 
 /* TITLE */
 .legal-wrapper h1{
-font-family:'DM Serif Display', serif;
 font-size:2.5rem;
-margin-bottom:10px;
+margin-bottom:5px;
 text-align:left;
 }
 
@@ -1050,50 +1050,128 @@ text-align:left;
 .legal-date{
 display:block;
 margin-bottom:30px;
-color:#888;
+color:#777;
 text-align:left;
 }
 
 /* HEADINGS */
 .legal-wrapper h2{
-margin-top:45px;
-font-size:1.45rem;
-color:#FF4500;
-text-align:left;
+font-size:1.6rem;
+margin-top:40px;
+margin-bottom:10px;
+color:#FF5B00;
 }
 
 .legal-wrapper h3{
-margin-top:30px;
-font-size:1.15rem;
-text-align:left;
+font-size:1.2rem;
+margin-top:20px;
+margin-bottom:5px;
+color:#111;
 }
 
-/* TEXT */
+/* PARAGRAPHS */
 .legal-wrapper p{
-margin:15px 0;
+margin:12px 0;
+line-height:1.7;
 color:#444;
-line-height:1.8;
-font-size:0.95rem;
 max-width:100%;
 }
 
 /* LISTS */
 .legal-wrapper ul{
-margin-left:20px;
-margin-bottom:20px;
+margin:10px 0 20px 20px;
+padding-left:10px;
 }
 
 .legal-wrapper li{
 margin-bottom:8px;
+line-height:1.6;
 }
 
-/* LINKS */
-.legal-wrapper a{
-color:#1a73e8; /* like termly */
-text-decoration:underline;
+/* 🔥 KEY FIX FOR YOUR PROBLEM */
+.legal-wrapper ul li{
+list-style:disc;
 }
-   
+
+/* REMOVE CENTERED FLEX ISSUES */
+body{
+text-align:left;
+}
+
+/* OPTIONAL: ADD READABILITY */
 .legal-wrapper{
-width:100%;
-max-width:900px;
+font-size:16px;
+}
+
+/* ===============================
+LEGAL PAGE OVERRIDE (FULL FIX)
+================================ */
+
+/* 🔥 KILLS GLOBAL CENTERING + FLEX */
+.legal-body{
+display:block !important;
+text-align:left !important;
+}
+
+/* RESET HEADER JUST FOR LEGAL PAGE */
+.legal-body header{
+display:block !important;
+align-items:unset !important;
+text-align:left !important;
+padding:40px 20px 20px !important;
+}
+
+/* MAIN LEGAL WRAPPER */
+.legal-body .legal-wrapper{
+max-width:800px;
+margin:0 auto;
+text-align:left;
+}
+
+/* FORCE EVERYTHING LEFT */
+.legal-body .legal-wrapper *{
+text-align:left !important;
+}
+
+/* FIX TITLE */
+.legal-body h1{
+font-size:2.4rem;
+margin-bottom:5px;
+}
+
+/* FIX DATE */
+.legal-body .legal-date{
+display:block;
+margin-bottom:30px;
+color:#777;
+}
+
+/* HEADINGS */
+.legal-body h2{
+font-size:1.6rem;
+margin-top:40px;
+margin-bottom:10px;
+color:#FF5B00;
+}
+
+.legal-body h3{
+font-size:1.2rem;
+margin-top:20px;
+margin-bottom:5px;
+}
+
+/* TEXT */
+.legal-body p{
+margin:12px 0;
+line-height:1.7;
+color:#444;
+}
+
+/* LISTS */
+.legal-body ul{
+margin:10px 0 20px 20px;
+}
+
+.legal-body li{
+margin-bottom:8px;
 }
