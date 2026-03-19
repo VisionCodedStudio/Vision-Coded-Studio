@@ -808,11 +808,10 @@ margin:0;
   margin:0;
 }
 
-.footer-links-grid a{
-  text-decoration:none;
-  color:#333;
-  font-size:13px;
-  transition:all 0.25s ease;
+.footer-links-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(120px, 1fr));
+  gap:8px 35px;
 }
 
 .footer-links-grid a:hover{
