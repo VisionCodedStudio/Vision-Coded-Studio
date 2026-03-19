@@ -1017,24 +1017,25 @@ flex-direction:column;
 align-items:center; /* 🔥 THIS LOCKS CENTER */
 }
 /* ===============================
-LEGAL PAGE (FINAL CLEAN VERSION)
+LEGAL PAGE (REAL FIX)
 ================================ */
 
 .legal-page{
 padding:80px 20px;
 background:#fff;
-text-align:left; /* fixes global center issue */
+display:block;
 }
 
+/* CONTAINER */
 .legal-wrapper{
-max-width:820px; /* cleaner reading width */
+max-width:900px;
 margin:0 auto;
 text-align:left;
 }
 
-/* FORCE EVERYTHING INSIDE LEFT */
+/* REMOVE CENTER FORCE */
 .legal-wrapper *{
-text-align:left;
+text-align:left !important;
 }
 
 /* TITLE */
@@ -1042,6 +1043,7 @@ text-align:left;
 font-family:'DM Serif Display', serif;
 font-size:2.5rem;
 margin-bottom:10px;
+text-align:left;
 }
 
 /* DATE */
@@ -1049,27 +1051,30 @@ margin-bottom:10px;
 display:block;
 margin-bottom:30px;
 color:#888;
-font-size:0.9rem;
+text-align:left;
 }
 
-/* SECTION HEADINGS */
+/* HEADINGS */
 .legal-wrapper h2{
 margin-top:45px;
 font-size:1.45rem;
 color:#FF4500;
+text-align:left;
 }
 
 .legal-wrapper h3{
 margin-top:30px;
 font-size:1.15rem;
+text-align:left;
 }
 
 /* TEXT */
 .legal-wrapper p{
 margin:15px 0;
-color:#444; /* stronger readability */
+color:#444;
 line-height:1.8;
 font-size:0.95rem;
+max-width:100%;
 }
 
 /* LISTS */
@@ -1080,15 +1085,15 @@ margin-bottom:20px;
 
 .legal-wrapper li{
 margin-bottom:8px;
-color:#444;
 }
 
-/* LINKS (if any inside policy) */
+/* LINKS */
 .legal-wrapper a{
-color:#FF4500;
-text-decoration:none;
-}
-
-.legal-wrapper a:hover{
+color:#1a73e8; /* like termly */
 text-decoration:underline;
+}
+   
+.legal-wrapper{
+width:100%;
+max-width:900px;
 }
