@@ -498,16 +498,17 @@ CONTACT PAGE
   border:1px solid rgba(0,0,0,0.05);
 }
 
+main{
+  flex:1;
+}
+
 .center-page{
-  min-height:calc(100vh - 200px);
   display:flex;
   justify-content:center;
+  align-items:center;
 
-  /* 🔥 THIS IS THE KEY */
-  align-items:flex-start;
-
-  /* 🔥 CONTROL HOW HIGH IT SITS */
-  padding-top:40px;
+  /* 🔥 THIS CONTROLS HEIGHT PROPERLY */
+  min-height:calc(100vh - 300px);
 }
 
 .contact-form{
