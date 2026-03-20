@@ -14,32 +14,29 @@
 
 <meta name="author" content="Vision Coded Studio">
 
-<!-- Open Graph (social sharing preview) -->
-
+<!-- Open Graph -->
 <meta property="og:title" content="Start a Project | Vision Coded Studio">
 <meta property="og:description" content="Tell Vision Coded Studio about your business and the website you want to build. Start your digital project today.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://visioncodedstudio.com/startproject">
 <meta property="og:image" content="https://visioncodedstudio.com/images/VCS_logo.png">
-<!-- Google Font -->
+
+<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  
-<!-- Font Awesome Icons -->
+
+<!-- Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- Main CSS -->
+<!-- CSS -->
 <link rel="stylesheet" href="/style.css">
 
-
 <link rel="icon" href="/favicon.ico">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  
+
 </head>
 
 <body>
 
 <!-- NAV -->
-
 <nav class="nav">
 
 <a href="/">
@@ -54,7 +51,8 @@
 <a href="/contact/">Contact</a>
 
 </nav>
-  
+
+<!-- HEADER -->
 <header>
 
 <h1>Start Your Project</h1>
@@ -68,149 +66,109 @@ This helps Vision Coded Studio understand your project before we begin.
 
 </header>
 
+<!-- CENTER WRAPPER -->
+<div class="center-page">
 
-<!-- PROJECT FORM -->
+  <!-- FORM CARD -->
+  <section class="contact-container">
 
-<section class="contact-container">
+    <form class="contact-form">
 
-<form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name *" required>
 
-<input type="text" name="name" placeholder="Your Name *" required>
+      <input type="email" name="email" placeholder="Email Address *" required>
 
-<input type="email" name="email" placeholder="Email Address *" required>
+      <input type="tel" name="phone" placeholder="Phone Number *" required>
 
-<input type="tel" name="phone" placeholder="Phone Number *" required>
+      <input type="text" name="business" placeholder="Business Name">
 
-<input type="text" name="business" placeholder="Business Name">
+      <select name="website-type">
+        <option value="">What type of website do you need?</option>
+        <option>Business Website</option>
+        <option>Landing Page</option>
+        <option>E-commerce Store</option>
+        <option>Portfolio Website</option>
+        <option>Not sure yet</option>
+      </select>
 
-<select name="website-type">
-<option value="">What type of website do you need?</option>
-<option>Business Website</option>
-<option>Landing Page</option>
-<option>E-commerce Store</option>
-<option>Portfolio Website</option>
-<option>Not sure yet</option>
-</select>
+      <select name="pages">
+        <option value="">How many pages do you need?</option>
+        <option>1 Page</option>
+        <option>3–5 Pages</option>
+        <option>5–8 Pages</option>
+        <option>Not sure yet</option>
+      </select>
 
-<select name="pages">
-<option value="">How many pages do you need?</option>
-<option>1 Page</option>
-<option>3–5 Pages</option>
-<option>5–8 Pages</option>
-<option>Not sure yet</option>
-</select>
+      <select name="branding">
+        <option value="">Do you already have branding?</option>
+        <option>Yes (logo + colors)</option>
+        <option>Logo only</option>
+        <option>No branding yet</option>
+      </select>
 
-<select name="branding">
-<option value="">Do you already have branding?</option>
-<option>Yes (logo + colors)</option>
-<option>Logo only</option>
-<option>No branding yet</option>
-</select>
+      <input type="text" name="domain" placeholder="Do you already own a domain name?">
 
-<input type="text" name="domain" placeholder="Do you already own a domain name?">
+      <select name="hosting">
+        <option value="">Do you have hosting?</option>
+        <option>Yes</option>
+        <option>No</option>
+        <option>Not sure</option>
+      </select>
 
-<select name="hosting">
-<option value="">Do you have hosting?</option>
-<option>Yes</option>
-<option>No</option>
-<option>Not sure</option>
-</select>
+      <textarea name="project-details" placeholder="Tell us more about your project *" required></textarea>
 
-<textarea name="project-details" placeholder="Tell us more about your project *" required></textarea>
+      <button class="btn btn-primary">
+        Start My Project
+        <span>→</span>
+      </button>
 
-<button class="btn btn-primary">
-Start My Project
-<span>→</span>
-</button>
+    </form>
 
-</form>
+  </section>
 
-</section>
+</div>
 
-
-<!-- ==================================================
-FOOTER
-================================================== -->
-
+<!-- FOOTER -->
 <footer class="vcs-footer">
 
 <div class="footer-container">
 
-<!-- Studio -->
 <div class="footer-col">
-
 <h3>Vision Coded Studio</h3>
-
-<p class="studio-motto">
-Design. Code. Innovation.
-</p>
-
-<p>
-Building modern websites and digital platforms for brands ready to grow online.
-</p>
-
+<p class="studio-motto">Design. Code. Innovation.</p>
+<p>Building modern websites and digital platforms for brands ready to grow online.</p>
 </div>
 
-
-<!-- Useful Links -->
 <div class="footer-col">
-
-<h4>Useful Links</h4>
-
 <h4>Useful Links</h4>
 
 <ul class="footer-links-grid">
-  <li><a href="/">Home</a></li>
-  <li><a href="/about/">About</a></li>
-
-  <li><a href="/services/">Services</a></li>
-  <li><a href="/portfolio/">Portfolio</a></li>
-
-  <li><a href="/startproject/">Start Project</a></li>
-  <li><a href="/contact/">Contact</a></li>
-
-  <li><a href="/privacy/">Privacy Policy</a></li>
-  <li><a href="/terms/">Terms of Service</a></li>
+<li><a href="/">Home</a></li>
+<li><a href="/about/">About</a></li>
+<li><a href="/services/">Services</a></li>
+<li><a href="/portfolio/">Portfolio</a></li>
+<li><a href="/startproject/">Start Project</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/privacy/">Privacy Policy</a></li>
+<li><a href="/terms/">Terms of Service</a></li>
 </ul>
-  
+
 </div>
 
-
-<!-- Contact Info -->
 <div class="footer-col">
-
 <h4>Contact</h4>
 
 <ul class="footer-contact">
-
-<li>
-<i class="fa-solid fa-envelope"></i>
-<a href="mailto:info@visioncodedstudio.com">info@visioncodedstudio.com</a>
-</li>
-
-<li>
-<i class="fa-solid fa-globe"></i>
-<a href="https://visioncodedstudio.com">visioncodedstudio.com</a>
-</li>
-
-<li>
-<i class="fa-solid fa-location-dot"></i>
-Available for projects worldwide
-</li>
-
+<li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@visioncodedstudio.com">info@visioncodedstudio.com</a></li>
+<li><i class="fa-solid fa-globe"></i> <a href="https://visioncodedstudio.com">visioncodedstudio.com</a></li>
+<li><i class="fa-solid fa-location-dot"></i> Available for projects worldwide</li>
 </ul>
 
 </div>
 
-
-<!-- Newsletter -->
 <div class="footer-col">
-
 <h4>Newsletter</h4>
-
-<p>
-Get web design tips, digital growth insights, and studio updates.
-</p>
+<p>Get web design tips, digital growth insights, and studio updates.</p>
 
 <div class="newsletter-box">
 <input type="email" placeholder="Enter your email">
@@ -221,14 +179,11 @@ Get web design tips, digital growth insights, and studio updates.
 
 </div>
 
-
 <div class="footer-bottom">
 <p>© 2026 Vision Coded Studio — All Rights Reserved</p>
 </div>
 
 </footer>
 
-
-
-
-
+</body>
+</html>
