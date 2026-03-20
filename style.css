@@ -103,7 +103,7 @@ color:#FF5B00;
 }
 
 /* ==================================================
-PAGE CONTENT / HEADER
+PAGE CONTENT / HEADER (CLEAN RESET)
 ================================================== */
 
 header{
@@ -119,72 +119,33 @@ header{
   position:relative;
   overflow:hidden;
 
-  background:
-  radial-gradient(circle at top center, rgba(255,91,0,0.08), transparent 60%),
-  linear-gradient(to bottom, #f5f5f5, #eaeaea);
+  background:#ffffff;
 }
 
-header::before{
-  content:"";
-  position:absolute;
-  inset:0;
-
-  background-image:
-    linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
-
-  background-size:50px 50px;
-
-  opacity:0.5;
-  pointer-events:none;
-}
-
-header::after{
-  content:"";
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  width:500px;
-  height:500px;
-
-  background:radial-gradient(
-    circle,
-    rgba(255,91,0,0.12),
-    transparent 70%
-  );
-
-  filter:blur(80px);
-  z-index:0;
-}
-
-header > *{
-  position:relative;
-  z-index:2;
-}
+/* REMOVE ALL EFFECTS — NO ::before / ::after */
 
 header h1{
-font-size:3rem;
-font-weight:400; /* important */
-letter-spacing:-0.5px;
-font-family:'DM Serif Display', serif; /* reinforce system */
-color:#111;
+  font-size:3rem;
+  font-weight:400;
+  letter-spacing:-0.5px;
+  font-family:'DM Serif Display', serif;
+  color:#111;
 }
 
 header p{
-margin:25px 0 20px;
-font-size:1.1rem;
-color:#555;
-max-width:580px;
-line-height:1.8;
+  margin:25px 0 20px;
+  font-size:1.1rem;
+  color:#555;
+  max-width:580px;
+  line-height:1.8;
 }
 
 header strong{
-display:block;
-margin-top:35px;
-font-size:1.05rem;
-letter-spacing:1px;
-color:#222;
+  display:block;
+  margin-top:35px;
+  font-size:1.05rem;
+  letter-spacing:1px;
+  color:#222;
 }
 
 /* ==================================================
