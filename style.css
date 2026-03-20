@@ -501,8 +501,13 @@ CONTACT PAGE
 .center-page{
   min-height:calc(100vh - 200px);
   display:flex;
-  align-items:center;
   justify-content:center;
+
+  /* 🔥 THIS IS THE KEY */
+  align-items:flex-start;
+
+  /* 🔥 CONTROL HOW HIGH IT SITS */
+  padding-top:40px;
 }
 
 .contact-form{
