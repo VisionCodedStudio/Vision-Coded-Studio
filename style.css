@@ -107,15 +107,60 @@ PAGE CONTENT / HEADER
 ================================================== */
 
 header{
-width:100%;
-max-width:1400px;
-margin:0 auto;
-padding:60px 20px 40px;
-flex:1;
+  width:100%;
+  max-width:1400px;
+  margin:0 auto;
+  padding:100px 20px 80px;
 
-display:flex;
-flex-direction:column;
-align-items:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  position:relative;
+  overflow:hidden;
+
+  background:
+    radial-gradient(circle at top center, rgba(255,91,0,0.10), transparent 60%),
+    linear-gradient(to bottom, #ededed, #d6d6d6);
+}
+
+header::before{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+
+  background-size:50px 50px;
+
+  opacity:0.5;
+  pointer-events:none;
+}
+
+header::after{
+  content:"";
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:500px;
+  height:500px;
+
+  background:radial-gradient(
+    circle,
+    rgba(255,91,0,0.12),
+    transparent 70%
+  );
+
+  filter:blur(80px);
+  z-index:0;
+}
+
+header > *{
+  position:relative;
+  z-index:2;
 }
 
 header h1{
