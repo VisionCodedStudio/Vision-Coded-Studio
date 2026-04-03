@@ -972,22 +972,25 @@ width:100%;
 }
 
 }
+
 /* ===============================
 REAL HERO CONTROL (CLEAN + REFINED)
 ================================ */
 
 .hero{
-padding:100px 20px 80px;
-text-align:center;
-position:relative;
-overflow:hidden;
+  padding:100px 20px 80px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
 
-/* slightly cleaner light tone */
-background:linear-gradient(
-to bottom,
-#ededed,
-#d6d6d6
-);
+  min-height: calc(100vh - 200px); /* 🔥 ADD THIS */
+
+  background:linear-gradient(
+    to bottom,
+    #ededed,
+    #d6d6d6
+  );
+}
 
 /* subtle orange glow (keep your vibe) */
 .hero::before{
