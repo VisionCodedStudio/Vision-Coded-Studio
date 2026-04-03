@@ -12,13 +12,17 @@ html{
 height:100%;
 }
 
-body{
+body {
   font-family:'Poppins',sans-serif;
   background:#ffffff;
   color:#111;
   line-height:1.6;
   text-align:left;
   min-height:100vh;
+
+  display: flex;            /* 🔥 ADD THIS */
+  flex-direction: column;   /* 🔥 ADD THIS */
+}
 
 }
 /* =========================================
