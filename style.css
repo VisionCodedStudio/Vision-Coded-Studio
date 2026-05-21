@@ -24,7 +24,6 @@ body {
   flex-direction: column;   /* 🔥 ADD THIS */
 }
 
-}
 /* =========================================
 TYPOGRAPHY SYSTEM
 ========================================= */
@@ -70,22 +69,18 @@ NAVIGATION
 .nav{
 width:100%;
 display:flex;
-justify-content:center;
+justify-content:space-between;
 align-items:center;
-gap:40px;
-padding:25px 0;
-font-weight:600;
-
-position:relative; /* ADD THIS */
+padding:18px 24px;
+gap:20px;
+flex-wrap:wrap;
 }
 
 .nav-logo{
-position:absolute;
-left:30px;
-top:50%;
-transform:translateY(-50%);
-height:140px; /* 🔥 CHANGE THIS */
+height:70px;
 width:auto;
+position:static;
+transform:none;
 }
 
 .nav a{
@@ -1127,4 +1122,175 @@ align-items:center; /* 🔥 THIS LOCKS CENTER */
 
 .legal-wrapper li{
   margin-bottom:8px;
+}
+
+/* =========================================
+FINAL MOBILE RESPONSIVE FIX
+========================================= */
+
+.nav-links{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:28px;
+flex-wrap:wrap;
+}
+
+/* GLOBAL MOBILE */
+@media (max-width:768px){
+
+html,
+body{
+overflow-x:hidden;
+width:100%;
+}
+
+/* ======================
+NAVIGATION
+====================== */
+
+.nav{
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:18px 20px;
+gap:18px;
+text-align:center;
+}
+
+.nav-logo{
+height:60px;
+width:auto;
+}
+
+.nav-links{
+gap:16px;
+justify-content:center;
+}
+
+.nav-links a{
+font-size:0.92rem;
+}
+
+/* ======================
+HERO
+====================== */
+
+.hero{
+padding:70px 20px 60px;
+min-height:auto;
+}
+
+.hero-logo{
+width:180px;
+margin-bottom:24px;
+}
+
+.hero h1{
+font-size:clamp(2.1rem, 7vw, 3.4rem);
+line-height:1.1;
+max-width:100%;
+padding:0 5px;
+}
+
+.hero p{
+font-size:1rem;
+line-height:1.7;
+padding:0 5px;
+max-width:100%;
+}
+
+.hero-buttons{
+width:100%;
+}
+
+.btn-primary{
+width:100%;
+max-width:320px;
+padding:16px 20px;
+font-size:1rem;
+}
+
+/* ======================
+SERVICES
+====================== */
+
+.services-grid{
+grid-template-columns:1fr;
+max-width:100%;
+padding:0 20px;
+gap:24px;
+}
+
+.service-card{
+padding:35px 24px;
+}
+
+/* ======================
+PORTFOLIO
+====================== */
+
+.portfolio-grid{
+grid-template-columns:1fr;
+padding:0 20px;
+}
+
+/* ======================
+CONTACT
+====================== */
+
+.contact-container{
+padding:35px 24px;
+margin:40px 20px;
+}
+
+/* ======================
+FOOTER
+====================== */
+
+.vcs-footer{
+padding:60px 24px;
+}
+
+.footer-container{
+grid-template-columns:1fr;
+gap:40px;
+text-align:center;
+}
+
+.footer-col{
+width:100%;
+overflow:hidden;
+}
+
+.footer-col p{
+max-width:100%;
+margin:auto;
+}
+
+.footer-links-grid{
+grid-template-columns:1fr 1fr;
+gap:12px;
+justify-content:center;
+}
+
+.footer-contact li{
+justify-content:center;
+}
+
+.newsletter-box{
+flex-direction:column;
+width:100%;
+}
+
+.newsletter-box input,
+.newsletter-box button{
+width:100%;
+}
+
+.footer-bottom{
+font-size:12px;
+line-height:1.6;
+}
+
 }
