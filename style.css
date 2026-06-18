@@ -74,7 +74,7 @@ NAVIGATION
     display:flex;
     align-items:center;
 
-    padding:20px 40px;
+    padding:10px 40px;
 }
 
 .logo-wrap{
@@ -82,7 +82,7 @@ NAVIGATION
 }
 
 .nav-logo{
-    height:90px;
+    height:120px;
     width:auto;
     display:block;
 }
