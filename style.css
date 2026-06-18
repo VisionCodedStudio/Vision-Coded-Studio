@@ -1009,64 +1009,102 @@ width:100%;
 }
 
 /* ===============================
-REAL HERO CONTROL
+HOME HERO
 ================================ */
 
 .hero{
     max-width:1200px;
     margin:0 auto;
-    padding:100px 40px;
+    padding:80px 40px;
 
     display:flex;
     align-items:center;
     justify-content:space-between;
 
-    gap:80px;
+    gap:60px;
 }
 
 .hero-content{
     flex:1;
+    max-width:600px;
 }
 
 .hero-image-wrap{
     flex:1;
     display:flex;
     justify-content:center;
-    align-items:center;
 }
 
 .hero-image{
     width:100%;
-    max-width:420px;
+    max-width:360px;
     height:auto;
 }
 
 .hero h1{
-    font-size:3.8rem;
-    line-height:1.1;
-    margin-bottom:25px;
-    max-width:700px;
+    font-size:3rem;
+    line-height:1.15;
+    margin-bottom:20px;
 }
 
 .hero p{
-    font-size:1.1rem;
-    line-height:1.8;
-    max-width:600px;
+    font-size:1.05rem;
+    color:#555;
     margin-bottom:30px;
+    max-width:520px;
 }
 
 .hero-buttons{
     display:flex;
     gap:15px;
-    flex-wrap:wrap;
+    margin-bottom:25px;
 }
 
 .hero-features{
     display:flex;
-    gap:20px;
+    gap:25px;
     flex-wrap:wrap;
-    margin-top:25px;
+
+    color:#444;
+    font-size:.95rem;
+    font-weight:500;
 }
+
+@media (max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero-content{
+    max-width:100%;
+}
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.hero p{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.hero-features{
+    justify-content:center;
+}
+
+.hero-image{
+    max-width:280px;
+}
+
+}
+
 .legal-page{
   padding:120px 20px;
   background:#f5f5f5;
