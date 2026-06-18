@@ -1061,6 +1061,23 @@ HOME HERO
     display:none;
 }
 
+.hero-tag{
+    color:#FF5B00;
+    font-size:.85rem;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:25px;
+}
+
+.hero-line{
+    width:90px;
+    height:4px;
+    background:#FF5B00;
+    border-radius:999px;
+    margin:35px auto;
+}
+
 @media (max-width:900px){
 
 .hero{
