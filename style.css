@@ -75,15 +75,19 @@ NAVIGATION
     align-items:center;
     justify-content:space-between;
 
-    padding:20px 40px;
+    padding:10px 40px;
+
+    background:#fff;
 }
 
 .logo-wrap{
     flex-shrink:0;
+    display:flex;
+    align-items:center;
 }
 
 .nav-logo{
-    height:85px;
+    height:110px;
     width:auto;
     display:block;
 }
@@ -102,8 +106,9 @@ NAVIGATION
     text-decoration:none;
     color:#111;
     font-size:1rem;
-    letter-spacing:1px;
-    transition:0.3s;
+    font-weight:500;
+    letter-spacing:0.5px;
+    transition:all .25s ease;
 }
 
 .nav a:hover{
@@ -988,12 +993,12 @@ REAL HERO CONTROL (CLEAN + REFINED)
 ================================ */
 
 .hero{
-  padding:100px 20px 80px;
+  padding:40px 20px 80px;
   text-align:center;
   position:relative;
   overflow:hidden;
 
-  min-height: calc(100vh - 200px); /* 🔥 ADD THIS */
+  min-height: calc(100vh - 200px);
 
   background:linear-gradient(
     to bottom,
@@ -1024,9 +1029,9 @@ z-index:0;
 
 /* LOGO (balanced size + spacing) */
 .hero-logo{
-width:260px;
+width:340px;
 max-width:90%;
-margin-bottom:30px;
+margin-bottom:20px;
 }
 
 /* HEADLINE (clean hierarchy) */
