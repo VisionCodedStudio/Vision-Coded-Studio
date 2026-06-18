@@ -71,18 +71,20 @@ NAVIGATION
     max-width:1400px;
     margin:0 auto;
 
-    display:flex;
+    display:grid;
+    grid-template-columns:220px 1fr 220px;
+
     align-items:center;
 
     padding:10px 40px;
 }
-
 .logo-wrap{
     flex-shrink:0;
+  
 }
 
 .nav-logo{
-    height:120px;
+    height:95px;
     width:auto;
     display:block;
 }
