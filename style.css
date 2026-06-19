@@ -1148,6 +1148,47 @@ HOME HERO
     gap:8px;
 }
 
+.home-services{
+    padding:120px 20px;
+    background:#fff;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-heading h2{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.section-heading p{
+    max-width:600px;
+    margin:0 auto;
+}
+
+.home-services-grid{
+    max-width:1200px;
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.home-service-card{
+    background:#fff;
+    padding:40px;
+    border-radius:16px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.home-service-card:hover{
+    transform:translateY(-6px);
+}
+
 @media (max-width:768px){
 
 .hero{
@@ -1164,8 +1205,6 @@ HOME HERO
 
 .hero-features{
     gap:15px;
-}
-
 }
 
 .legal-page{
