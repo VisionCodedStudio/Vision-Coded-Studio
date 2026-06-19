@@ -1514,3 +1514,38 @@ line-height:1.6;
 }
 
 }
+
+/* ===============================
+FOUNDER SIGNATURE
+================================ */
+
+.founder-signature{
+margin-top:50px;
+text-align:center;
+}
+
+.founder-signature::before{
+content:"";
+display:block;
+width:70px;
+height:3px;
+background:#FF5B00;
+margin:0 auto 25px;
+border-radius:999px;
+}
+
+.signature-line{
+font-family:'Alex Brush', cursive;
+font-size:4rem;
+line-height:1;
+color:#111;
+margin:0;
+}
+
+.signature-title{
+margin-top:10px;
+font-size:.9rem;
+letter-spacing:2px;
+text-transform:uppercase;
+color:#777;
+}
