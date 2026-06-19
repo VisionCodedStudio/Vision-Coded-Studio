@@ -1013,9 +1013,11 @@ HOME HERO
 ================================ */
 
 .hero{
-    max-width:900px;
+    max-width:1000px;
     margin:0 auto;
-    padding:100px 20px 140px;
+
+    padding:80px 20px 80px;
+
     text-align:center;
 }
 
@@ -1027,16 +1029,22 @@ HOME HERO
 }
 
 .hero h1{
-    font-size:4rem;
-    line-height:1.1;
-    max-width:850px;
-    margin:0 auto 25px;
+    font-size:5rem;
+    line-height:1.05;
+
+    max-width:900px;
+
+    margin:0 auto 30px;
 }
 
 .hero p{
-    font-size:1.1rem;
-    max-width:650px;
-    margin:0 auto 35px;
+    font-size:1.25rem;
+
+    max-width:700px;
+
+    margin:0 auto 40px;
+
+    color:#666;
 }
 
 .hero-buttons{
@@ -1050,13 +1058,20 @@ HOME HERO
 .hero-features{
     display:flex;
     justify-content:center;
-    gap:40px;
+    align-items:center;
+    gap:35px;
     flex-wrap:wrap;
 
-    font-size:1rem;
+    font-size:1.05rem;
     font-weight:500;
 
-    color:#444;
+    color:#333;
+}
+
+.hero-features span{
+    display:flex;
+    align-items:center;
+    gap:8px;
 }
 
 .hero-image-wrap,
