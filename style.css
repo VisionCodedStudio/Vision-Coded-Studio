@@ -1287,6 +1287,17 @@ HOME HERO
   margin-bottom:8px;
 }
 
+/* =========================
+MOBILE MENU
+========================= */
+
+.mobile-menu{
+display:none;
+font-size:30px;
+font-weight:700;
+cursor:pointer;
+color:#111;
+}
 
 /* =========================
 MOBILE RESPONSIVE
