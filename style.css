@@ -1050,9 +1050,12 @@ HOME HERO
 .hero-features{
     display:flex;
     justify-content:center;
-    gap:30px;
+    gap:40px;
     flex-wrap:wrap;
+
+    font-size:1rem;
     font-weight:500;
+
     color:#444;
 }
 
