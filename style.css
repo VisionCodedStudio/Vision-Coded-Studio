@@ -1319,7 +1319,25 @@ flex-wrap:nowrap;
 overflow:hidden;
 }
 
+.nav-logo{
+height:75px;
+width:auto;
+flex-shrink:0;
+}
 
+.nav-links{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.nav-links a{
+font-size:0.8rem;
+letter-spacing:0;
+white-space:nowrap;
+}
   
 /* ======================
 HERO
