@@ -1330,22 +1330,28 @@ flex-wrap:nowrap;
 overflow:hidden;
 }
 
+.logo-wrap{
+position:static;
+transform:none;
+}
+
 .nav-logo{
-height:42px;
+height:55px;
 width:auto;
 flex-shrink:0;
 }
 
-.nav-links{
-display:none;
-}
-
 .mobile-menu{
 display:block;
-font-size:28px;
+font-size:32px;
 font-weight:700;
 cursor:pointer;
 color:#111;
+z-index:1000;
+}
+
+.nav-links{
+display:none;
 }
 
 .nav-links.active{
@@ -1367,7 +1373,7 @@ font-size:0.8rem;
 letter-spacing:0;
 white-space:nowrap;
 }
-
+  
 /* ======================
 HERO
 ====================== */
