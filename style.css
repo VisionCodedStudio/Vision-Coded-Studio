@@ -1320,11 +1320,11 @@ overflow:hidden;
 }
 
 .nav-logo{
-height:75px;
+height:55px;
 width:auto;
 flex-shrink:0;
 }
-
+  
 .nav-links{
 display:flex;
 justify-content:center;
