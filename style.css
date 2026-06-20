@@ -1287,17 +1287,6 @@ HOME HERO
   margin-bottom:8px;
 }
 
-/* =========================
-MOBILE MENU
-========================= */
-
-.mobile-menu{
-display:none;
-font-size:30px;
-font-weight:700;
-cursor:pointer;
-color:#111;
-}
 
 /* =========================
 MOBILE RESPONSIVE
@@ -1330,49 +1319,7 @@ flex-wrap:nowrap;
 overflow:hidden;
 }
 
-.logo-wrap{
-position:static;
-transform:none;
-}
 
-.nav-logo{
-height:55px;
-width:auto;
-flex-shrink:0;
-}
-
-.mobile-menu{
-display:block;
-font-size:32px;
-font-weight:700;
-cursor:pointer;
-color:#111;
-z-index:1000;
-}
-
-.nav-links{
-display:none;
-}
-
-.nav-links.active{
-display:flex;
-position:absolute;
-top:70px;
-left:0;
-width:100%;
-background:#fff;
-flex-direction:column;
-padding:20px;
-gap:15px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-z-index:999;
-}
-
-.nav-links a{
-font-size:0.8rem;
-letter-spacing:0;
-white-space:nowrap;
-}
   
 /* ======================
 HERO
