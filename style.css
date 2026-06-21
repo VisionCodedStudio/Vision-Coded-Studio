@@ -1301,42 +1301,41 @@ width:100%;
 }
 
 /* ======================
-NAVIGATION
+MOBILE NAVIGATION
 ====================== */
 
 .nav{
 display:flex;
-flex-direction:row;
-justify-content:space-between;
+flex-direction:column;
 align-items:center;
+justify-content:center;
+padding:20px 15px;
+}
 
-padding:12px 15px;
-
-gap:10px;
-
-flex-wrap:nowrap;
-
-overflow:hidden;
+.logo-wrap{
+position:static;
+left:auto;
+top:auto;
+transform:none;
+margin-bottom:20px;
 }
 
 .nav-logo{
-height:55px;
+height:80px;
 width:auto;
-flex-shrink:0;
+display:block;
 }
-  
+
 .nav-links{
 display:flex;
-justify-content:center;
-align-items:center;
-gap:15px;
 flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+width:100%;
 }
 
 .nav-links a{
-font-size:0.8rem;
-letter-spacing:0;
-white-space:nowrap;
+font-size:.8rem;
 }
   
 /* ======================
