@@ -1313,10 +1313,9 @@ padding:20px 15px;
 }
 
 .logo-wrap{
-position:static;
-left:auto;
-top:auto;
-transform:none;
+width:100%;
+display:flex;
+justify-content:center;
 margin-bottom:20px;
 }
 
@@ -1335,7 +1334,7 @@ width:100%;
 }
 
 .nav-links a{
-font-size:.8rem;
+font-size:.9rem;
 }
   
 /* ======================
