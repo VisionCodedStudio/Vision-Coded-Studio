@@ -1313,9 +1313,10 @@ padding:20px 15px;
 }
 
 .logo-wrap{
-width:100%;
-display:flex;
-justify-content:center;
+position:static;
+left:auto;
+top:auto;
+transform:none;
 margin-bottom:20px;
 }
 
