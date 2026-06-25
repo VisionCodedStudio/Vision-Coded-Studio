@@ -6,8 +6,13 @@
 
 <title>Client Login | Vision Coded Studio</title>
 
+<!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/auth.css">
+
+<!-- CSS (FIXED PATH FOR DEPLOYMENT) -->
+<link rel="stylesheet" href="/css/auth.css">
+
+<!-- Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -17,7 +22,7 @@
 
     <!-- HEADER -->
     <div class="header">
-        <img src="../assets/logos/vcs-logo-horizontal.png" class="logo">
+        <img src="/assets/logos/vcs-logo-horizontal.png" class="logo">
 
         <p class="portal">
             <i class="fa-solid fa-user"></i>
@@ -73,7 +78,7 @@
 
 </div>
 
-<!-- 🔥 FULL LOGIN FLOW SCRIPT -->
+<!-- 🔥 LOGIN FLOW -->
 <script>
 function handleLogin(e){
     e.preventDefault();
@@ -81,18 +86,18 @@ function handleLogin(e){
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim();
 
-    // simple validation
-    if(email === "" || password === ""){
+    // basic validation
+    if(!email || !password){
         alert("Enter credentials");
         return;
     }
 
-    // 🔐 SET AUTH STATE (UNIFIED KEY)
+    // store session (fake auth for now)
     localStorage.setItem("clientAuth", "true");
     localStorage.setItem("clientEmail", email);
 
-    // 🚀 REDIRECT TO CLIENT DASHBOARD
-    window.location.href = "/client-portal/index.html";
+    // 🚀 FIXED REDIRECT (THIS WAS YOUR MAIN ISSUE)
+    window.location.href = "/client-portal/dashboard/index.html";
 }
 </script>
 
