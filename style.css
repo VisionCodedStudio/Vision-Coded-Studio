@@ -1515,35 +1515,3 @@ text-transform:uppercase;
 color:#777;
 }
 
-/* =========================
-   ACTIVE NAV LINK
-========================= */
-
-.nav-links a{
-    position:relative;
-    text-decoration:none;
-    color:#111111;
-    font-weight:500;
-    transition:.3s ease;
-}
-
-.nav-links a:hover{
-    color:var(--primary);
-}
-
-.nav-links a.active{
-    color:var(--primary);
-    font-weight:600;
-}
-
-.nav-links a.active::after{
-    content:"";
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    bottom:-10px;
-    width:30px;
-    height:3px;
-    background:var(--primary);
-    border-radius:999px;
-}
