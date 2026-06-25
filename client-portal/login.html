@@ -9,8 +9,9 @@
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- CSS (FIXED PATH FOR DEPLOYMENT) -->
+<!-- CSS (FIXED PATH) -->
 <link rel="stylesheet" href="./auth.css">
+
 <!-- Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
@@ -21,7 +22,8 @@
 
     <!-- HEADER -->
     <div class="header">
-      <img src="/assets/logos/vcs-logo-horizontal.png" alt="Vision Coded Studio">        
+        <img src="/assets/logos/vcs-logo-horizontal.png" class="logo" alt="Vision Coded Studio">
+
         <p class="portal">
             <i class="fa-solid fa-user"></i>
             CLIENT PORTAL
@@ -76,7 +78,7 @@
 
 </div>
 
-<!-- 🔥 LOGIN FLOW -->
+<!-- LOGIN SCRIPT -->
 <script>
 function handleLogin(e){
     e.preventDefault();
@@ -84,18 +86,15 @@ function handleLogin(e){
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim();
 
-    // basic validation
     if(!email || !password){
         alert("Enter credentials");
         return;
     }
 
-    // store session (fake auth for now)
     localStorage.setItem("clientAuth", "true");
     localStorage.setItem("clientEmail", email);
 
-    // 🚀 FIXED REDIRECT (THIS WAS YOUR MAIN ISSUE)
-      window.location.href = "/client-portal/index.html";
+    window.location.href = "/client-portal/index.html";
 }
 </script>
 
