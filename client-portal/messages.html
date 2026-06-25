@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Messages | Vision Coded Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- ==================================
+SIDEBAR
+================================== -->
+
+<aside class="sidebar">
+
+<div class="sidebar-brand">
+
+<img
+src="../assets/logos/vcs-logo-horizontal.png"
+alt="Vision Coded Studio"
+class="sidebar-logo">
+
+</div>
+
+<nav class="sidebar-nav">
+
+<a href="index.html">
+<i class="fa-solid fa-table-columns"></i>
+<span>Overview</span>
+</a>
+
+<a href="projects.html">
+<i class="fa-solid fa-folder"></i>
+<span>Projects</span>
+</a>
+
+<a href="files.html">
+<i class="fa-solid fa-folder-open"></i>
+<span>Files</span>
+</a>
+
+<a href="messages.html" class="active">
+<i class="fa-solid fa-comments"></i>
+<span>Messages</span>
+</a>
+
+<a href="contracts.html">
+<i class="fa-solid fa-file-signature"></i>
+<span>Contracts</span>
+</a>
+
+<a href="invoices.html">
+<i class="fa-solid fa-file-invoice-dollar"></i>
+<span>Invoices</span>
+</a>
+
+<a href="requests.html">
+<i class="fa-solid fa-clipboard-list"></i>
+<span>Requests</span>
+</a>
+
+<a href="settings.html">
+<i class="fa-solid fa-gear"></i>
+<span>Settings</span>
+</a>
+
+</nav>
+
+<div class="sidebar-footer">
+
+<a href="../client-portal/index.html">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+<span>Logout</span>
+
+</a>
+
+</div>
+
+</aside>
+
+<!-- ==================================
+MAIN
+================================== -->
+
+<div class="dashboard-main">
+
+<header class="topbar">
+
+<div class="topbar-left">
+
+<h2>Messages</h2>
+
+</div>
+
+<div class="topbar-right">
+
+<button class="notification-btn">
+
+<i class="fa-solid fa-bell"></i>
+
+</button>
+
+<div class="user-profile">
+
+<div class="avatar">
+
+J
+
+</div>
+
+<div class="user-info">
+
+<strong>John Smith</strong>
+
+<span>Premium Client</span>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="messages-page">
+
+<div class="messages-layout">
+
+<!-- LEFT SIDE -->
+
+<div class="messages-sidebar">
+
+<div class="messages-search">
+
+<h3>Conversations</h3>
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search conversations...">
+
+</div>
+
+</div>
+
+<div class="conversation-list">
+
+<div class="conversation active">
+
+<div class="avatar">
+
+J
+
+</div>
+
+<div class="conversation-details">
+
+<strong>John Smith</strong>
+
+<p>Thanks! The homepage looks amazing.</p>
+
+</div>
+
+<div class="conversation-time">
+
+2m
+
+<div class="badge">2</div>
+
+</div>
+
+</div>
+
+<div class="conversation">
+
+<div class="avatar">
+
+S
+
+</div>
+
+<div class="conversation-details">
+
+<strong>Sarah Williams</strong>
+
+<p>Can we update the hero section?</p>
+
+</div>
+
+<div class="conversation-time">
+
+Yesterday
+
+</div>
+
+</div>
+
+<div class="conversation">
+
+<div class="avatar">
+
+M
+
+</div>
+
+<div class="conversation-details">
+
+<strong>Michael Brown</strong>
+
+<p>Invoice received.</p>
+
+</div>
+
+<div class="conversation-time">
+
+Mon
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ==================================
+CHAT PANEL
+================================== -->
+
+<div class="chat-panel">
+
+<div class="chat-header">
+
+<div class="chat-user">
+
+<div class="avatar">
+
+J
+
+</div>
+
+<div>
+
+<strong>John Smith</strong>
+
+<p class="online-status">
+
+<i class="fa-solid fa-circle"></i>
+
+Online
+
+</p>
+
+</div>
+
+</div>
+
+<div class="chat-actions">
+
+<button>
+
+<i class="fa-solid fa-phone"></i>
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-video"></i>
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-paperclip"></i>
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-ellipsis"></i>
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ==========================
+CHAT BODY
+========================== -->
+
+<div class="chat-body">
+
+<div class="message received">
+
+<div class="message-box">
+
+<p>
+
+Hey Amir! We absolutely love the homepage redesign. The layout looks much more premium.
+
+</p>
+
+<span>10:18 AM</span>
+
+</div>
+
+</div>
+
+<div class="message sent">
+
+<div class="message-box">
+
+<p>
+
+Awesome! I'm finishing the mobile optimization and polishing a few sections before sending another preview.
+
+</p>
+
+<span>10:21 AM</span>
+
+</div>
+
+</div>
+
+<div class="message received">
+
+<div class="message-box">
+
+<p>
+
+Perfect. Could we also make the orange button slightly larger?
+
+</p>
+
+<span>10:24 AM</span>
+
+</div>
+
+</div>
+
+<div class="message sent">
+
+<div class="message-box">
+
+<p>
+
+Absolutely! I'll increase the button size, improve the spacing, and upload the new version this afternoon.
+
+</p>
+
+<span>10:26 AM</span>
+
+</div>
+
+</div>
+
+<div class="message received">
+
+<div class="message-box">
+
+<p>
+
+Sounds great! Looking forward to seeing it.
+
+</p>
+
+<span>10:28 AM</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ==========================
+MESSAGE INPUT
+========================== -->
+
+<div class="chat-footer">
+
+<button class="chat-tool">
+
+<i class="fa-regular fa-face-smile"></i>
+
+</button>
+
+<button class="chat-tool">
+
+<i class="fa-solid fa-paperclip"></i>
+
+</button>
+
+<input
+type="text"
+placeholder="Type your message...">
+
+<button class="send-message">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+<span>Send</span>
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ==================================
+END MESSAGES LAYOUT
+================================== -->
+
+</div>
+
+</section>
+
+<!-- ==================================
+FOOTER
+================================== -->
+
+<footer class="dashboard-footer">
+
+<p>
+
+© 2026 Vision Coded Studio • All Rights Reserved
+
+</p>
+
+</footer>
+
+</div>
+
+</div>
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

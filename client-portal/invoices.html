@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Invoices | Vision Coded Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- ==================================
+SIDEBAR
+================================== -->
+
+<aside class="sidebar">
+
+<div class="sidebar-brand">
+
+<img
+src="../assets/logos/vcs-logo-horizontal.png"
+alt="Vision Coded Studio"
+class="sidebar-logo">
+
+</div>
+
+<nav class="sidebar-nav">
+
+<a href="index.html">
+<i class="fa-solid fa-table-columns"></i>
+<span>Overview</span>
+</a>
+
+<a href="projects.html">
+<i class="fa-solid fa-folder"></i>
+<span>Projects</span>
+</a>
+
+<a href="files.html">
+<i class="fa-solid fa-folder-open"></i>
+<span>Files</span>
+</a>
+
+<a href="messages.html">
+<i class="fa-solid fa-comments"></i>
+<span>Messages</span>
+</a>
+
+<a href="contracts.html">
+<i class="fa-solid fa-file-signature"></i>
+<span>Contracts</span>
+</a>
+
+<a href="invoices.html" class="active">
+<i class="fa-solid fa-file-invoice-dollar"></i>
+<span>Invoices</span>
+</a>
+
+<a href="requests.html">
+<i class="fa-solid fa-clipboard-list"></i>
+<span>Requests</span>
+</a>
+
+<a href="settings.html">
+<i class="fa-solid fa-gear"></i>
+<span>Settings</span>
+</a>
+
+</nav>
+
+<div class="sidebar-footer">
+
+<a href="../client-portal/index.html">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+<span>Logout</span>
+
+</a>
+
+</div>
+
+</aside>
+
+<!-- ==================================
+MAIN
+================================== -->
+
+<div class="dashboard-main">
+
+<header class="topbar">
+
+<div class="topbar-left">
+
+<h2>Invoices</h2>
+
+</div>
+
+<div class="topbar-right">
+
+<button class="notification-btn">
+
+<i class="fa-solid fa-bell"></i>
+
+</button>
+
+<div class="user-profile">
+
+<div class="avatar">
+
+J
+
+</div>
+
+<div class="user-info">
+
+<strong>John Smith</strong>
+
+<span>Premium Client</span>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ==================================
+HERO
+================================== -->
+
+<section class="invoice-page">
+
+<div class="invoice-hero">
+
+<div>
+
+<span class="hero-tag">
+
+Billing Center
+
+</span>
+
+<h1>
+
+Invoices & Payments
+
+</h1>
+
+<p>
+
+Review invoices, download receipts, and securely pay outstanding balances through your client portal.
+
+</p>
+
+</div>
+
+<div class="invoice-summary">
+
+<span class="summary-status">
+
+<i class="fa-solid fa-wallet"></i>
+
+Outstanding Balance
+
+</span>
+
+<h2>
+
+$500.00
+
+</h2>
+
+<p>
+
+Due July 15, 2026
+
+</p>
+
+<button class="primary-btn">
+
+Pay Invoice
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ==================================
+SUMMARY CARDS
+================================== -->
+
+<div class="invoice-stats">
+
+<div class="stat-card">
+
+<div class="stat-icon">
+
+<i class="fa-solid fa-file-invoice-dollar"></i>
+
+</div>
+
+<h4>Total Invoices</h4>
+
+<h2>8</h2>
+
+<p>Generated</p>
+
+</div>
+
+<div class="stat-card">
+
+<div class="stat-icon">
+
+<i class="fa-solid fa-circle-check"></i>
+
+</div>
+
+<h4>Paid</h4>
+
+<h2>7</h2>
+
+<p>Completed</p>
+
+</div>
+
+<div class="stat-card">
+
+<div class="stat-icon">
+
+<i class="fa-solid fa-clock"></i>
+
+</div>
+
+<h4>Pending</h4>
+
+<h2>1</h2>
+
+<p>Awaiting Payment</p>
+
+</div>
+
+<div class="stat-card">
+
+<div class="stat-icon">
+
+<i class="fa-solid fa-dollar-sign"></i>
+
+</div>
+
+<h4>Total Paid</h4>
+
+<h2>$6,750</h2>
+
+<p>Lifetime</p>
+
+</div>
+
+</div>
+
+<!-- ==================================
+INVOICE TABLE
+================================== -->
+
+<div class="invoice-card">
+
+<div class="card-header">
+
+<h3>
+
+Invoice History
+
+</h3>
+
+<button class="download-btn">
+
+<i class="fa-solid fa-download"></i>
+
+Download All
+
+</button>
+
+</div>
+
+<table class="invoice-table">
+
+<thead>
+
+<tr>
+
+<th>Invoice</th>
+
+<th>Date</th>
+
+<th>Amount</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>#1008</td>
+
+<td>July 8, 2026</td>
+
+<td>$500.00</td>
+
+<td>
+
+<span class="status pending">
+
+Pending
+
+</span>
+
+</td>
+
+<td>
+
+<a href="#">
+
+View
+
+</a>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>#1007</td>
+
+<td>June 28, 2026</td>
+
+<td>$1,250.00</td>
+
+<td>
+
+<span class="status paid">
+
+Paid
+
+</span>
+
+</td>
+
+<td>
+
+<a href="#">
+
+Download
+
+</a>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>#1006</td>
+
+<td>June 12, 2026</td>
+
+<td>$750.00</td>
+
+<td>
+
+<span class="status paid">
+
+Paid
+
+</span>
+
+</td>
+
+<td>
+
+<a href="#">
+
+Download
+
+</a>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>#1005</td>
+
+<td>May 30, 2026</td>
+
+<td>$2,000.00</td>
+
+<td>
+
+<span class="status paid">
+
+Paid
+
+</span>
+
+</td>
+
+<td>
+
+<a href="#">
+
+Download
+
+</a>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- ==================================
+PAYMENT METHODS
+================================== -->
+
+<div class="payment-grid">
+
+<div class="payment-card">
+
+<i class="fa-solid fa-credit-card"></i>
+
+<h4>
+
+Saved Card
+
+</h4>
+
+<p>
+
+Visa ending in •••• 4821
+
+</p>
+
+<button class="secondary-btn">
+
+Manage
+
+</button>
+
+</div>
+
+<div class="payment-card">
+
+<i class="fa-brands fa-paypal"></i>
+
+<h4>
+
+PayPal
+
+</h4>
+
+<p>
+
+Connected Account
+
+</p>
+
+<button class="secondary-btn">
+
+Use PayPal
+
+</button>
+
+</div>
+
+<div class="payment-card">
+
+<i class="fa-solid fa-building-columns"></i>
+
+<h4>
+
+Bank Transfer
+
+</h4>
+
+<p>
+
+ACH Available
+
+</p>
+
+<button class="secondary-btn">
+
+Pay via ACH
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ==================================
+RECENT PAYMENT ACTIVITY
+================================== -->
+
+<div class="payment-history">
+
+<h3>
+
+Recent Payment Activity
+
+</h3>
+
+<div class="activity-list">
+
+<div class="activity-item">
+
+<div class="activity-icon">
+
+<i class="fa-solid fa-circle-check"></i>
+
+</div>
+
+<div class="activity-info">
+
+<strong>
+
+Invoice #1007 Paid
+
+</strong>
+
+<p>
+
+Payment received via Visa ending in ••••4821
+
+</p>
+
+</div>
+
+<span>
+
+June 28, 2026
+
+</span>
+
+</div>
+
+<div class="activity-item">
+
+<div class="activity-icon">
+
+<i class="fa-solid fa-file-invoice-dollar"></i>
+
+</div>
+
+<div class="activity-info">
+
+<strong>
+
+Invoice #1008 Generated
+
+</strong>
+
+<p>
+
+Final website balance has been issued.
+
+</p>
+
+</div>
+
+<span>
+
+July 8, 2026
+
+</span>
+
+</div>
+
+<div class="activity-item">
+
+<div class="activity-icon">
+
+<i class="fa-solid fa-envelope"></i>
+
+</div>
+
+<div class="activity-info">
+
+<strong>
+
+Payment Reminder Sent
+
+</strong>
+
+<p>
+
+A reminder email was sent regarding Invoice #1008.
+
+</p>
+
+</div>
+
+<span>
+
+July 10, 2026
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ==================================
+QUICK ACTIONS
+================================== -->
+
+<div class="invoice-actions">
+
+<div class="action-card">
+
+<i class="fa-solid fa-credit-card"></i>
+
+<h4>
+
+Pay Outstanding Balance
+
+</h4>
+
+<p>
+
+Securely pay invoices using your preferred payment method.
+
+</p>
+
+</div>
+
+<div class="action-card">
+
+<i class="fa-solid fa-download"></i>
+
+<h4>
+
+Download Receipts
+
+</h4>
+
+<p>
+
+Access all paid invoices and receipts anytime.
+
+</p>
+
+</div>
+
+<div class="action-card">
+
+<i class="fa-solid fa-headset"></i>
+
+<h4>
+
+Billing Support
+
+</h4>
+
+<p>
+
+Need help with a payment or invoice? Contact our team.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==================================
+FOOTER
+================================== -->
+
+<footer class="dashboard-footer">
+
+<p>
+
+© 2026 Vision Coded Studio • All Rights Reserved
+
+</p>
+
+</footer>
+
+</div>
+
+</div>
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

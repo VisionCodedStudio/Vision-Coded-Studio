@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Requests | Vision Coded Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="../css/dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<div class="sidebar-brand">
+
+<img
+src="../assets/logos/vcs-logo-horizontal.png"
+class="sidebar-logo">
+
+</div>
+
+<nav class="sidebar-nav">
+
+<a href="index.html">
+
+<i class="fa-solid fa-table-columns"></i>
+
+<span>Overview</span>
+
+</a>
+
+<a href="projects.html">
+
+<i class="fa-solid fa-folder"></i>
+
+<span>Projects</span>
+
+</a>
+
+<a href="files.html">
+
+<i class="fa-solid fa-folder-open"></i>
+
+<span>Files</span>
+
+</a>
+
+<a href="messages.html">
+
+<i class="fa-solid fa-comments"></i>
+
+<span>Messages</span>
+
+</a>
+
+<a href="contracts.html">
+
+<i class="fa-solid fa-file-signature"></i>
+
+<span>Contracts</span>
+
+</a>
+
+<a href="invoices.html">
+
+<i class="fa-solid fa-file-invoice-dollar"></i>
+
+<span>Invoices</span>
+
+</a>
+
+<a href="requests.html"
+class="active">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+<span>Requests</span>
+
+</a>
+
+<a href="settings.html">
+
+<i class="fa-solid fa-gear"></i>
+
+<span>Settings</span>
+
+</a>
+
+</nav>
+
+<div class="sidebar-footer">
+
+<a href="../client-portal/">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+<span>Logout</span>
+
+</a>
+
+</div>
+
+</aside>
+
+<!-- MAIN -->
+
+<div class="dashboard-main">
+
+<header class="topbar">
+
+<div class="topbar-left">
+
+<h2>
+
+Requests
+
+</h2>
+
+</div>
+
+<div class="topbar-right">
+
+<button class="notification-btn">
+
+<i class="fa-solid fa-bell"></i>
+
+</button>
+
+<div class="user-profile">
+
+<div class="avatar">
+
+J
+
+</div>
+
+<div class="user-info">
+
+<strong>
+
+John Smith
+
+</strong>
+
+<span>
+
+Premium Client
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="requests-page">
+
+<div class="requests-hero">
+
+<div>
+
+<span class="hero-tag">
+
+Support Center
+
+</span>
+
+<h1>
+
+Need Something?
+
+</h1>
+
+<p>
+
+Submit revisions, feature requests, bug reports, or upload new assets directly to your project.
+
+</p>
+
+</div>
+
+<div class="request-summary">
+
+<span class="summary-status">
+
+<i class="fa-solid fa-headset"></i>
+
+Open Requests
+
+</span>
+
+<h2>
+
+3
+
+</h2>
+
+<p>
+
+Average Response: 24 Hours
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ==================================
+REQUEST TYPES
+================================== -->
+
+<div class="request-grid">
+
+<div class="request-card">
+
+<i class="fa-solid fa-palette"></i>
+
+<h3>
+
+Design Revision
+
+</h3>
+
+<p>
+
+Request updates to layouts, colors, typography, spacing, or overall design.
+
+</p>
+
+<button class="secondary-btn">
+
+New Request
+
+</button>
+
+</div>
+
+<div class="request-card">
+
+<i class="fa-solid fa-bug"></i>
+
+<h3>
+
+Bug Report
+
+</h3>
+
+<p>
+
+Report website issues, broken links, mobile problems, or unexpected behavior.
+
+</p>
+
+<button class="secondary-btn">
+
+Report Bug
+
+</button>
+
+</div>
+
+<div class="request-card">
+
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+
+<h3>
+
+Feature Request
+
+</h3>
+
+<p>
+
+Need a new feature? Submit enhancement ideas for your website.
+
+</p>
+
+<button class="secondary-btn">
+
+Request Feature
+
+</button>
+
+</div>
+
+<div class="request-card">
+
+<i class="fa-solid fa-upload"></i>
+
+<h3>
+
+Upload Assets
+
+</h3>
+
+<p>
+
+Send logos, photos, videos, PDFs, or brand files for your project.
+
+</p>
+
+<button class="secondary-btn">
+
+Upload Files
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ==================================
+NEW REQUEST FORM
+================================== -->
+
+<div class="request-form-card">
+
+<h3>
+
+Submit a Request
+
+</h3>
+
+<form class="request-form">
+
+<div class="form-grid">
+
+<div>
+
+<label>
+
+Request Type
+
+</label>
+
+<select>
+
+<option>Design Revision</option>
+
+<option>Bug Report</option>
+
+<option>Feature Request</option>
+
+<option>Website Update</option>
+
+<option>General Support</option>
+
+</select>
+
+</div>
+
+<div>
+
+<label>
+
+Priority
+
+</label>
+
+<select>
+
+<option>Low</option>
+
+<option selected>
+
+Normal
+
+</option>
+
+<option>High</option>
+
+<option>Urgent</option>
+
+</select>
+
+</div>
+
+</div>
+
+<label>
+
+Subject
+
+</label>
+
+<input
+type="text"
+placeholder="Brief description of your request">
+
+<label>
+
+Details
+
+</label>
+
+<textarea
+rows="8"
+placeholder="Describe your request in as much detail as possible..."></textarea>
+
+<label>
+
+Attachments
+
+</label>
+
+<input
+type="file">
+
+<button
+type="submit"
+class="primary-btn">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+Submit Request
+
+</button>
+
+</form>
+
+</div>
+
+<!-- ==================================
+REQUEST HISTORY
+================================== -->
+
+<div class="request-history">
+
+<h3>
+
+Recent Requests
+
+</h3>
+
+<table class="request-table">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Request</th>
+
+<th>Priority</th>
+
+<th>Status</th>
+
+<th>Updated</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>#REQ-1042</td>
+
+<td>Homepage Hero Revision</td>
+
+<td>
+
+<span class="priority medium">
+
+Normal
+
+</span>
+
+</td>
+
+<td>
+
+<span class="status progress">
+
+In Progress
+
+</span>
+
+</td>
+
+<td>Today</td>
+
+<td>
+
+<a href="#">
+
+View
+
+</a>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>#REQ-1038</td>
+
+<td>Mobile Navigation Bug</td>
+
+<td>
+
+<span class="priority high">
+
+High
+
+</span>
+
+</td>
+
+<td>
+
+<span class="status completed">
+
+Completed
+
+</span>
+
+</td>
+
+<td>Yesterday</td>
+
+<td>
+
+<a href="#">
+
+View
+
+</a>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>#REQ-1033</td>
+
+<td>Upload New Logo</td>
+
+<td>
+
+<span class="priority low">
+
+Low
+
+</span>
+
+</td>
+
+<td>
+
+<span class="status open">
+
+Open
+
+</span>
+
+</td>
+
+<td>June 28</td>
+
+<td>
+
+<a href="#">
+
+View
+
+</a>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- ==================================
+HELP CENTER
+================================== -->
+
+<div class="help-grid">
+
+<div class="action-card">
+
+<i class="fa-solid fa-circle-question"></i>
+
+<h4>
+
+FAQ
+
+</h4>
+
+<p>
+
+Find answers to common client questions.
+
+</p>
+
+</div>
+
+<div class="action-card">
+
+<i class="fa-solid fa-book-open"></i>
+
+<h4>
+
+Documentation
+
+</h4>
+
+<p>
+
+View tutorials and project resources.
+
+</p>
+
+</div>
+
+<div class="action-card">
+
+<i class="fa-solid fa-headset"></i>
+
+<h4>
+
+Contact Support
+
+</h4>
+
+<p>
+
+Need immediate assistance? Reach out to our team.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==================================
+FOOTER
+================================== -->
+
+<footer class="dashboard-footer">
+
+<p>
+
+© 2026 Vision Coded Studio • All Rights Reserved
+
+</p>
+
+</footer>
+
+</div>
+
+</div>
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>
