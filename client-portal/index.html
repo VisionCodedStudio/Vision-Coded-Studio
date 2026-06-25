@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -27,24 +29,66 @@ if(localStorage.getItem("clientAuth") !== "true"){
 <aside class="sidebar">
 
     <div class="sidebar-brand">
-        <img src="../assets/logos/vcs-logo-horizontal.png" class="sidebar-logo">
+
+        <img
+            src="../assets/logos/vcs-logo-horizontal.png"
+            alt="Vision Coded Studio"
+            class="sidebar-logo">
+
     </div>
 
     <nav class="sidebar-nav">
 
-        <a href="index.html" class="active">🏠 <span>Overview</span></a>
-        <a href="projects.html">📁 <span>Projects</span></a>
-        <a href="files.html">📂 <span>Files</span></a>
-        <a href="messages.html">💬 <span>Messages</span></a>
-        <a href="contracts.html">📄 <span>Contracts</span></a>
-        <a href="invoices.html">💳 <span>Invoices</span></a>
-        <a href="requests.html">📝 <span>Requests</span></a>
-        <a href="settings.html">⚙️ <span>Settings</span></a>
+        <a href="index.html" class="active">
+            🏠
+            <span>Overview</span>
+        </a>
+
+        <a href="projects.html">
+            📁
+            <span>Projects</span>
+        </a>
+
+        <a href="files.html">
+            📂
+            <span>Files</span>
+        </a>
+
+        <a href="messages.html">
+            💬
+            <span>Messages</span>
+        </a>
+
+        <a href="contracts.html">
+            📄
+            <span>Contracts</span>
+        </a>
+
+        <a href="invoices.html">
+            💳
+            <span>Invoices</span>
+        </a>
+
+        <a href="requests.html">
+            📝
+            <span>Requests</span>
+        </a>
+
+        <a href="settings.html">
+            ⚙️
+            <span>Settings</span>
+        </a>
 
     </nav>
 
     <div class="sidebar-footer">
-        <a href="#" onclick="logout()">🚪 <span>Logout</span></a>
+
+        <!-- 🔥 FIXED LOGOUT -->
+        <a href="#" onclick="logout()">
+            🚪
+            <span>Logout</span>
+        </a>
+
     </div>
 
 </aside>
@@ -59,14 +103,18 @@ if(localStorage.getItem("clientAuth") !== "true"){
     </div>
 
     <div class="topbar-right">
+
         <button class="notification-btn">🔔</button>
 
         <div class="user-profile">
+
             <div class="avatar">J</div>
+
             <div class="user-info">
                 <strong>John Smith</strong>
                 <span>Premium Client</span>
             </div>
+
         </div>
 
     </div>
@@ -105,16 +153,20 @@ if(localStorage.getItem("clientAuth") !== "true"){
 
 </section>
 
-</div> <!-- dashboard-main END -->
+</div>
+
+</div>
+
+
+<!-- MAIN CONTENT -->
+</div>
 
 <!-- FOOTER (CORRECT PLACE) -->
 <footer class="dashboard-footer">
     <p>© 2026 Vision Coded Studio</p>
 </footer>
 
-</div> <!-- dashboard END -->
-
-<!-- LOGOUT SCRIPT -->
+<!-- 🔥 LOGOUT SCRIPT -->
 <script>
 function logout(){
     localStorage.removeItem("clientAuth");
