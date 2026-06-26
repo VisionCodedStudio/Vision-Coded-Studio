@@ -19,6 +19,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <body>
 
+<script>
+if(localStorage.getItem("clientAuth") !== "true"){
+    window.location.href = "/client-portal/login.html";
+}
+</script>
+
 <div class="dashboard">
 
 <!-- ==================================
@@ -82,7 +88,7 @@ class="sidebar-logo">
 
 <div class="sidebar-footer">
 
-<a href="../client-portal/index.html">
+<a href="#" onclick="logout()">
 
 <i class="fa-solid fa-right-from-bracket"></i>
 
@@ -451,6 +457,14 @@ FOOTER
 </div>
 
 </div>
+
+<script>
+function logout(){
+    localStorage.removeItem("clientAuth");
+    localStorage.removeItem("clientEmail");
+    window.location.href = "/client-portal/login.html";
+}
+</script>
 
 <script src="../js/dashboard.js"></script>
 
