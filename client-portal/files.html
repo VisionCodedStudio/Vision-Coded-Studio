@@ -16,6 +16,12 @@
 
 <body>
 
+<script>
+if(localStorage.getItem("clientAuth") !== "true"){
+    window.location.href = "/client-portal/login.html";
+}
+</script>
+
 <div class="dashboard">
 
 <!-- ==================================
@@ -79,7 +85,7 @@ alt="Vision Coded Studio">
 
 <div class="sidebar-footer">
 
-<a href="../client-portal/index.html">
+<a href="#" onclick="logout()">
 
 🚪
 
@@ -578,6 +584,14 @@ Photos & Graphics
 </div>
 
 </div>
+
+<script>
+function logout(){
+    localStorage.removeItem("clientAuth");
+    localStorage.removeItem("clientEmail");
+    window.location.href = "/client-portal/login.html";
+}
+</script>
 
 <script src="../js/dashboard.js"></script>
 
