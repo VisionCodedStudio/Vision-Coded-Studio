@@ -1,628 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Vision Coded Studio</title>
 
-<title>Settings | Vision Coded Studio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="../css/dashboard.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
-
-<div class="dashboard">
-
-<!-- ==================================
-SIDEBAR
-================================== -->
-
-<aside class="sidebar">
-
-<div class="sidebar-brand">
-
-<img
-src="../assets/logos/vcs-logo-horizontal.png"
-class="sidebar-logo"
-alt="Vision Coded Studio">
-
-</div>
-
-<nav class="sidebar-nav">
-
-<a href="index.html">
-<i class="fa-solid fa-table-columns"></i>
-<span>Overview</span>
-</a>
-
-<a href="projects.html">
-<i class="fa-solid fa-folder"></i>
-<span>Projects</span>
-</a>
-
-<a href="files.html">
-<i class="fa-solid fa-folder-open"></i>
-<span>Files</span>
-</a>
-
-<a href="messages.html">
-<i class="fa-solid fa-comments"></i>
-<span>Messages</span>
-</a>
-
-<a href="contracts.html">
-<i class="fa-solid fa-file-signature"></i>
-<span>Contracts</span>
-</a>
-
-<a href="invoices.html">
-<i class="fa-solid fa-file-invoice-dollar"></i>
-<span>Invoices</span>
-</a>
-
-<a href="requests.html">
-<i class="fa-solid fa-paper-plane"></i>
-<span>Requests</span>
-</a>
-
-<a href="settings.html" class="active">
-<i class="fa-solid fa-gear"></i>
-<span>Settings</span>
-</a>
-
-</nav>
-
-<div class="sidebar-footer">
-
-<a href="../client-portal/">
-
-<i class="fa-solid fa-right-from-bracket"></i>
-
-<span>Logout</span>
-
-</a>
-
-</div>
-
-</aside>
-
-<!-- ==================================
-MAIN
-================================== -->
-
-<div class="dashboard-main">
-
-<header class="topbar">
-
-<div class="topbar-left">
-
-<h2>
-
-Settings
-
-</h2>
-
-</div>
-
-<div class="topbar-right">
-
-<button class="notification-btn">
-
-<i class="fa-solid fa-bell"></i>
-
-</button>
-
-<div class="user-profile">
-
-<div class="avatar">
-
-J
-
-</div>
-
-<div class="user-info">
-
-<strong>
-
-John Smith
-
-</strong>
-
-<span>
-
-Premium Client
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-</header>
-
-<section class="settings-page">
-
-<div class="settings-hero">
-
-<div>
-
-<span class="hero-tag">
-
-Account Settings
-
-</span>
-
-<h1>
-
-Manage Your Account
-
-</h1>
-
-<p>
-
-Update your profile, security preferences, notifications, and client account information.
-
-</p>
-
-</div>
-
-<div class="settings-summary">
-
-<span class="summary-status">
-
-<i class="fa-solid fa-circle-check"></i>
-
-Account Status
-
-</span>
-
-<h2>
-
-Active
-
-</h2>
-
-<p>
-
-Premium Client Since 2026
-
-</p>
-
-</div>
-
-</div>
-
-<!-- ==================================
-PROFILE SETTINGS
-================================== -->
-
-<div class="settings-grid">
-
-<div class="settings-card">
-
-<h3>
-
-<i class="fa-solid fa-user"></i>
-
-Profile Information
-
-</h3>
-
-<form class="settings-form">
-
-<div class="form-grid">
-
-<div>
-
-<label>Full Name</label>
-
-<input
-type="text"
-value="John Smith">
-
-</div>
-
-<div>
-
-<label>Email Address</label>
-
-<input
-type="email"
-value="john@example.com">
-
-</div>
-
-</div>
-
-<div class="form-grid">
-
-<div>
-
-<label>Company</label>
-
-<input
-type="text"
-value="Smith Media">
-
-</div>
-
-<div>
-
-<label>Phone Number</label>
-
-<input
-type="tel"
-value="(555) 555-5555">
-
-</div>
-
-</div>
-
-<label>
-
-Business Address
-
-</label>
-
-<input
-type="text"
-placeholder="123 Business Street">
-
-<button class="primary-btn">
-
-<i class="fa-solid fa-floppy-disk"></i>
-
-Save Changes
-
-</button>
-
-</form>
-
-</div>
-
-<!-- ==================================
-PASSWORD
-================================== -->
-
-<div class="settings-card">
-
-<h3>
-
-<i class="fa-solid fa-lock"></i>
-
-Password & Security
-
-</h3>
-
-<form class="settings-form">
-
-<label>
-
-Current Password
-
-</label>
-
-<input
-type="password">
-
-<label>
-
-New Password
-
-</label>
-
-<input
-type="password">
-
-<label>
-
-Confirm Password
-
-</label>
-
-<input
-type="password">
-
-<button class="secondary-btn">
-
-<i class="fa-solid fa-key"></i>
-
-Update Password
-
-</button>
-
-</form>
-
-</div>
-
-</div>
-
-<!-- ==================================
-PREFERENCES
-================================== -->
-
-<div class="settings-grid">
-
-<div class="settings-card">
-
-<h3>
-
-<i class="fa-solid fa-bell"></i>
-
-Notifications
-
-</h3>
-
-<div class="setting-option">
-
-<span>
-
-Email Notifications
-
-</span>
-
-<label class="switch">
-
-<input type="checkbox" checked>
-
-<span class="slider"></span>
-
-</label>
-
-</div>
-
-<div class="setting-option">
-
-<span>
-
-Project Updates
-
-</span>
-
-<label class="switch">
-
-<input type="checkbox" checked>
-
-<span class="slider"></span>
-
-</label>
-
-</div>
-
-<div class="setting-option">
-
-<span>
-
-Invoice Reminders
-
-</span>
-
-<label class="switch">
-
-<input type="checkbox" checked>
-
-<span class="slider"></span>
-
-</label>
-
-</div>
-
-<div class="setting-option">
-
-<span>
-
-Marketing Emails
-
-</span>
-
-<label class="switch">
-
-<input type="checkbox">
-
-<span class="slider"></span>
-
-</label>
-
-</div>
-
-</div>
-
-<div class="settings-card">
-
-<h3>
-
-<i class="fa-solid fa-palette"></i>
-
-Preferences
-
-</h3>
-
-<label>
-
-Time Zone
-
-</label>
-
-<select>
-
-<option>Eastern Time (EST)</option>
-
-<option>Central Time (CST)</option>
-
-<option>Mountain Time (MST)</option>
-
-<option>Pacific Time (PST)</option>
-
-</select>
-
-<label>
-
-Language
-
-</label>
-
-<select>
-
-<option>English</option>
-
-<option>Spanish</option>
-
-</select>
-
-<button class="primary-btn">
-
-<i class="fa-solid fa-check"></i>
-
-Save Preferences
-
-</button>
-
-</div>
-
-</div>
-
-<!-- ==================================
-ACCOUNT INFORMATION
-================================== -->
-
-<div class="settings-grid">
-
-<div class="settings-card">
-
-<h3>
-
-<i class="fa-solid fa-id-card"></i>
-
-Account Information
-
-</h3>
-
-<div class="account-info">
-
-<div class="info-row">
-
-<span>Client ID</span>
-
-<strong>#VCS-10248</strong>
-
-</div>
-
-<div class="info-row">
-
-<span>Membership</span>
-
-<strong>Premium Client</strong>
-
-</div>
-
-<div class="info-row">
-
-<span>Member Since</span>
-
-<strong>June 2026</strong>
-
-</div>
-
-<div class="info-row">
-
-<span>Current Project</span>
-
-<strong>Business Website</strong>
-
-</div>
-
-<div class="info-row">
-
-<span>Account Status</span>
-
-<span class="status active">
-
-Active
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- ==================================
-DANGER ZONE
-================================== -->
-
-<div class="settings-card danger-zone">
-
-<h3>
-
-<i class="fa-solid fa-triangle-exclamation"></i>
-
-Danger Zone
-
-</h3>
-
-<p>
-
-These actions are permanent and cannot be undone. Please proceed carefully.
-
-</p>
-
-<div class="danger-actions">
-
-<button class="danger-btn">
-
-<i class="fa-solid fa-right-from-bracket"></i>
-
-Log Out
-
-</button>
-
-<button class="danger-btn delete">
-
-<i class="fa-solid fa-trash"></i>
-
-Delete Account
-
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ==================================
-FOOTER
-================================== -->
-
-<footer class="dashboard-footer">
-
-<p>
-
-© 2026 Vision Coded Studio • All Rights Reserved
-
-</p>
-
-</footer>
-
-</div>
-
-</div>
-
-<script src="../js/dashboard.js"></script>
-
+    <script>
+    if(localStorage.getItem("clientAuth") !== "true"){
+        window.location.href = "/client-portal/login.html";
+    }
+    </script>
+
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <img src="../assets/logos/vcs-logo-horizontal.png" class="sidebar-logo" alt="Vision Coded Studio">
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="index.html">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span>Overview</span>
+                </a>
+
+                <a href="projects.html">
+                    <i class="fa-solid fa-folder"></i>
+                    <span>Projects</span>
+                </a>
+
+                <a href="files.html">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Files</span>
+                </a>
+
+                <a href="messages.html">
+                    <i class="fa-solid fa-comments"></i>
+                    <span>Messages</span>
+                </a>
+
+                <a href="contracts.html">
+                    <i class="fa-solid fa-file-signature"></i>
+                    <span>Contracts</span>
+                </a>
+
+                <a href="invoices.html">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    <span>Invoices</span>
+                </a>
+
+                <a href="requests.html">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Requests</span>
+                </a>
+
+                <a href="settings.html" class="active">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="#" onclick="logout()">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <div class="dashboard-main">
+            <header class="topbar">
+                <div class="topbar-left">
+                    <h2>Settings</h2>
+                </div>
+
+                <div class="topbar-right">
+                    <button class="notification-btn" type="button">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>
+
+                    <div class="user-profile">
+                        <div class="avatar">J</div>
+
+                        <div class="user-info">
+                            <strong>John Smith</strong>
+                            <span>Premium Client</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="settings-page">
+                <div class="settings-hero">
+                    <div>
+                        <span class="hero-tag">Account Settings</span>
+                        <h1>Manage Your Account</h1>
+                        <p>Update your profile, security preferences, notifications, and client account information.</p>
+                    </div>
+
+                    <div class="settings-summary">
+                        <span class="summary-status">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Account Status
+                        </span>
+                        <h2>Active</h2>
+                        <p>Premium Client Since 2026</p>
+                    </div>
+                </div>
+
+                <div class="settings-grid">
+                    <div class="settings-card">
+                        <h3>
+                            <i class="fa-solid fa-user"></i>
+                            Profile Information
+                        </h3>
+
+                        <form class="settings-form">
+                            <div class="form-grid">
+                                <div>
+                                    <label>Full Name</label>
+                                    <input type="text" value="John Smith">
+                                </div>
+
+                                <div>
+                                    <label>Email Address</label>
+                                    <input type="email" value="john@example.com">
+                                </div>
+                            </div>
+
+                            <div class="form-grid">
+                                <div>
+                                    <label>Company</label>
+                                    <input type="text" value="Smith Media">
+                                </div>
+
+                                <div>
+                                    <label>Phone Number</label>
+                                    <input type="tel" value="(555) 555-5555">
+                                </div>
+                            </div>
+
+                            <label>Business Address</label>
+                            <input type="text" placeholder="123 Business Street">
+
+                            <button class="primary-btn" type="button">
+                                <i class="fa-solid fa-floppy-disk"></i>
+                                Save Changes
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="settings-card">
+                        <h3>
+                            <i class="fa-solid fa-lock"></i>
+                            Password & Security
+                        </h3>
+
+                        <form class="settings-form">
+                            <label>Current Password</label>
+                            <input type="password">
+
+                            <label>New Password</label>
+                            <input type="password">
+
+                            <label>Confirm Password</label>
+                            <input type="password">
+
+                            <button class="secondary-btn" type="button">
+                                <i class="fa-solid fa-key"></i>
+                                Update Password
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="settings-grid">
+                    <div class="settings-card">
+                        <h3>
+                            <i class="fa-solid fa-bell"></i>
+                            Notifications
+                        </h3>
+
+                        <div class="setting-option">
+                            <span>Email Notifications</span>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="setting-option">
+                            <span>Project Updates</span>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="setting-option">
+                            <span>Invoice Reminders</span>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                        <div class="setting-option">
+                            <span>Marketing Emails</span>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="settings-card">
+                        <h3>
+                            <i class="fa-solid fa-palette"></i>
+                            Preferences
+                        </h3>
+
+                        <label>Time Zone</label>
+                        <select>
+                            <option>Eastern Time (EST)</option>
+                            <option>Central Time (CST)</option>
+                            <option>Mountain Time (MST)</option>
+                            <option>Pacific Time (PST)</option>
+                        </select>
+
+                        <label>Language</label>
+                        <select>
+                            <option>English</option>
+                            <option>Spanish</option>
+                        </select>
+
+                        <button class="primary-btn" type="button">
+                            <i class="fa-solid fa-check"></i>
+                            Save Preferences
+                        </button>
+                    </div>
+                </div>
+
+                <div class="settings-grid">
+                    <div class="settings-card">
+                        <h3>
+                            <i class="fa-solid fa-id-card"></i>
+                            Account Information
+                        </h3>
+
+                        <div class="account-info">
+                            <div class="info-row">
+                                <span>Client ID</span>
+                                <strong>#VCS-10248</strong>
+                            </div>
+
+                            <div class="info-row">
+                                <span>Membership</span>
+                                <strong>Premium Client</strong>
+                            </div>
+
+                            <div class="info-row">
+                                <span>Member Since</span>
+                                <strong>June 2026</strong>
+                            </div>
+
+                            <div class="info-row">
+                                <span>Current Project</span>
+                                <strong>Business Website</strong>
+                            </div>
+
+                            <div class="info-row">
+                                <span>Account Status</span>
+                                <span class="status active">Active</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settings-card danger-zone">
+                        <h3>
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            Danger Zone
+                        </h3>
+
+                        <p>These actions are permanent and cannot be undone. Please proceed carefully.</p>
+
+                        <div class="danger-actions">
+                            <button class="danger-btn" type="button" onclick="logout()">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                Log Out
+                            </button>
+
+                            <button class="danger-btn delete" type="button">
+                                <i class="fa-solid fa-trash"></i>
+                                Delete Account
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="dashboard-footer">
+                <p>&copy; 2026 Vision Coded Studio. All Rights Reserved</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+    function logout(){
+        localStorage.removeItem("clientAuth");
+        localStorage.removeItem("clientEmail");
+        window.location.href = "/client-portal/login.html";
+    }
+    </script>
+
+    <script src="../js/dashboard.js"></script>
 </body>
-
 </html>
